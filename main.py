@@ -1,16 +1,19 @@
-# This is a sample Python script.
+import os
+from diffparser import get_changed_file
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+PATH_TO_STATIC_BUG_CHECKERS = "~/PycharmProjects/StaticBugCheckers/static-checkers"
+EP_BIN = os.path.join(PATH_TO_STATIC_BUG_CHECKERS, "error_prone_ant-2.1.1.jar")
 
+# TODO: what is prop-compile-path in Defects4J?
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    print(EP_BIN)
+    proj_path = "/home/yuliia/PycharmProjects/bugs-dot-jar/logging-log4j2"
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    buggy_files = get_changed_file(proj_path)
+
+    for buggy_f in buggy_files:
+        cmd = ['java', '-Xbootclasspath/p:' + EP_BIN,
+           'com.google.errorprone.ErrorProneCompiler',
+           '-implicit:none'] + ['-cp', "TODO", buggy_f]
+

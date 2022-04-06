@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../StaticBugCheckers/.idea/StaticBugCheckers.iml" filepath="$PROJECT_DIR$/../StaticBugCheckers/.idea/StaticBugCheckers.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/masters.iml" filepath="$PROJECT_DIR$/.idea/masters.iml" />
     </modules>
   </component>
