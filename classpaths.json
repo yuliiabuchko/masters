@@ -1,13 +1,13 @@
 {
   "logging-log4j2" : [
-    "/home/yuliia/PycharmProjects/masters/org.osgi.framework-1.8.0.jar",
-    "/home/yuliia/PycharmProjects/masters/org.osgi.resource-1.0.1.jar",
-    "/home/yuliia/PycharmProjects/masters/slf4j-api-1.7.36.jar",
-    "/home/yuliia/PycharmProjects/masters/slf4j-nop-1.7.36.jar",
-    "/home/yuliia/PycharmProjects/masters/jackson-annotations-2.6.0.jar",
-    "/home/yuliia/PycharmProjects/masters/jackson-core-2.6.7.jar",
-    "/home/yuliia/PycharmProjects/masters/jackson-databind-2.6.7.5.jar",
-    "/home/yuliia/PycharmProjects/masters/jakarta.mail-api-1.6.7.jar",
-    "/home/yuliia/PycharmProjects/masters/disruptor-3.2.1.jar"
+    "/home/yuliia/PycharmProjects/masters/jars/org.osgi.framework-1.8.0.jar",
+    "/home/yuliia/PycharmProjects/masters/jars/org.osgi.resource-1.0.1.jar",
+    "/home/yuliia/PycharmProjects/masters/jars/slf4j-api-1.7.36.jar",
+    "/home/yuliia/PycharmProjects/masters/jars/slf4j-nop-1.7.36.jar",
+    "/home/yuliia/PycharmProjects/masters/jars/jackson-annotations-2.6.0.jar",
+    "/home/yuliia/PycharmProjects/masters/jars/jackson-core-2.6.7.jar",
+    "/home/yuliia/PycharmProjects/masters/jars/jackson-databind-2.6.7.5.jar",
+    "/home/yuliia/PycharmProjects/masters/jars/jakarta.mail-api-1.6.7.jar",
+    "/home/yuliia/PycharmProjects/masters/jars/disruptor-3.2.1.jar"
   ]
 }

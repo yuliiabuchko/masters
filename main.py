@@ -1,63 +1,54 @@
 import os
-import subprocess
 
-from classpathsearcher import find_all_jars
-from diffparser import get_changed_file
-import json
-from runners.errorprone.runner import run_error_prone
+from scripts.classpathsearcher import find_all_jars, get_class_paths_from_dependencies
+from scripts.commands import git
+from scripts.commands import maven
+from scripts.diffparser import get_changed_file
+from scripts.errorprone.runner import run_error_prone
+
 
 PATH_TO_DATABASE = "/home/yuliia/PycharmProjects/bugs-dot-jar"
+PATH_TO_LOGS = "/home/yuliia/PycharmProjects/masters/logs"
+PATH_TO_RESULTS = "/home/yuliia/PycharmProjects/masters/results"
+
+BUG_FOLDER = "bug"
+FIX_FOLDER = "fix"
 
 if __name__ == '__main__':
     proj = "logging-log4j2"
     proj_path = os.path.join(PATH_TO_DATABASE, proj)
 
-    with open("classpaths.json", "r") as file:
-        data = json.load(file)
-        class_paths = data[proj]
+    class_paths = get_class_paths_from_dependencies(proj)
 
     os.chdir(proj_path)
 
-    with subprocess.Popen('git branch -a'.split(), stdout=subprocess.PIPE,
-                          stderr=subprocess.STDOUT) as proc:
-        all_branches = []
-        for branch in proc.stdout.readlines():
-            if "bugs-dot-jar_" in branch.decode("UTF-8") and not "HEAD" in branch.decode("UTF-8"):
-                all_branches.append(branch.decode("UTF-8").strip())
+    git.revert_changes()
+    all_branches = git.get_all_branches()
 
-    for branch in sorted(all_branches):
-        subprocess.call(f'git checkout {branch}'.split())
-
-        with subprocess.Popen('mvn clean install -DskipTests=true'.split(), stdout=subprocess.PIPE,
-                             stderr=subprocess.STDOUT) as proc:
-           pass
-
+    for branch in all_branches:
+        git.checkout_branch(branch)
         buggy_files = get_changed_file(proj_path)
 
+        maven.clean_install()
         run_error_prone(
             buggy_files,
             class_paths + find_all_jars(proj_path),
-            '/home/yuliia/PycharmProjects/masters/results/bug/ep_output',
-            '/home/yuliia/PycharmProjects/masters/logs/bug/ep_logs',
+            os.path.join(PATH_TO_RESULTS, BUG_FOLDER, branch),
+            os.path.join(PATH_TO_LOGS, BUG_FOLDER),
         )
-
         # TODO: run spotbugs
-        # TODO: run last one
+        # TODO: run infer
 
-        # with subprocess.Popen('git apply .bugs-dot-jar/developer-patch.diff'.split(), stdout=subprocess.PIPE,
-        #                       stderr=subprocess.STDOUT) as proc:
-        #     pass
-        #
-        # with subprocess.Popen('mvn clean install -DskipTests=true'.split(), stdout=subprocess.PIPE,
-        #                       stderr=subprocess.STDOUT) as proc:
-        #     pass
-        #
-        # run_error_prone(
-        #     buggy_files,
-        #     class_paths,
-        #     '/home/yuliia/PycharmProjects/masters/results/fix/ep_output',
-        #     '/home/yuliia/PycharmProjects/masters/logs/fix/ep_logs',
-        # )
+        git.apply_patch()
 
-        with subprocess.Popen('git checkout .'.split(), stdout=subprocess.PIPE, stderr=subprocess.STDOUT) as proc:
-            pass
+        maven.clean_install()
+        run_error_prone(
+            buggy_files,
+            class_paths + find_all_jars(proj_path),
+            os.path.join(PATH_TO_RESULTS, FIX_FOLDER, branch),
+            os.path.join(PATH_TO_LOGS, FIX_FOLDER),
+        )
+        # TODO: run spotbugs
+        # TODO: run infer
+
+        git.revert_changes()
