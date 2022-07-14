@@ -33,7 +33,8 @@ if __name__ == '__main__':
         run_error_prone(
             buggy_files,
             class_paths + find_all_jars(proj_path),
-            os.path.join(PATH_TO_RESULTS, BUG_FOLDER, branch),
+            os.path.join(PATH_TO_RESULTS, BUG_FOLDER, 'ep_output'),
+            proj + "_" + branch.split('/')[-1],
             os.path.join(PATH_TO_LOGS, BUG_FOLDER),
         )
         # TODO: run spotbugs
@@ -45,7 +46,8 @@ if __name__ == '__main__':
         run_error_prone(
             buggy_files,
             class_paths + find_all_jars(proj_path),
-            os.path.join(PATH_TO_RESULTS, FIX_FOLDER, branch),
+            os.path.join(PATH_TO_RESULTS, FIX_FOLDER, "ep_output"),
+            proj + "_" + branch.split('/')[-1],
             os.path.join(PATH_TO_LOGS, FIX_FOLDER),
         )
         # TODO: run spotbugs

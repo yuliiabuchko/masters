@@ -2,12 +2,12 @@ from typing import List
 import subprocess
 import os
 
-def run_error_prone(buggy_files: List[str], class_paths: List[str], path_out: str, path_logs: str) -> None:
+def run_error_prone(buggy_files: List[str], class_paths: List[str], path_out: str, branch_name: str, path_logs: str) -> None:
     os.makedirs(path_out, exist_ok=True)
     os.makedirs(path_logs, exist_ok=True)
 
     log = open(os.path.join(path_logs, 'ep_logs'), 'a+')
-    f = open(os.path.join(path_out, 'ep_output'), 'w+')
+    f = open(os.path.join(path_out, branch_name), 'w+')
 
     for buggy_f in buggy_files:
         cmd = "javac  " \
