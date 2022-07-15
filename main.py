@@ -1,4 +1,5 @@
 import os
+import shutil
 
 from scripts.classpathsearcher import find_all_jars, get_class_paths_from_dependencies
 from scripts.commands import git
@@ -15,7 +16,7 @@ BUG_FOLDER = "bug"
 FIX_FOLDER = "fix"
 
 if __name__ == '__main__':
-    proj = "logging-log4j2"
+    proj = "flink"
     proj_path = os.path.join(PATH_TO_DATABASE, proj)
 
     class_paths = get_class_paths_from_dependencies(proj)
@@ -25,9 +26,17 @@ if __name__ == '__main__':
     git.revert_changes()
     all_branches = git.get_all_branches()
 
-    for branch in all_branches:
+    for i, branch in enumerate(all_branches):
+        if i < 9:
+            continue
+        print(i + 1, branch)
         git.checkout_branch(branch)
         buggy_files = get_changed_file(proj_path)
+
+        shutil.rmtree(".bugs-dot-jar")
+
+        if proj == "flink":
+            git.apply_flink_patch()
 
         maven.clean_install()
         run_error_prone(
@@ -40,7 +49,12 @@ if __name__ == '__main__':
         # TODO: run spotbugs
         # TODO: run infer
 
+        git.revert_changes()
         git.apply_patch()
+
+        shutil.rmtree(".bugs-dot-jar")
+        if proj == "flink":
+            git.apply_flink_patch()
 
         maven.clean_install()
         run_error_prone(

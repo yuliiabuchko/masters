@@ -1,0 +1,41 @@
+Index: flink-dist/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/flink-dist/pom.xml b/flink-dist/pom.xml
+--- a/flink-dist/pom.xml	(revision 7e10b9914216b02e7895123a9b67afe67562884b)
++++ b/flink-dist/pom.xml	(date 1657829887013)
+@@ -387,19 +387,19 @@
+ 				<artifactId>maven-junction-plugin</artifactId>
+ 				<version>1.0.3</version>
+ 				<executions>
+-					<execution>
+-						<phase>package</phase>
+-						<goals>
+-							<goal>link</goal>
+-						</goals>
+-					</execution>
+-					<execution>
+-						<id>unlink</id>
+-						<phase>pre-clean</phase>
+-						<goals>
+-							<goal>unlink</goal>
+-						</goals>
+-					</execution>
++<!--					<execution>-->
++<!--						<phase>package</phase>-->
++<!--						<goals>-->
++<!--							<goal>link</goal>-->
++<!--						</goals>-->
++<!--					</execution>-->
++<!--					<execution>-->
++<!--						<id>unlink</id>-->
++<!--						<phase>pre-clean</phase>-->
++<!--						<goals>-->
++<!--							<goal>unlink</goal>-->
++<!--						</goals>-->
++<!--					</execution>-->
+ 				</executions>
+ 				<configuration>
+ 					<links>

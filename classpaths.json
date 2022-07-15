@@ -18,5 +18,8 @@
     "/home/yuliia/PycharmProjects/masters/jars/jackson-dataformat-xml-2.11.3.jar",
     "/home/yuliia/PycharmProjects/masters/jars/jackson-core-2.11.3.jar",
     "/home/yuliia/PycharmProjects/masters/jars/jackson-core-2.6.7.jar"
+  ],
+  "flink": [
+    "/home/yuliia/PycharmProjects/masters/jars/commons-lang3-3.3.2.jar"
   ]
 }

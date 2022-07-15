@@ -1,0 +1,177 @@
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision a7d2048bd0377a50410dda1fba971fe4f40a1f61)
++++ b/pom.xml	(date 1657831459573)
+@@ -482,88 +482,88 @@
+ 				</configuration>
+ 			</plugin>
+ 			
+-			<plugin>
+-				<groupId>org.apache.rat</groupId>
+-				<artifactId>apache-rat-plugin</artifactId>
+-				<version>0.10</version><!--$NO-MVN-MAN-VER$-->
+-				<inherited>false</inherited>
+-				<executions>
+-					<execution>
+-						<phase>verify</phase>
+-						<goals>
+-							<goal>check</goal>
+-						</goals>
+-					</execution>
+-				</executions>
+-				<configuration>
+-					<excludeSubProjects>false</excludeSubProjects>
+-					<numUnapprovedLicenses>0</numUnapprovedLicenses>
+-					<licenses>
+-						<!-- Enforce this license:
+-							Licensed to the Apache Software Foundation (ASF) under one
+-							or more contributor license agreements.  See the NOTICE file
+-							distributed with this work for additional information
+-							regarding copyright ownership.  The ASF licenses this file
+-							to you under the Apache License, Version 2.0 (the
+-							"License"); you may not use this file except in compliance
+-							with the License.  You may obtain a copy of the License at
++<!--			<plugin>-->
++<!--				<groupId>org.apache.rat</groupId>-->
++<!--				<artifactId>apache-rat-plugin</artifactId>-->
++<!--				<version>0.10</version>&lt;!&ndash;$NO-MVN-MAN-VER$&ndash;&gt;-->
++<!--				<inherited>false</inherited>-->
++<!--				<executions>-->
++<!--					<execution>-->
++<!--						<phase>verify</phase>-->
++<!--						<goals>-->
++<!--							<goal>check</goal>-->
++<!--						</goals>-->
++<!--					</execution>-->
++<!--				</executions>-->
++<!--				<configuration>-->
++<!--					<excludeSubProjects>false</excludeSubProjects>-->
++<!--					<numUnapprovedLicenses>0</numUnapprovedLicenses>-->
++<!--					<licenses>-->
++<!--						&lt;!&ndash; Enforce this license:-->
++<!--							Licensed to the Apache Software Foundation (ASF) under one-->
++<!--							or more contributor license agreements.  See the NOTICE file-->
++<!--							distributed with this work for additional information-->
++<!--							regarding copyright ownership.  The ASF licenses this file-->
++<!--							to you under the Apache License, Version 2.0 (the-->
++<!--							"License"); you may not use this file except in compliance-->
++<!--							with the License.  You may obtain a copy of the License at-->
+ 
+-							  http://www.apache.org/licenses/LICENSE-2.0
++<!--							  http://www.apache.org/licenses/LICENSE-2.0-->
+ 
+-							Unless required by applicable law or agreed to in writing,
+-							software distributed under the License is distributed on an
+-							"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+-							KIND, either express or implied.  See the License for the
+-							specific language governing permissions and limitations
+-							under the License.
+-						-->
+-							<license implementation="org.apache.rat.analysis.license.SimplePatternBasedLicense">
+-							<licenseFamilyCategory>AL2 </licenseFamilyCategory>
+-							<licenseFamilyName>Apache License 2.0</licenseFamilyName>
+-							<notes />
+-							<patterns>
+-								<pattern>Licensed to the Apache Software Foundation (ASF) under one</pattern>
+-							</patterns>
+-						</license>
+-					</licenses>
+-					<licenseFamilies>
+-						<licenseFamily implementation="org.apache.rat.license.SimpleLicenseFamily">
+-							<familyName>Apache License 2.0</familyName>
+-						</licenseFamily>
+-					</licenseFamilies>
+-					<excludes>
+-						<!-- Additional files like .gitignore etc.-->
+-						<exclude>**/.*</exclude>
+-						<exclude>**/*.prefs</exclude>
+-						<exclude>**/*.log</exclude>
+-						<!-- Resource files which have values. -->
+-						<exclude>**/resources/**</exclude>
+-						<!-- Configuration Files. -->
+-						<exclude>**/flink-bin/conf/slaves</exclude>
+-						<!-- Administrative files in the main trunk. -->
+-						<exclude>**/README.md</exclude>
+-						<exclude>tools/checkstyle.xml</exclude>
+-						<exclude>CHANGELOG</exclude>
+-						<exclude>**/*.creole</exclude>
+-						<exclude>CONTRIBUTORS</exclude>
+-						<exclude>DEPENDENCIES</exclude>
+-						<!-- Build files -->
+-						<exclude>tools/maven/checkstyle.xml</exclude>
+-						<exclude>tools/maven/scalastyle-config.xml</exclude>
+-						<exclude>**/scalastyle-output.xml</exclude>
+-						<exclude>**/dependency-reduced-pom.xml</exclude>
+-						<exclude>tools/maven/suppressions.xml</exclude>
+-						<exclude>**/pom.xml</exclude>
+-						<exclude>**/pom.hadoop2.xml</exclude>
+-						<exclude>**/*.iml</exclude>
+-						<!-- Generated content -->
+-						<exclude>**/target/**</exclude>
+-						<!-- Documentation -->
+-						<exclude>**/docs/**</exclude>
+-						<exclude>**/tools/*.md</exclude>
+-					</excludes>
+-				</configuration>
+-			</plugin>
++<!--							Unless required by applicable law or agreed to in writing,-->
++<!--							software distributed under the License is distributed on an-->
++<!--							"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY-->
++<!--							KIND, either express or implied.  See the License for the-->
++<!--							specific language governing permissions and limitations-->
++<!--							under the License.-->
++<!--						&ndash;&gt;-->
++<!--							<license implementation="org.apache.rat.analysis.license.SimplePatternBasedLicense">-->
++<!--							<licenseFamilyCategory>AL2 </licenseFamilyCategory>-->
++<!--							<licenseFamilyName>Apache License 2.0</licenseFamilyName>-->
++<!--							<notes />-->
++<!--							<patterns>-->
++<!--								<pattern>Licensed to the Apache Software Foundation (ASF) under one</pattern>-->
++<!--							</patterns>-->
++<!--						</license>-->
++<!--					</licenses>-->
++<!--					<licenseFamilies>-->
++<!--						<licenseFamily implementation="org.apache.rat.license.SimpleLicenseFamily">-->
++<!--							<familyName>Apache License 2.0</familyName>-->
++<!--						</licenseFamily>-->
++<!--					</licenseFamilies>-->
++<!--					<excludes>-->
++<!--						&lt;!&ndash; Additional files like .gitignore etc.&ndash;&gt;-->
++<!--						<exclude>**/.*</exclude>-->
++<!--						<exclude>**/*.prefs</exclude>-->
++<!--						<exclude>**/*.log</exclude>-->
++<!--						&lt;!&ndash; Resource files which have values. &ndash;&gt;-->
++<!--						<exclude>**/resources/**</exclude>-->
++<!--						&lt;!&ndash; Configuration Files. &ndash;&gt;-->
++<!--						<exclude>**/flink-bin/conf/slaves</exclude>-->
++<!--						&lt;!&ndash; Administrative files in the main trunk. &ndash;&gt;-->
++<!--						<exclude>**/README.md</exclude>-->
++<!--						<exclude>tools/checkstyle.xml</exclude>-->
++<!--						<exclude>CHANGELOG</exclude>-->
++<!--						<exclude>**/*.creole</exclude>-->
++<!--						<exclude>CONTRIBUTORS</exclude>-->
++<!--						<exclude>DEPENDENCIES</exclude>-->
++<!--						&lt;!&ndash; Build files &ndash;&gt;-->
++<!--						<exclude>tools/maven/checkstyle.xml</exclude>-->
++<!--						<exclude>tools/maven/scalastyle-config.xml</exclude>-->
++<!--						<exclude>**/scalastyle-output.xml</exclude>-->
++<!--						<exclude>**/dependency-reduced-pom.xml</exclude>-->
++<!--						<exclude>tools/maven/suppressions.xml</exclude>-->
++<!--						<exclude>**/pom.xml</exclude>-->
++<!--						<exclude>**/pom.hadoop2.xml</exclude>-->
++<!--						<exclude>**/*.iml</exclude>-->
++<!--						&lt;!&ndash; Generated content &ndash;&gt;-->
++<!--						<exclude>**/target/**</exclude>-->
++<!--						&lt;!&ndash; Documentation &ndash;&gt;-->
++<!--						<exclude>**/docs/**</exclude>-->
++<!--						<exclude>**/tools/*.md</exclude>-->
++<!--					</excludes>-->
++<!--				</configuration>-->
++<!--			</plugin>-->
+ 			<plugin>
+ 				<groupId>org.apache.maven.plugins</groupId>
+ 				<artifactId>maven-checkstyle-plugin</artifactId>

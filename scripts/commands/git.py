@@ -22,6 +22,22 @@ def apply_patch():
         pass
 
 
+def apply_flink_patch():
+    with subprocess.Popen('git apply /home/yuliia/PycharmProjects/masters/flink.patch'.split(), stdout=subprocess.PIPE,
+                          stderr=subprocess.STDOUT) as _:
+        pass
+
+    with subprocess.Popen('git apply /home/yuliia/PycharmProjects/masters/flink-rat.patch'.split(), stdout=subprocess.PIPE,
+                          stderr=subprocess.STDOUT) as _:
+        pass
+
+    with subprocess.Popen('git apply /home/yuliia/PycharmProjects/masters/flink-rat-2.patch'.split(), stdout=subprocess.PIPE,
+                          stderr=subprocess.STDOUT) as _:
+        pass
+
+
 def revert_changes():
-    with subprocess.Popen('git checkout .'.split(), stdout=subprocess.PIPE, stderr=subprocess.STDOUT) as _:
+    with subprocess.Popen('git clean  -d  -fx .'.split(), stdout=subprocess.PIPE, stderr=subprocess.STDOUT) as _:
+        pass
+    with subprocess.Popen('git checkout . -f'.split(), stdout=subprocess.PIPE, stderr=subprocess.STDOUT) as _:
         pass
