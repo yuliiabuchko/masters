@@ -1,0 +1,52 @@
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision 069dba351124db6d8171cf7a2d8faea7cfb14582)
++++ b/pom.xml	(date 1657951507306)
+@@ -670,10 +670,10 @@
+         <executions>
+           <execution>
+             <id>run-integration-tests</id>
+-            <goals>
+-              <goal>integration-test</goal>
+-              <goal>verify</goal>
+-            </goals>
++<!--            <goals>-->
++<!--              <goal>integration-test</goal>-->
++<!--              <goal>verify</goal>-->
++<!--            </goals>-->
+             <configuration>
+               <!--parallel>classes</parallel-->
+               <reuseForks>false</reuseForks>
+Index: maven-plugin/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/maven-plugin/pom.xml b/maven-plugin/pom.xml
+--- a/maven-plugin/pom.xml	(revision 069dba351124db6d8171cf7a2d8faea7cfb14582)
++++ b/maven-plugin/pom.xml	(date 1657951507174)
+@@ -151,13 +151,13 @@
+               </goals>
+             </configuration>
+             <executions>
+-              <execution>
+-                <id>integration-test</id>
+-                <goals>
+-                  <goal>install</goal>
+-                  <goal>run</goal>
+-                </goals>
+-              </execution>
++<!--              <execution>-->
++<!--                <id>integration-test</id>-->
++<!--                <goals>-->
++<!--                  <goal>install</goal>-->
++<!--                  <goal>run</goal>-->
++<!--                </goals>-->
++<!--              </execution>-->
+             </executions>
+           </plugin>
+         </plugins>

@@ -1,0 +1,17 @@
+Index: test/src/test/java/org/apache/accumulo/test/functional/AccumuloInputFormatIT.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test/src/test/java/org/apache/accumulo/test/functional/AccumuloInputFormatIT.java b/test/src/test/java/org/apache/accumulo/test/functional/AccumuloInputFormatIT.java
+--- a/test/src/test/java/org/apache/accumulo/test/functional/AccumuloInputFormatIT.java	(revision aad9e59fc5381203c1d7753254fb470b662de6e1)
++++ b/test/src/test/java/org/apache/accumulo/test/functional/AccumuloInputFormatIT.java	(date 1657952919353)
+@@ -80,7 +80,7 @@
+     getConnector().tableOperations().offline(table);
+     splits = inputFormat.getSplits(job);
+     assertEquals(actualSplits.size(), splits.size());
+->>>>>>> ACCUMULO-1751 Adding tests for autoAdjustRanges and offlineTable paths through getSplits().
++//>>>>>>> ACCUMULO-1751 Adding tests for autoAdjustRanges and offlineTable paths through getSplits().
+ 
+     // auto adjust ranges
+     ranges = new ArrayList<Range>();

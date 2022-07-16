@@ -1,0 +1,53 @@
+Index: test/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test/pom.xml b/test/pom.xml
+--- a/test/pom.xml	(revision 069dba351124db6d8171cf7a2d8faea7cfb14582)
++++ b/test/pom.xml	(date 1657952154285)
+@@ -185,25 +185,25 @@
+             <groupId>org.codehaus.mojo</groupId>
+             <artifactId>exec-maven-plugin</artifactId>
+             <executions>
+-              <execution>
+-                <id>run-mini-for-integration-tests</id>
+-                <goals>
+-                  <goal>java</goal>
+-                </goals>
+-                <phase>pre-integration-test</phase>
+-                <configuration>
+-                  <mainClass>org.apache.accumulo.maven.plugin.StartMojo</mainClass>
+-                  <classpathScope>test</classpathScope>
+-                  <arguments>
+-                    <!-- These first two should stay static -->
+-                    <argument>${project.build.directory}</argument>
+-                    <argument>${accumulo-it-mini-classpath}</argument>
+-                    <!-- InstanceName RootPassword, one pair per MiniAccumuloCluster -->
+-                    <argument>testInstance1 rootPassword1</argument>
+-                    <argument>testInstance2 rootPassword2</argument>
+-                  </arguments>
+-                </configuration>
+-              </execution>
++<!--              <execution>-->
++<!--                <id>run-mini-for-integration-tests</id>-->
++<!--                <goals>-->
++<!--                  <goal>java</goal>-->
++<!--                </goals>-->
++<!--                <phase>pre-integration-test</phase>-->
++<!--                <configuration>-->
++<!--                  <mainClass>org.apache.accumulo.maven.plugin.StartMojo</mainClass>-->
++<!--                  <classpathScope>test</classpathScope>-->
++<!--                  <arguments>-->
++<!--                    &lt;!&ndash; These first two should stay static &ndash;&gt;-->
++<!--                    <argument>${project.build.directory}</argument>-->
++<!--                    <argument>${accumulo-it-mini-classpath}</argument>-->
++<!--                    &lt;!&ndash; InstanceName RootPassword, one pair per MiniAccumuloCluster &ndash;&gt;-->
++<!--                    <argument>testInstance1 rootPassword1</argument>-->
++<!--                    <argument>testInstance2 rootPassword2</argument>-->
++<!--                  </arguments>-->
++<!--                </configuration>-->
++<!--              </execution>-->
+             </executions>
+           </plugin>
+         </plugins>

@@ -9,6 +9,8 @@ def clean_install():
     if "BUILD SUCCESS" not in cmd_out:
         print("BUILD FAILED")
         print(cmd_out)
+    else:
+        print("BUILD SUCCESS")
 
     # with subprocess.Popen('mvn clean install -DskipTests=true'.split(), stdout=subprocess.PIPE,
     #                       stderr=subprocess.STDOUT) as proc:

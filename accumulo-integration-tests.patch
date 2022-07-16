@@ -1,0 +1,80 @@
+Index: maven-plugin/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/maven-plugin/pom.xml b/maven-plugin/pom.xml
+--- a/maven-plugin/pom.xml	(revision 84760007c3266f16d65a2889e87eb32271acd530)
++++ b/maven-plugin/pom.xml	(date 1657946450670)
+@@ -151,13 +151,13 @@
+               </goals>
+             </configuration>
+             <executions>
+-              <execution>
+-                <id>integration-test</id>
+-                <goals>
+-                  <goal>install</goal>
+-                  <goal>run</goal>
+-                </goals>
+-              </execution>
++<!--              <execution>-->
++<!--                <id>integration-test</id>-->
++<!--                <goals>-->
++<!--                  <goal>install</goal>-->
++<!--                  <goal>run</goal>-->
++<!--                </goals>-->
++<!--              </execution>-->
+             </executions>
+           </plugin>
+         </plugins>
+Index: test/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test/pom.xml b/test/pom.xml
+--- a/test/pom.xml	(revision 84760007c3266f16d65a2889e87eb32271acd530)
++++ b/test/pom.xml	(date 1657946516396)
+@@ -185,24 +185,24 @@
+             <groupId>org.codehaus.mojo</groupId>
+             <artifactId>exec-maven-plugin</artifactId>
+             <executions>
+-              <execution>
+-                <id>run-mini-for-integration-tests</id>
+-                <goals>
+-                  <goal>java</goal>
+-                </goals>
+-                <phase>pre-integration-test</phase>
+-                <configuration>
+-                  <mainClass>org.apache.accumulo.maven.plugin.StartMojo</mainClass>
+-                  <classpathScope>test</classpathScope>
+-                  <arguments>
+-                    <!-- These first two should stay static -->
+-                    <argument>${project.build.directory}</argument>
+-                    <argument>${accumulo-it-mini-classpath}</argument>
+-                    <!-- InstanceName RootPassword, one pair per MiniAccumuloCluster -->
+-                    <argument>testInstance1 testRootPassword1</argument>
+-                  </arguments>
+-                </configuration>
+-              </execution>
++<!--              <execution>-->
++<!--                <id>run-mini-for-integration-tests</id>-->
++<!--                <goals>-->
++<!--                  <goal>java</goal>-->
++<!--                </goals>-->
++<!--                <phase>pre-integration-test</phase>-->
++<!--                <configuration>-->
++<!--                  <mainClass>org.apache.accumulo.maven.plugin.StartMojo</mainClass>-->
++<!--                  <classpathScope>test</classpathScope>-->
++<!--                  <arguments>-->
++<!--                    &lt;!&ndash; These first two should stay static &ndash;&gt;-->
++<!--                    <argument>${project.build.directory}</argument>-->
++<!--                    <argument>${accumulo-it-mini-classpath}</argument>-->
++<!--                    &lt;!&ndash; InstanceName RootPassword, one pair per MiniAccumuloCluster &ndash;&gt;-->
++<!--                    <argument>testInstance1 testRootPassword1</argument>-->
++<!--                  </arguments>-->
++<!--                </configuration>-->
++<!--              </execution>-->
+             </executions>
+           </plugin>
+         </plugins>

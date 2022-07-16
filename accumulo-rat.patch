@@ -1,0 +1,45 @@
+Index: test/src/test/java/org/apache/accumulo/test/functional/AccumuloInputFormatIT.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test/src/test/java/org/apache/accumulo/test/functional/AccumuloInputFormatIT.java b/test/src/test/java/org/apache/accumulo/test/functional/AccumuloInputFormatIT.java
+--- a/test/src/test/java/org/apache/accumulo/test/functional/AccumuloInputFormatIT.java	(revision aad9e59fc5381203c1d7753254fb470b662de6e1)
++++ b/test/src/test/java/org/apache/accumulo/test/functional/AccumuloInputFormatIT.java	(date 1657952577986)
+@@ -80,7 +80,6 @@
+     getConnector().tableOperations().offline(table);
+     splits = inputFormat.getSplits(job);
+     assertEquals(actualSplits.size(), splits.size());
+->>>>>>> ACCUMULO-1751 Adding tests for autoAdjustRanges and offlineTable paths through getSplits().
+ 
+     // auto adjust ranges
+     ranges = new ArrayList<Range>();
+Index: maven-plugin/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/maven-plugin/pom.xml b/maven-plugin/pom.xml
+--- a/maven-plugin/pom.xml	(revision aad9e59fc5381203c1d7753254fb470b662de6e1)
++++ b/maven-plugin/pom.xml	(date 1657952429183)
+@@ -151,13 +151,13 @@
+               </goals>
+             </configuration>
+             <executions>
+-              <execution>
+-                <id>integration-test</id>
+-                <goals>
+-                  <goal>install</goal>
+-                  <goal>run</goal>
+-                </goals>
+-              </execution>
++<!--              <execution>-->
++<!--                <id>integration-test</id>-->
++<!--                <goals>-->
++<!--                  <goal>install</goal>-->
++<!--                  <goal>run</goal>-->
++<!--                </goals>-->
++<!--              </execution>-->
+             </executions>
+           </plugin>
+         </plugins>

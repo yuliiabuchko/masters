@@ -1,0 +1,25 @@
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision a961c2c7f5aaaf6d17ae736f133a2642d91ca0f5)
++++ b/pom.xml	(date 1657944987996)
+@@ -64,11 +64,11 @@
+   <build>
+     <extensions>
+       <!-- enable ssh deployment of site with maven 3 -->
+-      <extension>
+-        <groupId>org.apache.maven.wagon</groupId>
+-        <artifactId>wagon-ssh</artifactId>
+-        <version>2.2</version>
+-      </extension>
++<!--      <extension>-->
++<!--        <groupId>org.apache.maven.wagon</groupId>-->
++<!--        <artifactId>wagon-ssh</artifactId>-->
++<!--        <version>2.2</version>-->
++<!--      </extension>-->
+     </extensions>
+     <defaultGoal>package</defaultGoal>
+     <plugins>
