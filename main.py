@@ -27,8 +27,10 @@ if __name__ == '__main__':
     all_branches = git.get_all_branches()
 
     for i, branch in enumerate(all_branches):
-        if i < 9:
+        if i + 1 != 70:
             continue
+        # flink all done
+        # logging-log4j2 5 + 61 i cant fix
         print(i + 1, branch)
         git.checkout_branch(branch)
         buggy_files = get_changed_file(proj_path)

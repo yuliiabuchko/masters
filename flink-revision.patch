@@ -1,0 +1,25 @@
+Index: stratosphere-dist/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/stratosphere-dist/pom.xml b/stratosphere-dist/pom.xml
+--- a/stratosphere-dist/pom.xml	(revision 47a6df2ce1ecf644bec2a6e2746502de9020f854)
++++ b/stratosphere-dist/pom.xml	(date 1657943234642)
+@@ -337,11 +337,11 @@
+ 				<artifactId>git-commit-id-plugin</artifactId>
+ 				<version>2.1.5</version>
+ 				<executions>
+-					<execution>
+-						<goals>
+-							<goal>revision</goal>
+-						 </goals>
+-					</execution>
++<!--					<execution>-->
++<!--						<goals>-->
++<!--							<goal>revision</goal>-->
++<!--						 </goals>-->
++<!--					</execution>-->
+ 				</executions>
+ 				<configuration>
+ 					<dotGitDirectory>${project.basedir}/../.git</dotGitDirectory>

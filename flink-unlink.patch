@@ -1,0 +1,93 @@
+Index: flink-dist/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/flink-dist/pom.xml b/flink-dist/pom.xml
+--- a/flink-dist/pom.xml	(revision 00b07541bc306aa829420b71080a3b4977711561)
++++ b/flink-dist/pom.xml	(date 1657912083093)
+@@ -387,19 +387,19 @@
+ 				<artifactId>maven-junction-plugin</artifactId>
+ 				<version>1.0.3</version>
+ 				<executions>
+-					<execution>
+-						<phase>package</phase>
+-						<goals>
+-							<goal>link</goal>
+-						</goals>
+-					</execution>
+-					<execution>
+-						<id>unlink</id>
+-						<phase>pre-clean</phase>
+-						<goals>
+-							<goal>unlink</goal>
+-						</goals>
+-					</execution>
++<!--					<execution>-->
++<!--						<phase>package</phase>-->
++<!--						<goals>-->
++<!--							<goal>link</goal>-->
++<!--						</goals>-->
++<!--					</execution>-->
++<!--					<execution>-->
++<!--						<id>unlink</id>-->
++<!--						<phase>pre-clean</phase>-->
++<!--						<goals>-->
++<!--							<goal>unlink</goal>-->
++<!--						</goals>-->
++<!--					</execution>-->
+ 				</executions>
+ 				<configuration>
+ 					<links>
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision 00b07541bc306aa829420b71080a3b4977711561)
++++ b/pom.xml	(date 1657911831979)
+@@ -551,12 +551,12 @@
+ 							<quiet>true</quiet>
+ 						</configuration>
+ 						<executions>
+-							<execution>
+-								<id>attach-javadocs</id>
+-								<goals>
+-									<goal>jar</goal>
+-								</goals>
+-							</execution>
++<!--							<execution>-->
++<!--								<id>attach-javadocs</id>-->
++<!--								<goals>-->
++<!--									<goal>jar</goal>-->
++<!--								</goals>-->
++<!--							</execution>-->
+ 						</executions>
+ 					</plugin>
+ 				</plugins>
+@@ -617,15 +617,15 @@
+ 							<quiet>true</quiet>
+ 						</configuration>
+ 						<executions>
+-							<execution>
+-								<id>attach-javadocs</id>
+-								<goals>
+-									<goal>jar</goal>
+-								</goals>
+-								<configuration>
+-									<additionalparam>-Xdoclint:none</additionalparam>
+-								</configuration>
+-							</execution>
++<!--							<execution>-->
++<!--								<id>attach-javadocs</id>-->
++<!--								<goals>-->
++<!--									<goal>jar</goal>-->
++<!--								</goals>-->
++<!--								<configuration>-->
++<!--									<additionalparam>-Xdoclint:none</additionalparam>-->
++<!--								</configuration>-->
++<!--							</execution>-->
+ 						</executions>
+ 					</plugin>
+ 				</plugins>

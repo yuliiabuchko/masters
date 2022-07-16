@@ -1,0 +1,52 @@
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision 00b07541bc306aa829420b71080a3b4977711561)
++++ b/pom.xml	(date 1657941827124)
+@@ -551,12 +551,12 @@
+ 							<quiet>true</quiet>
+ 						</configuration>
+ 						<executions>
+-							<execution>
+-								<id>attach-javadocs</id>
+-								<goals>
+-									<goal>jar</goal>
+-								</goals>
+-							</execution>
++<!--							<execution>-->
++<!--								<id>attach-javadocs</id>-->
++<!--								<goals>-->
++<!--									<goal>jar</goal>-->
++<!--								</goals>-->
++<!--							</execution>-->
+ 						</executions>
+ 					</plugin>
+ 				</plugins>
+@@ -617,15 +617,15 @@
+ 							<quiet>true</quiet>
+ 						</configuration>
+ 						<executions>
+-							<execution>
+-								<id>attach-javadocs</id>
+-								<goals>
+-									<goal>jar</goal>
+-								</goals>
+-								<configuration>
+-									<additionalparam>-Xdoclint:none</additionalparam>
+-								</configuration>
+-							</execution>
++<!--							<execution>-->
++<!--								<id>attach-javadocs</id>-->
++<!--								<goals>-->
++<!--									<goal>jar</goal>-->
++<!--								</goals>-->
++<!--								<configuration>-->
++<!--									<additionalparam>-Xdoclint:none</additionalparam>-->
++<!--								</configuration>-->
++<!--							</execution>-->
+ 						</executions>
+ 					</plugin>
+ 				</plugins>
