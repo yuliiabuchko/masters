@@ -8,7 +8,7 @@ def clean_install():
 
     if "BUILD SUCCESS" not in cmd_out:
         print("BUILD FAILED")
-        print(cmd_out)
+        # print(cmd_out)
     else:
         print("BUILD SUCCESS")
 

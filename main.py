@@ -27,9 +27,9 @@ if __name__ == '__main__':
     all_branches = git.get_all_branches()
 
     for i, branch in enumerate(all_branches):
-        if i + 1 <= 23:
+        if i + 1 <= 50:
             continue
-        # accumulo 1-38 ok
+        # accumulo 1-62, 65 67 69 74 75 78 85 86 90-93 95-98 ok, 63 64 66 68 70-73 76 77 79-84 87-89 94 fail
         # flink all done
         # logging-log4j2 5 + 61 i cant fix
         print(i + 1, branch)

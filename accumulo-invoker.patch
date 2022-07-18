@@ -1,0 +1,89 @@
+Index: maven-plugin/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/maven-plugin/pom.xml b/maven-plugin/pom.xml
+--- a/maven-plugin/pom.xml	(revision 7c80acc39a0175abaa8d7a262544a1a1fb21973c)
++++ b/maven-plugin/pom.xml	(date 1658093762191)
+@@ -113,13 +113,13 @@
+               </goals>
+             </configuration>
+             <executions>
+-              <execution>
+-                <id>integration-test</id>
+-                <goals>
+-                  <goal>install</goal>
+-                  <goal>run</goal>
+-                </goals>
+-              </execution>
++<!--              <execution>-->
++<!--                <id>integration-test</id>-->
++<!--                <goals>-->
++<!--                  <goal>install</goal>-->
++<!--                  <goal>run</goal>-->
++<!--                </goals>-->
++<!--              </execution>-->
+             </executions>
+           </plugin>
+         </plugins>
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision 7c80acc39a0175abaa8d7a262544a1a1fb21973c)
++++ b/pom.xml	(date 1658093635674)
+@@ -715,19 +715,19 @@
+                     <ignore />
+                   </action>
+                 </pluginExecution>
+-                <pluginExecution>
+-                  <pluginExecutionFilter>
+-                    <groupId>org.apache.maven.plugins</groupId>
+-                    <artifactId>maven-invoker-plugin</artifactId>
+-                    <versionRange>[1.7,)</versionRange>
+-                    <goals>
+-                      <goal>install</goal>
+-                    </goals>
+-                  </pluginExecutionFilter>
+-                  <action>
+-                    <ignore />
+-                  </action>
+-                </pluginExecution>
++<!--                <pluginExecution>-->
++<!--                  <pluginExecutionFilter>-->
++<!--                    <groupId>org.apache.maven.plugins</groupId>-->
++<!--                    <artifactId>maven-invoker-plugin</artifactId>-->
++<!--                    <versionRange>[1.7,)</versionRange>-->
++<!--                    <goals>-->
++<!--                      <goal>install</goal>-->
++<!--                    </goals>-->
++<!--                  </pluginExecutionFilter>-->
++<!--                  <action>-->
++<!--                    <ignore />-->
++<!--                  </action>-->
++<!--                </pluginExecution>-->
+                 <pluginExecution>
+                   <pluginExecutionFilter>
+                     <groupId>com.google.code.sortpom</groupId>
+@@ -830,12 +830,12 @@
+         <groupId>org.codehaus.mojo</groupId>
+         <artifactId>findbugs-maven-plugin</artifactId>
+         <executions>
+-          <execution>
+-            <id>run-findbugs</id>
+-            <goals>
+-              <goal>check</goal>
+-            </goals>
+-          </execution>
++<!--          <execution>-->
++<!--            <id>run-findbugs</id>-->
++<!--            <goals>-->
++<!--              <goal>check</goal>-->
++<!--            </goals>-->
++<!--          </execution>-->
+         </executions>
+       </plugin>
+       <plugin>

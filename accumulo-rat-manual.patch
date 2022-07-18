@@ -1,0 +1,27 @@
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision aad9e59fc5381203c1d7753254fb470b662de6e1)
++++ b/pom.xml	(date 1657952429183)
+@@ -969,12 +969,12 @@
+         <groupId>org.apache.rat</groupId>
+         <artifactId>apache-rat-plugin</artifactId>
+         <executions>
+-          <execution>
+-            <goals>
+-              <goal>check</goal>
+-            </goals>
+-            <phase>verify</phase>
+-          </execution>
++<!--          <execution>-->
++<!--            <goals>-->
++<!--              <goal>check</goal>-->
++<!--            </goals>-->
++<!--            <phase>verify</phase>-->
++<!--          </execution>-->
+         </executions>
+       </plugin>
+       <plugin>
