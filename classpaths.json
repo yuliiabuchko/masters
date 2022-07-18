@@ -32,5 +32,9 @@
     "/home/yuliia/PycharmProjects/masters/jars/commons-cli-1.2.jar",
     "/home/yuliia/PycharmProjects/masters/jars/log4j-1.2.16.jar",
     "/home/yuliia/PycharmProjects/masters/jars/commons-vfs2-2.0.jar"
-  ]
+  ],
+  "camel": [
+
+  ],
+  "commons-math": []
 }

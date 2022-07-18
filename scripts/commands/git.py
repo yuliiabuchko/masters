@@ -43,6 +43,7 @@ def apply_accumulo_patch():
     apply_patch('/home/yuliia/PycharmProjects/masters/accumulo-rat-2.patch')
     apply_patch('/home/yuliia/PycharmProjects/masters/accumulo-rat-manual.patch')
     apply_patch('/home/yuliia/PycharmProjects/masters/accumulo-invoker.patch')
+    apply_patch('/home/yuliia/PycharmProjects/masters/accumulo-findbugs.patch')
 
 
 def apply_flink_patch():

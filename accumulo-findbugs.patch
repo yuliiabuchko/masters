@@ -1,0 +1,27 @@
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision b14160e6dca672232c3534e3bad55b7532038fa7)
++++ b/pom.xml	(date 1658166163183)
+@@ -905,12 +905,12 @@
+         <groupId>org.codehaus.mojo</groupId>
+         <artifactId>findbugs-maven-plugin</artifactId>
+         <executions>
+-          <execution>
+-            <id>run-findbugs</id>
+-            <goals>
+-              <goal>check</goal>
+-            </goals>
+-          </execution>
++<!--          <execution>-->
++<!--            <id>run-findbugs</id>-->
++<!--            <goals>-->
++<!--              <goal>check</goal>-->
++<!--            </goals>-->
++<!--          </execution>-->
+         </executions>
+       </plugin>
+       <plugin>

@@ -16,7 +16,7 @@ BUG_FOLDER = "bug"
 FIX_FOLDER = "fix"
 
 if __name__ == '__main__':
-    proj = "accumulo"
+    proj = "commons-math"
     proj_path = os.path.join(PATH_TO_DATABASE, proj)
 
     class_paths = get_class_paths_from_dependencies(proj)
@@ -27,11 +27,13 @@ if __name__ == '__main__':
     all_branches = git.get_all_branches()
 
     for i, branch in enumerate(all_branches):
-        if i + 1 <= 50:
+        if i + 1 == 1:
             continue
-        # accumulo 1-62, 65 67 69 74 75 78 85 86 90-93 95-98 ok, 63 64 66 68 70-73 76 77 79-84 87-89 94 fail
+        # accumulo 77 + 94 fail - compilation errors
+        # camel
+        # common-math 1-28 ok
         # flink all done
-        # logging-log4j2 5 + 61 i cant fix
+        # logging-log4j2 5 + 61 i can't fix
         print(i + 1, branch)
         git.checkout_branch(branch)
         buggy_files = get_changed_file(proj_path)
