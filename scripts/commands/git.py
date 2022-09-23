@@ -7,13 +7,15 @@ def get_all_branches() -> List[str]:
                           stderr=subprocess.STDOUT) as proc:
         branches = []
         for branch in proc.stdout.readlines():
-            if "bugs-dot-jar_" in branch.decode("UTF-8") and not "HEAD" in branch.decode("UTF-8"):
+            if "bugs-dot-jar_" in branch.decode("UTF-8") and "remotes" in branch.decode("UTF-8") and not "HEAD" in branch.decode("UTF-8"):
                 branches.append(branch.decode("UTF-8").strip())
         return sorted(branches)
 
 
 def checkout_branch(branch):
-    subprocess.call(f'git checkout {branch}'.split())
+    with subprocess.Popen(f'git checkout {branch}'.split(), stdout=subprocess.PIPE,
+                          stderr=subprocess.STDOUT) as proc:
+        print(proc.stdout.readlines())
 
 
 def apply_developer_patch():
@@ -22,8 +24,8 @@ def apply_developer_patch():
 
 def apply_patch(path: str):
     with subprocess.Popen(f'git apply {path}'.split(), stdout=subprocess.PIPE,
-                          stderr=subprocess.STDOUT) as _:
-        pass
+                          stderr=subprocess.STDOUT) as proc:
+        print(proc.stdout.readlines())
 
 
 def apply_proj_specific_patches(proj: str):

@@ -2,6 +2,7 @@ from typing import List
 import subprocess
 import os
 
+
 def run_error_prone(buggy_files: List[str], class_paths: List[str], path_out: str, branch_name: str, path_logs: str) -> None:
     os.makedirs(path_out, exist_ok=True)
     os.makedirs(path_logs, exist_ok=True)

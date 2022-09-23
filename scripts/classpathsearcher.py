@@ -5,7 +5,7 @@ import json
 
 
 def get_class_paths_from_dependencies(proj: str) -> List[str]:
-    with open("classpaths.json", "r") as file:
+    with open("/home/yuliia/PycharmProjects/masters/classpaths.json", "r") as file:
         data = json.load(file)
         return data[proj]
 

@@ -1,0 +1,54 @@
+     accumulo & ACCUMULO-1044\_9396979b & MissingOverride & Mismatch \\
+     accumulo & ACCUMULO-1044\_ea2f9856 & MissingOverride & Mismatch \\
+     accumulo & ACCUMULO-1192\_9476b877 & StringSplitter & Mismatch \\
+     accumulo & ACCUMULO-1192\_c489d866 & StringSplitter & Mismatch \\
+     accumulo & ACCUMULO-1348\_6ff92b12 & StringSplitter & Mismatch \\
+     accumulo & ACCUMULO-1348\_ef0f6ddc & StringSplitter & Mismatch \\
+     accumulo & ACCUMULO-1518\_dc95cb69 & StringSplitter & Mismatch \\
+     accumulo & ACCUMULO-151\_b007b22e & AlmostJavadoc & Mismatch (2) \\
+     accumulo & ACCUMULO-193\_8ad5a888 & DefaultCharset & Partial match (3) \\
+     accumulo & ACCUMULO-193\_8ad5a888 & MissingOverride & Mismatch \\
+     accumulo & ACCUMULO-193\_c831e44d & DefaultCharset & Partial match (3) \\
+     accumulo & ACCUMULO-193\_c831e44d & MissingOverride & Mismatch \\
+     accumulo & ACCUMULO-217\_46f62443 & StringSplitter & Mismatch \\
+     accumulo & ACCUMULO-217\_add180fb & StringSplitter & Mismatch \\
+     accumulo & ACCUMULO-2494\_0dc92ca1 & MissingOverride & Mismatch \\
+     accumulo & ACCUMULO-3229\_891584fb & FormatString & Full match \\
+     accumulo & ACCUMULO-3229\_891584fb & StringSplitter & Mismatch \\
+     accumulo & ACCUMULO-334\_9d8cc45d & CatchAndPrintStackTrace & Mismatch (2) \\
+     accumulo & ACCUMULO-334\_9d8cc45d & DefaultCharset & Mismatch \\
+     accumulo & ACCUMULO-334\_9d8cc45d & JavaUtilDate & Mismatch (2) \\
+     accumulo & ACCUMULO-334\_9d8cc45d & UnusedVariable & Mismatch (2) \\
+     accumulo & ACCUMULO-3475\_7651b777 & ClassNewInstance & Mismatch \\
+     accumulo & ACCUMULO-3475\_7651b777 & MissingOverride & Mismatch \\
+     accumulo & ACCUMULO-3475\_7651b777 & StringSplitter & Mismatch \\
+     accumulo & ACCUMULO-412\_5594b2e0 & UnusedVariable & Mismatch (3) \\
+     accumulo & ACCUMULO-412\_be2fdba7 & UnusedVariable & Mismatch (3) \\
+     accumulo & ACCUMULO-776\_dc9f23d9 & JavaUtilDate & Full match (4) \\
+     accumulo & ACCUMULO-907\_4aeaeb2a & ClassNewInstance & Mismatch \\
+     flink & FLINK-1496\_0a4c7694 & MissingOverride & Mismatch \\
+     flink & FLINK-1761\_380ef878 & FutureReturnValueIgnored & Partial match \\
+     flink & FLINK-1820\_39d526e6 & DefaultCharset & Mismatch (6) \\
+     flink & FLINK-2734\_8b40bb7a & ClassNewInstance & Mismatch (2) \\
+     flink & FLINK-2812\_e494c279 & ClassNewInstance & Mismatch \\
+     flink & FLINK-3314\_8fc7e7af & EmptyBlockTag & Mismatch (2) \\
+     jackrabbit-oak & OAK-1075\_79467350 & EmptyBlockTag & Mismatch (3) \\
+     jackrabbit-oak & OAK-1075\_79467350 & MissingCasesInEnumSwitch & Mismatch \\
+     jackrabbit-oak & OAK-1739\_8188ef54 & EmptyBlockTag & Mismatch (3) \\
+     jackrabbit-oak & OAK-1739\_8188ef54 & MissingCasesInEnumSwitch & Mismatch \\
+     jackrabbit-oak & OAK-1894\_35562cce & EmptyBlockTag & Mismatch \\
+     jackrabbit-oak & OAK-1977\_4bfbfcdd & MissingOverride & Mismatch \\
+     jackrabbit-oak & OAK-2388\_487de751 & ClassCanBeStatic & Mismatch \\
+     jackrabbit-oak & OAK-2388\_487de751 & IntLongMath & Full match \\
+     jackrabbit-oak & OAK-276\_1bf5c550 & MissingOverride & Mismatch \\
+     jackrabbit-oak & OAK-4038\_557eec4f & UnusedVariable & Partial match \\
+     logging-log4j2 & LOG4J2-1046\_11960820 & EqualsGetClass & Mismatch \\
+     logging-log4j2 & LOG4J2-1067\_4786a739 & UnusedVariable & Mismatch \\
+     logging-log4j2 & LOG4J2-139\_50e19247 & UnusedVariable & Full match \\
+     logging-log4j2 & LOG4J2-492\_61ccbb95 & FormatString & Partial match \\
+     logging-log4j2 & LOG4J2-639\_a5a1f1a2 & ReferenceEquality & Mismatch \\
+     logging-log4j2 & LOG4J2-668\_60f64cc1 & ReferenceEquality & Mismatch \\
+     logging-log4j2 & LOG4J2-763\_97203de8 & UnusedVariable & Mismatch \\
+     logging-log4j2 & LOG4J2-102\_7f391872 & OperatorPrecedence & Full match \\
+     logging-log4j2 & LOG4J2-94\_d8af1c93 & MissingOverride & Mismatch \\
+     wicket & WICKET-3721\_1858bc18 & MissingSummary & Mismatch \\

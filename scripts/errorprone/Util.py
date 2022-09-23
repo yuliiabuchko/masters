@@ -348,7 +348,9 @@ def load_parsed_inf(inf_file):
 def find_msg_by_proj_and_cls(proj, cls, msgs):
     found_messages = []
     for m in msgs:
-        if m.proj == proj and m.cls == cls:
+        if not m.proj or not m.cls:
+            continue
+        if proj in m.proj and cls in m.cls:
             found_messages.append(m)
     return found_messages
 
