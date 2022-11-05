@@ -17,7 +17,7 @@ BUG_FOLDER = "bug"
 FIX_FOLDER = "fix"
 
 if __name__ == '__main__':
-    proj = "accumulo"
+    proj = "maven"  # 23
     proj_path = os.path.join(PATH_TO_DATABASE, proj)
 
     class_paths = get_class_paths_from_dependencies(proj)
@@ -27,9 +27,11 @@ if __name__ == '__main__':
     git.revert_changes()
     all_branches = git.get_all_branches()
 
+    # camel 142
+
     for i, branch in enumerate(all_branches):
-        if i + 1 <= 0:
-            continue
+        # if i + 1 <= 146: # 30
+        #     continue
         print(i + 1, branch)
         git.checkout_branch(branch)
         buggy_files = get_changed_file(proj_path)
@@ -52,7 +54,7 @@ if __name__ == '__main__':
             os.path.join(PATH_TO_RESULTS, BUG_FOLDER, 'sb_output'),
             proj + "_" + branch.split('/')[-1],
             os.path.join(PATH_TO_LOGS, BUG_FOLDER),
-        )
+        ) # 21
         # TODO: run infer
 
         git.revert_changes()

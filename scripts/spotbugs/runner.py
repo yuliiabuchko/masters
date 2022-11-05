@@ -8,11 +8,14 @@ def run_spotbugs(buggy_files: List[str], class_paths: List[str], path_out: str, 
     os.makedirs(path_out, exist_ok=True)
     os.makedirs(path_logs, exist_ok=True)
 
+    # 21 stopeed
+
     log = open(os.path.join(path_logs, 'sb_logs'), 'a+')
 
+    list(map(lambda name: name.replace("/", ".")[:-5].split(".java."), buggy_files))
     cmd = f"java -jar /home/yuliia/PycharmProjects/masters/spotbugs-4.7.2/lib/spotbugs.jar -textui  -xml:withMessages={os.path.join(path_out, branch_name)}".split() + \
           ["-onlyAnalyze",
-           ",".join(list(map(lambda name: name.replace("/", ".")[:-5].split(".java.")[1], buggy_files)))] + \
+           ",".join(list(map(lambda name: name[1], filter(lambda name: len(name) > 1, list(map(lambda name: name.replace("/", ".")[:-5].split(".java."), buggy_files))))))] + \
           ["-auxclasspath", ':'.join(class_paths)] + \
           ["-low", "."]
 

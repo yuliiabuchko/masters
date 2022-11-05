@@ -163,6 +163,9 @@ class SpotbugsMsg(object):
         return("\n" + "\n".join(k + ": " + str(v) for (k, v) in zip(SpotbugsMsg.keys, self.values)) + "\n")
 
     __repr__ = __str__
+
+    def __lt__(self, other):
+        return self.proj < other.proj
     
     def unrollLines(self):
         lines = []

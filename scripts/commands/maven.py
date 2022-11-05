@@ -2,9 +2,13 @@ import subprocess
 
 
 def clean_install():
-    p = subprocess.Popen('mvn clean install -DskipTests=true'.split(), universal_newlines=True, stdout=subprocess.PIPE,
+    p = subprocess.Popen('mvn clean install -DskipTests=true -Dmaven.wagon.http.retryHandler.count=10'.split(), universal_newlines=True, stdout=subprocess.PIPE,
                          stderr=subprocess.STDOUT)
-    (cmd_out, _) = p.communicate()
+    try:
+        (cmd_out, _) = p.communicate(timeout=10*60)
+    except subprocess.TimeoutExpired:
+        print("Timeout clean install")
+        return
 
     if "BUILD SUCCESS" not in cmd_out:
         print("BUILD FAILED")

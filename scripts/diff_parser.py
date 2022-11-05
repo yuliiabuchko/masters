@@ -1,5 +1,4 @@
-import git
-
+import json
 from main import *
 from ExtractAndSerializeDiffs import compute_proj_diff
 from errorprone.Util import CustomEncoder
@@ -7,7 +6,7 @@ from errorprone.Util import CustomEncoder
 PATH_TO_B_F_BUGS_DOT_JAR = "/home/yuliia/PycharmProjects/bugs-dot-jar-like-defects4j"
 
 if __name__ == '__main__':
-    proj = "wicket"  # maven accumulo camel commons-math flink jackrabbit-oak logging-log4j2 wicket
+    proj = "jackrabbit-oak"  # maven accumulo camel commons-math flink jackrabbit-oak logging-log4j2 wicket
     proj_path = os.path.join(PATH_TO_DATABASE, proj)
     proj_bug_path = os.path.join(PATH_TO_B_F_BUGS_DOT_JAR, proj)
 
