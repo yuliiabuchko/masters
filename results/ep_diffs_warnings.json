@@ -1,0 +1,1312 @@
+[
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-2494_0dc92ca1",
+        "Class": "org.apache.accumulo.core.util.Stat",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "toString overrides method in Object; expected @Override",
+        " Code": "  public String toString() {",
+        " Mark": "                ^",
+        " Line": 56
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-3229_891584fb",
+        "Class": "org.apache.accumulo.core.util.shell.Shell",
+        " Type": "error",
+        "  Cat": "FormatString",
+        "  Msg": "illegal format conversion: 'java.lang.Long' cannot be formatted using '%f'",
+        " Code": "      sb.append(\"- Authorization timeout: \").append(String.format(\"%.2fs%n\", TimeUnit.NANOSECONDS.toSeconds(authTimeout)));",
+        " Mark": "                                                                 ^",
+        " Line": 496
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-3475_7651b777",
+        "Class": "org.apache.accumulo.core.client.mock.MockShell",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "config overrides method in Shell; expected @Override",
+        " Code": "  public boolean config(String... args) {",
+        " Mark": "                 ^",
+        " Line": 47
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-334_9d8cc45d",
+        "Class": "org.apache.accumulo.core.iterators.user.TimestampFilter",
+        " Type": "warning",
+        "  Cat": "JavaUtilDate",
+        "  Msg": "Date has a bad API that leads to bugs; prefer java.time.Instant or LocalDate.",
+        " Code": "        start = dateParser.parse(options.get(START)).getTime();",
+        " Mark": "                                                            ^",
+        " Line": 101
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-334_9d8cc45d",
+        "Class": "org.apache.accumulo.core.iterators.user.TimestampFilter",
+        " Type": "warning",
+        "  Cat": "JavaUtilDate",
+        "  Msg": "Date has a bad API that leads to bugs; prefer java.time.Instant or LocalDate.",
+        " Code": "        end = dateParser.parse(options.get(END)).getTime();",
+        " Mark": "                                                        ^",
+        " Line": 103
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-776_dc9f23d9",
+        "Class": "org.apache.accumulo.core.iterators.user.TimestampFilter",
+        " Type": "warning",
+        "  Cat": "JavaUtilDate",
+        "  Msg": "Date has a bad API that leads to bugs; prefer java.time.Instant or LocalDate.",
+        " Code": "        start = dateParser.parse(options.get(START)).getTime();",
+        " Mark": "                                                            ^",
+        " Line": 90
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-776_dc9f23d9",
+        "Class": "org.apache.accumulo.core.iterators.user.TimestampFilter",
+        " Type": "warning",
+        "  Cat": "JavaUtilDate",
+        "  Msg": "Date has a bad API that leads to bugs; prefer java.time.Instant or LocalDate.",
+        " Code": "        end = dateParser.parse(options.get(END)).getTime();",
+        " Mark": "                                                        ^",
+        " Line": 92
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-776_dc9f23d9",
+        "Class": "org.apache.accumulo.core.iterators.user.TimestampFilter",
+        " Type": "warning",
+        "  Cat": "JavaUtilDate",
+        "  Msg": "Date has a bad API that leads to bugs; prefer java.time.Instant or LocalDate.",
+        " Code": "    is.addOption(START, dateParser.format(new Date(start)));",
+        " Mark": "                                          ^",
+        " Line": 252
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-776_dc9f23d9",
+        "Class": "org.apache.accumulo.core.iterators.user.TimestampFilter",
+        " Type": "warning",
+        "  Cat": "JavaUtilDate",
+        "  Msg": "Date has a bad API that leads to bugs; prefer java.time.Instant or LocalDate.",
+        " Code": "    is.addOption(END, dateParser.format(new Date(end)));",
+        " Mark": "                                        ^",
+        " Line": 268
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-1044_9396979b",
+        "Class": "org.apache.accumulo.server.constraints.MetadataConstraints",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "check implements method in Constraint; expected @Override",
+        " Code": "  public List<Short> check(Environment env, Mutation mutation) {",
+        " Mark": "                     ^",
+        " Line": 75
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-1044_ea2f9856",
+        "Class": "org.apache.accumulo.server.constraints.MetadataConstraints",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "check implements method in Constraint; expected @Override",
+        " Code": "  public List<Short> check(Environment env, Mutation mutation) {",
+        " Mark": "                     ^",
+        " Line": 75
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-1044_9396979b",
+        "Class": "org.apache.accumulo.server.constraints.MetadataConstraints",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "check implements method in Constraint; expected @Override",
+        " Code": "  public List<Short> check(Environment env, Mutation mutation) {",
+        " Mark": "                     ^",
+        " Line": 75
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-1044_ea2f9856",
+        "Class": "org.apache.accumulo.server.constraints.MetadataConstraints",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "check implements method in Constraint; expected @Override",
+        " Code": "  public List<Short> check(Environment env, Mutation mutation) {",
+        " Mark": "                     ^",
+        " Line": 75
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-1192_9476b877",
+        "Class": "org.apache.accumulo.core.util.TableDiskUsage",
+        " Type": "warning",
+        "  Cat": "StringSplitter",
+        "  Msg": "String.split(String) has surprising behavior",
+        " Code": "          tablesReferenced.add(file.split(\"\\\\/\")[1]);",
+        " Mark": "                                         ^",
+        " Line": 157
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-1192_c489d866",
+        "Class": "org.apache.accumulo.core.util.TableDiskUsage",
+        " Type": "warning",
+        "  Cat": "StringSplitter",
+        "  Msg": "String.split(String) has surprising behavior",
+        " Code": "          tablesReferenced.add(file.split(\"\\\\/\")[1]);",
+        " Mark": "                                         ^",
+        " Line": 157
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-1192_9476b877",
+        "Class": "org.apache.accumulo.core.util.TableDiskUsage",
+        " Type": "warning",
+        "  Cat": "StringSplitter",
+        "  Msg": "String.split(String) has surprising behavior",
+        " Code": "          tablesReferenced.add(file.split(\"\\\\/\")[1]);",
+        " Mark": "                                         ^",
+        " Line": 157
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-1192_c489d866",
+        "Class": "org.apache.accumulo.core.util.TableDiskUsage",
+        " Type": "warning",
+        "  Cat": "StringSplitter",
+        "  Msg": "String.split(String) has surprising behavior",
+        " Code": "          tablesReferenced.add(file.split(\"\\\\/\")[1]);",
+        " Mark": "                                         ^",
+        " Line": 157
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-1348_6ff92b12",
+        "Class": "org.apache.accumulo.core.client.mock.MockShell",
+        " Type": "warning",
+        "  Cat": "StringSplitter",
+        "  Msg": "String.split(String) has surprising behavior",
+        " Code": "      for (String command : execCommand.split(\"\\n\")) {",
+        " Mark": "                                             ^",
+        " Line": 84
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-1348_ef0f6ddc",
+        "Class": "org.apache.accumulo.core.client.mock.MockShell",
+        " Type": "warning",
+        "  Cat": "StringSplitter",
+        "  Msg": "String.split(String) has surprising behavior",
+        " Code": "      for (String command : execCommand.split(\"\\n\")) {",
+        " Mark": "                                             ^",
+        " Line": 84
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-3229_891584fb",
+        "Class": "org.apache.accumulo.core.util.shell.Shell",
+        " Type": "warning",
+        "  Cat": "StringSplitter",
+        "  Msg": "String.split(String) has surprising behavior",
+        " Code": "      for (String command : execCommand.split(\"\\n\")) {",
+        " Mark": "                                             ^",
+        " Line": 451
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-3475_7651b777",
+        "Class": "org.apache.accumulo.core.util.shell.Shell",
+        " Type": "warning",
+        "  Cat": "StringSplitter",
+        "  Msg": "String.split(String) has surprising behavior",
+        " Code": "      for (String command : execCommand.split(\"\\n\")) {",
+        " Mark": "                                             ^",
+        " Line": 452
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-1348_6ff92b12",
+        "Class": "org.apache.accumulo.core.client.mock.MockShell",
+        " Type": "warning",
+        "  Cat": "StringSplitter",
+        "  Msg": "String.split(String) has surprising behavior",
+        " Code": "      for (String command : execCommand.split(\"\\n\")) {",
+        " Mark": "                                             ^",
+        " Line": 84
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-1348_ef0f6ddc",
+        "Class": "org.apache.accumulo.core.client.mock.MockShell",
+        " Type": "warning",
+        "  Cat": "StringSplitter",
+        "  Msg": "String.split(String) has surprising behavior",
+        " Code": "      for (String command : execCommand.split(\"\\n\")) {",
+        " Mark": "                                             ^",
+        " Line": 84
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-3475_7651b777",
+        "Class": "org.apache.accumulo.core.util.shell.Shell",
+        " Type": "warning",
+        "  Cat": "ClassNewInstance",
+        "  Msg": "Class.newInstance() bypasses exception checking; prefer getDeclaredConstructor().newInstance()",
+        " Code": "        this.token = Class.forName(cl.getOptionValue(tokenOption.getOpt())).asSubclass(AuthenticationToken.class).newInstance();",
+        " Mark": "                                                                                                                             ^",
+        " Line": 282
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-1518_dc95cb69",
+        "Class": "org.apache.accumulo.core.file.FileOperations",
+        " Type": "warning",
+        "  Cat": "StringSplitter",
+        "  Msg": "String.split(String) has surprising behavior",
+        " Code": "    String[] sp = name.split(\"\\\\.\");",
+        " Mark": "                            ^",
+        " Line": 48
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-1518_dc95cb69",
+        "Class": "org.apache.accumulo.core.file.FileOperations",
+        " Type": "warning",
+        "  Cat": "StringSplitter",
+        "  Msg": "String.split(String) has surprising behavior",
+        " Code": "    String[] sp = name.split(\"\\\\.\");",
+        " Mark": "                            ^",
+        " Line": 48
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-193_8ad5a888",
+        "Class": "org.apache.accumulo.core.data.Key",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "toString overrides method in Object; expected @Override",
+        " Code": "  public String toString() {",
+        " Mark": "                ^",
+        " Line": 466
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-193_8ad5a888",
+        "Class": "org.apache.accumulo.core.data.Key",
+        " Type": "warning",
+        "  Cat": "DefaultCharset",
+        "  Msg": "Implicit use of the platform default charset, which can result in differing behaviour between JVM executions or incorrect behavior if the encoding of the data source doesn't match expectations.",
+        " Code": "    String s = new String(row, 0, row.length) + \" \" + new String(colFamily, 0, colFamily.length) + \":\" + new String(colQualifier, 0, colQualifier.length) + \" \"",
+        " Mark": "               ^",
+        " Line": 480
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-193_8ad5a888",
+        "Class": "org.apache.accumulo.core.data.Key",
+        " Type": "warning",
+        "  Cat": "DefaultCharset",
+        "  Msg": "Implicit use of the platform default charset, which can result in differing behaviour between JVM executions or incorrect behavior if the encoding of the data source doesn't match expectations.",
+        " Code": "    String s = new String(row, 0, row.length) + \" \" + new String(colFamily, 0, colFamily.length) + \":\" + new String(colQualifier, 0, colQualifier.length) + \" \"",
+        " Mark": "                                                      ^",
+        " Line": 480
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-193_8ad5a888",
+        "Class": "org.apache.accumulo.core.data.Key",
+        " Type": "warning",
+        "  Cat": "DefaultCharset",
+        "  Msg": "Implicit use of the platform default charset, which can result in differing behaviour between JVM executions or incorrect behavior if the encoding of the data source doesn't match expectations.",
+        " Code": "    String s = new String(row, 0, row.length) + \" \" + new String(colFamily, 0, colFamily.length) + \":\" + new String(colQualifier, 0, colQualifier.length) + \" \"",
+        " Mark": "                                                                                                         ^",
+        " Line": 480
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-193_c831e44d",
+        "Class": "org.apache.accumulo.core.data.Key",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "toString overrides method in Object; expected @Override",
+        " Code": "  public String toString() {",
+        " Mark": "                ^",
+        " Line": 466
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-193_c831e44d",
+        "Class": "org.apache.accumulo.core.data.Key",
+        " Type": "warning",
+        "  Cat": "DefaultCharset",
+        "  Msg": "Implicit use of the platform default charset, which can result in differing behaviour between JVM executions or incorrect behavior if the encoding of the data source doesn't match expectations.",
+        " Code": "    String s = new String(row, 0, row.length) + \" \" + new String(colFamily, 0, colFamily.length) + \":\" + new String(colQualifier, 0, colQualifier.length) + \" \"",
+        " Mark": "               ^",
+        " Line": 480
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-193_c831e44d",
+        "Class": "org.apache.accumulo.core.data.Key",
+        " Type": "warning",
+        "  Cat": "DefaultCharset",
+        "  Msg": "Implicit use of the platform default charset, which can result in differing behaviour between JVM executions or incorrect behavior if the encoding of the data source doesn't match expectations.",
+        " Code": "    String s = new String(row, 0, row.length) + \" \" + new String(colFamily, 0, colFamily.length) + \":\" + new String(colQualifier, 0, colQualifier.length) + \" \"",
+        " Mark": "                                                      ^",
+        " Line": 480
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-193_c831e44d",
+        "Class": "org.apache.accumulo.core.data.Key",
+        " Type": "warning",
+        "  Cat": "DefaultCharset",
+        "  Msg": "Implicit use of the platform default charset, which can result in differing behaviour between JVM executions or incorrect behavior if the encoding of the data source doesn't match expectations.",
+        " Code": "    String s = new String(row, 0, row.length) + \" \" + new String(colFamily, 0, colFamily.length) + \":\" + new String(colQualifier, 0, colQualifier.length) + \" \"",
+        " Mark": "                                                                                                         ^",
+        " Line": 480
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-193_8ad5a888",
+        "Class": "org.apache.accumulo.core.data.Key",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "toString overrides method in Object; expected @Override",
+        " Code": "  public String toString() {",
+        " Mark": "                ^",
+        " Line": 466
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-193_8ad5a888",
+        "Class": "org.apache.accumulo.core.data.Key",
+        " Type": "warning",
+        "  Cat": "DefaultCharset",
+        "  Msg": "Implicit use of the platform default charset, which can result in differing behaviour between JVM executions or incorrect behavior if the encoding of the data source doesn't match expectations.",
+        " Code": "    String s = new String(row, 0, row.length) + \" \" + new String(colFamily, 0, colFamily.length) + \":\" + new String(colQualifier, 0, colQualifier.length) + \" \"",
+        " Mark": "               ^",
+        " Line": 480
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-193_8ad5a888",
+        "Class": "org.apache.accumulo.core.data.Key",
+        " Type": "warning",
+        "  Cat": "DefaultCharset",
+        "  Msg": "Implicit use of the platform default charset, which can result in differing behaviour between JVM executions or incorrect behavior if the encoding of the data source doesn't match expectations.",
+        " Code": "    String s = new String(row, 0, row.length) + \" \" + new String(colFamily, 0, colFamily.length) + \":\" + new String(colQualifier, 0, colQualifier.length) + \" \"",
+        " Mark": "                                                      ^",
+        " Line": 480
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-193_8ad5a888",
+        "Class": "org.apache.accumulo.core.data.Key",
+        " Type": "warning",
+        "  Cat": "DefaultCharset",
+        "  Msg": "Implicit use of the platform default charset, which can result in differing behaviour between JVM executions or incorrect behavior if the encoding of the data source doesn't match expectations.",
+        " Code": "    String s = new String(row, 0, row.length) + \" \" + new String(colFamily, 0, colFamily.length) + \":\" + new String(colQualifier, 0, colQualifier.length) + \" \"",
+        " Mark": "                                                                                                         ^",
+        " Line": 480
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-193_c831e44d",
+        "Class": "org.apache.accumulo.core.data.Key",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "toString overrides method in Object; expected @Override",
+        " Code": "  public String toString() {",
+        " Mark": "                ^",
+        " Line": 466
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-193_c831e44d",
+        "Class": "org.apache.accumulo.core.data.Key",
+        " Type": "warning",
+        "  Cat": "DefaultCharset",
+        "  Msg": "Implicit use of the platform default charset, which can result in differing behaviour between JVM executions or incorrect behavior if the encoding of the data source doesn't match expectations.",
+        " Code": "    String s = new String(row, 0, row.length) + \" \" + new String(colFamily, 0, colFamily.length) + \":\" + new String(colQualifier, 0, colQualifier.length) + \" \"",
+        " Mark": "               ^",
+        " Line": 480
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-193_c831e44d",
+        "Class": "org.apache.accumulo.core.data.Key",
+        " Type": "warning",
+        "  Cat": "DefaultCharset",
+        "  Msg": "Implicit use of the platform default charset, which can result in differing behaviour between JVM executions or incorrect behavior if the encoding of the data source doesn't match expectations.",
+        " Code": "    String s = new String(row, 0, row.length) + \" \" + new String(colFamily, 0, colFamily.length) + \":\" + new String(colQualifier, 0, colQualifier.length) + \" \"",
+        " Mark": "                                                      ^",
+        " Line": 480
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-193_c831e44d",
+        "Class": "org.apache.accumulo.core.data.Key",
+        " Type": "warning",
+        "  Cat": "DefaultCharset",
+        "  Msg": "Implicit use of the platform default charset, which can result in differing behaviour between JVM executions or incorrect behavior if the encoding of the data source doesn't match expectations.",
+        " Code": "    String s = new String(row, 0, row.length) + \" \" + new String(colFamily, 0, colFamily.length) + \":\" + new String(colQualifier, 0, colQualifier.length) + \" \"",
+        " Mark": "                                                                                                         ^",
+        " Line": 480
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-334_9d8cc45d",
+        "Class": "org.apache.accumulo.core.iterators.user.RegExFilter",
+        " Type": "warning",
+        "  Cat": "CatchAndPrintStackTrace",
+        "  Msg": "Logging or rethrowing exceptions should usually be preferred to catching and calling printStackTrace",
+        " Code": "        e.printStackTrace();",
+        " Mark": "        ^",
+        " Line": 80
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-334_9d8cc45d",
+        "Class": "org.apache.accumulo.core.iterators.user.RegExFilter",
+        " Type": "warning",
+        "  Cat": "CatchAndPrintStackTrace",
+        "  Msg": "Logging or rethrowing exceptions should usually be preferred to catching and calling printStackTrace",
+        " Code": "        e.printStackTrace();",
+        " Mark": "        ^",
+        " Line": 92
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-334_9d8cc45d",
+        "Class": "org.apache.accumulo.core.iterators.user.RegExFilter",
+        " Type": "warning",
+        "  Cat": "DefaultCharset",
+        "  Msg": "Implicit use of the platform default charset, which can result in differing behaviour between JVM executions or incorrect behavior if the encoding of the data source doesn't match expectations.",
+        " Code": "        String test = new String(\"test\".getBytes(), encoding);",
+        " Mark": "                                                ^",
+        " Line": 178
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-334_9d8cc45d",
+        "Class": "org.apache.accumulo.core.iterators.user.RegExFilter",
+        " Type": "warning",
+        "  Cat": "CatchAndPrintStackTrace",
+        "  Msg": "Logging or rethrowing exceptions should usually be preferred to catching and calling printStackTrace",
+        " Code": "        e.printStackTrace();",
+        " Mark": "        ^",
+        " Line": 80
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-334_9d8cc45d",
+        "Class": "org.apache.accumulo.core.iterators.user.RegExFilter",
+        " Type": "warning",
+        "  Cat": "CatchAndPrintStackTrace",
+        "  Msg": "Logging or rethrowing exceptions should usually be preferred to catching and calling printStackTrace",
+        " Code": "        e.printStackTrace();",
+        " Mark": "        ^",
+        " Line": 92
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-334_9d8cc45d",
+        "Class": "org.apache.accumulo.core.iterators.user.RegExFilter",
+        " Type": "warning",
+        "  Cat": "DefaultCharset",
+        "  Msg": "Implicit use of the platform default charset, which can result in differing behaviour between JVM executions or incorrect behavior if the encoding of the data source doesn't match expectations.",
+        " Code": "        String test = new String(\"test\".getBytes(), encoding);",
+        " Mark": "                                                ^",
+        " Line": 178
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-217_46f62443",
+        "Class": "org.apache.accumulo.core.client.admin.TableOperationsHelper",
+        " Type": "warning",
+        "  Cat": "StringSplitter",
+        "  Msg": "String.split(String) has surprising behavior",
+        " Code": "      String[] parts = name.split(\"\\\\.\");",
+        " Mark": "                                 ^",
+        " Line": 99
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-217_add180fb",
+        "Class": "org.apache.accumulo.core.client.admin.TableOperationsHelper",
+        " Type": "warning",
+        "  Cat": "StringSplitter",
+        "  Msg": "String.split(String) has surprising behavior",
+        " Code": "      String[] parts = name.split(\"\\\\.\");",
+        " Mark": "                                 ^",
+        " Line": 99
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-217_46f62443",
+        "Class": "org.apache.accumulo.core.client.admin.TableOperationsHelper",
+        " Type": "warning",
+        "  Cat": "StringSplitter",
+        "  Msg": "String.split(String) has surprising behavior",
+        " Code": "      String[] parts = name.split(\"\\\\.\");",
+        " Mark": "                                 ^",
+        " Line": 99
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-217_add180fb",
+        "Class": "org.apache.accumulo.core.client.admin.TableOperationsHelper",
+        " Type": "warning",
+        "  Cat": "StringSplitter",
+        "  Msg": "String.split(String) has surprising behavior",
+        " Code": "      String[] parts = name.split(\"\\\\.\");",
+        " Mark": "                                 ^",
+        " Line": 99
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-2494_0dc92ca1",
+        "Class": "org.apache.accumulo.core.util.Stat",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "toString overrides method in Object; expected @Override",
+        " Code": "  public String toString() {",
+        " Mark": "                ^",
+        " Line": 56
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-3229_891584fb",
+        "Class": "org.apache.accumulo.core.util.shell.Shell",
+        " Type": "error",
+        "  Cat": "FormatString",
+        "  Msg": "illegal format conversion: 'java.lang.Long' cannot be formatted using '%f'",
+        " Code": "      sb.append(\"- Authorization timeout: \").append(String.format(\"%.2fs%n\", TimeUnit.NANOSECONDS.toSeconds(authTimeout)));",
+        " Mark": "                                                                 ^",
+        " Line": 496
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-151_b007b22e",
+        "Class": "org.apache.accumulo.core.iterators.Combiner",
+        " Type": "warning",
+        "  Cat": "AlmostJavadoc",
+        "  Msg": "This comment contains Javadoc or HTML tags, but isn't started with a double asterisk (/**); is it meant to be Javadoc?",
+        " Code": "  public static void addColumn(Text colf, Text colq, IteratorSetting is) {",
+        " Mark": "                     ^",
+        " Line": 243
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-907_4aeaeb2a",
+        "Class": "org.apache.accumulo.core.iterators.Combiner",
+        " Type": "warning",
+        "  Cat": "ClassNewInstance",
+        "  Msg": "Class.newInstance() bypasses exception checking; prefer getDeclaredConstructor().newInstance()",
+        " Code": "      newInstance = this.getClass().newInstance();",
+        " Mark": "                                               ^",
+        " Line": 234
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-334_9d8cc45d",
+        "Class": "org.apache.accumulo.core.iterators.user.TimestampFilter",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The parameter 'hasEnd' is never read.",
+        " Code": "  private TimestampFilter(SortedKeyValueIterator<Key,Value> iterator, boolean hasStart, long start, boolean startInclusive, boolean hasEnd, long end,",
+        " Mark": "                                                                                                                                    ^",
+        " Line": 57
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-334_9d8cc45d",
+        "Class": "org.apache.accumulo.core.iterators.user.TimestampFilter",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The parameter 'hasStart' is never read.",
+        " Code": "  private TimestampFilter(SortedKeyValueIterator<Key,Value> iterator, boolean hasStart, long start, boolean startInclusive, boolean hasEnd, long end,",
+        " Mark": "                                                                              ^",
+        " Line": 57
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-334_9d8cc45d",
+        "Class": "org.apache.accumulo.core.iterators.user.TimestampFilter",
+        " Type": "warning",
+        "  Cat": "JavaUtilDate",
+        "  Msg": "Date has a bad API that leads to bugs; prefer java.time.Instant or LocalDate.",
+        " Code": "        end = dateParser.parse(options.get(END)).getTime();",
+        " Mark": "                                                        ^",
+        " Line": 103
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-3475_7651b777",
+        "Class": "org.apache.accumulo.core.client.mock.MockShell",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "config overrides method in Shell; expected @Override",
+        " Code": "  public boolean config(String... args) {",
+        " Mark": "                 ^",
+        " Line": 47
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-412_5594b2e0",
+        "Class": "org.apache.accumulo.examples.wikisearch.ingest.WikipediaPartitionedMapper",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The field 'log' is never read.",
+        " Code": "  private static final Logger log = Logger.getLogger(WikipediaPartitionedMapper.class);",
+        " Mark": "                              ^",
+        " Line": 52
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-412_be2fdba7",
+        "Class": "org.apache.accumulo.examples.wikisearch.ingest.WikipediaPartitionedMapper",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The field 'log' is never read.",
+        " Code": "  private static final Logger log = Logger.getLogger(WikipediaPartitionedMapper.class);",
+        " Mark": "                              ^",
+        " Line": 52
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-412_5594b2e0",
+        "Class": "org.apache.accumulo.examples.wikisearch.ingest.WikipediaPartitioner",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The field 'log' is never read.",
+        " Code": "  private static final Logger log = Logger.getLogger(WikipediaPartitioner.class);",
+        " Mark": "                              ^",
+        " Line": 59
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-412_be2fdba7",
+        "Class": "org.apache.accumulo.examples.wikisearch.ingest.WikipediaPartitioner",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The field 'log' is never read.",
+        " Code": "  private static final Logger log = Logger.getLogger(WikipediaPartitioner.class);",
+        " Mark": "                              ^",
+        " Line": 59
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-412_5594b2e0",
+        "Class": "org.apache.accumulo.examples.wikisearch.output.SortingRFileOutputFormat",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The field 'log' is never read.",
+        " Code": "  private static final Logger log = Logger.getLogger(SortingRFileOutputFormat.class);",
+        " Mark": "                              ^",
+        " Line": 20
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-412_be2fdba7",
+        "Class": "org.apache.accumulo.examples.wikisearch.output.SortingRFileOutputFormat",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The field 'log' is never read.",
+        " Code": "  private static final Logger log = Logger.getLogger(SortingRFileOutputFormat.class);",
+        " Mark": "                              ^",
+        " Line": 20
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-412_5594b2e0",
+        "Class": "org.apache.accumulo.examples.wikisearch.ingest.WikipediaPartitionedMapper",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The field 'log' is never read.",
+        " Code": "  private static final Logger log = Logger.getLogger(WikipediaPartitionedMapper.class);",
+        " Mark": "                              ^",
+        " Line": 52
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-412_be2fdba7",
+        "Class": "org.apache.accumulo.examples.wikisearch.ingest.WikipediaPartitionedMapper",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The field 'log' is never read.",
+        " Code": "  private static final Logger log = Logger.getLogger(WikipediaPartitionedMapper.class);",
+        " Mark": "                              ^",
+        " Line": 52
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-412_5594b2e0",
+        "Class": "org.apache.accumulo.examples.wikisearch.ingest.WikipediaPartitioner",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The field 'log' is never read.",
+        " Code": "  private static final Logger log = Logger.getLogger(WikipediaPartitioner.class);",
+        " Mark": "                              ^",
+        " Line": 59
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-412_be2fdba7",
+        "Class": "org.apache.accumulo.examples.wikisearch.ingest.WikipediaPartitioner",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The field 'log' is never read.",
+        " Code": "  private static final Logger log = Logger.getLogger(WikipediaPartitioner.class);",
+        " Mark": "                              ^",
+        " Line": 59
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-412_5594b2e0",
+        "Class": "org.apache.accumulo.examples.wikisearch.output.SortingRFileOutputFormat",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The field 'log' is never read.",
+        " Code": "  private static final Logger log = Logger.getLogger(SortingRFileOutputFormat.class);",
+        " Mark": "                              ^",
+        " Line": 20
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-412_be2fdba7",
+        "Class": "org.apache.accumulo.examples.wikisearch.output.SortingRFileOutputFormat",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The field 'log' is never read.",
+        " Code": "  private static final Logger log = Logger.getLogger(SortingRFileOutputFormat.class);",
+        " Mark": "                              ^",
+        " Line": 20
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-334_9d8cc45d",
+        "Class": "org.apache.accumulo.core.iterators.user.TimestampFilter",
+        " Type": "warning",
+        "  Cat": "JavaUtilDate",
+        "  Msg": "Date has a bad API that leads to bugs; prefer java.time.Instant or LocalDate.",
+        " Code": "        start = dateParser.parse(options.get(START)).getTime();",
+        " Mark": "                                                            ^",
+        " Line": 101
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-334_9d8cc45d",
+        "Class": "org.apache.accumulo.core.iterators.user.TimestampFilter",
+        " Type": "warning",
+        "  Cat": "JavaUtilDate",
+        "  Msg": "Date has a bad API that leads to bugs; prefer java.time.Instant or LocalDate.",
+        " Code": "        end = dateParser.parse(options.get(END)).getTime();",
+        " Mark": "                                                        ^",
+        " Line": 103
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-776_dc9f23d9",
+        "Class": "org.apache.accumulo.core.iterators.user.TimestampFilter",
+        " Type": "warning",
+        "  Cat": "JavaUtilDate",
+        "  Msg": "Date has a bad API that leads to bugs; prefer java.time.Instant or LocalDate.",
+        " Code": "        start = dateParser.parse(options.get(START)).getTime();",
+        " Mark": "                                                            ^",
+        " Line": 90
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-776_dc9f23d9",
+        "Class": "org.apache.accumulo.core.iterators.user.TimestampFilter",
+        " Type": "warning",
+        "  Cat": "JavaUtilDate",
+        "  Msg": "Date has a bad API that leads to bugs; prefer java.time.Instant or LocalDate.",
+        " Code": "        end = dateParser.parse(options.get(END)).getTime();",
+        " Mark": "                                                        ^",
+        " Line": 92
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-776_dc9f23d9",
+        "Class": "org.apache.accumulo.core.iterators.user.TimestampFilter",
+        " Type": "warning",
+        "  Cat": "JavaUtilDate",
+        "  Msg": "Date has a bad API that leads to bugs; prefer java.time.Instant or LocalDate.",
+        " Code": "    is.addOption(START, dateParser.format(new Date(start)));",
+        " Mark": "                                          ^",
+        " Line": 252
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-776_dc9f23d9",
+        "Class": "org.apache.accumulo.core.iterators.user.TimestampFilter",
+        " Type": "warning",
+        "  Cat": "JavaUtilDate",
+        "  Msg": "Date has a bad API that leads to bugs; prefer java.time.Instant or LocalDate.",
+        " Code": "    is.addOption(END, dateParser.format(new Date(end)));",
+        " Mark": "                                        ^",
+        " Line": 268
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-151_b007b22e",
+        "Class": "org.apache.accumulo.core.iterators.Combiner",
+        " Type": "warning",
+        "  Cat": "AlmostJavadoc",
+        "  Msg": "This comment contains Javadoc or HTML tags, but isn't started with a double asterisk (/**); is it meant to be Javadoc?",
+        " Code": "    public ValueIterator(SortedKeyValueIterator<Key,Value> source) {",
+        " Mark": "           ^",
+        " Line": 66
+    },
+    {
+        " Proj": "jackrabbit-oak_bugs-dot-jar_OAK-4038_557eec4f",
+        "Class": "org.apache.jackrabbit.oak.plugins.index.property.PropertyIndexPlan",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The field 'root' is never read.",
+        " Code": "    private final NodeState root;",
+        " Mark": "                            ^",
+        " Line": 75
+    },
+    {
+        " Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1894_35562cce",
+        "Class": "org.apache.jackrabbit.oak.plugins.index.property.PropertyIndex",
+        " Type": "warning",
+        "  Cat": "EmptyBlockTag",
+        "  Msg": "A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.",
+        " Code": "     * @param root",
+        " Mark": "       ^",
+        " Line": 126
+    },
+    {
+        " Proj": "jackrabbit-oak_bugs-dot-jar_OAK-2388_487de751",
+        "Class": "org.apache.jackrabbit.oak.plugins.index.lucene.OakDirectory",
+        " Type": "warning",
+        "  Cat": "IntLongMath",
+        "  Msg": "Expression of type int may overflow before being assigned to a long",
+        " Code": "            this.length = data.size() * blobSize;",
+        " Mark": "                                      ^",
+        " Line": 190
+    },
+    {
+        " Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1075_79467350",
+        "Class": "org.apache.jackrabbit.oak.query.ast.ComparisonImpl",
+        " Type": "warning",
+        "  Cat": "EmptyBlockTag",
+        "  Msg": "A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.",
+        " Code": "     * @param p1",
+        " Mark": "       ^",
+        " Line": 112
+    },
+    {
+        " Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1075_79467350",
+        "Class": "org.apache.jackrabbit.oak.query.ast.ComparisonImpl",
+        " Type": "warning",
+        "  Cat": "EmptyBlockTag",
+        "  Msg": "A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.",
+        " Code": "     * @param p2",
+        " Mark": "       ^",
+        " Line": 113
+    },
+    {
+        " Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1075_79467350",
+        "Class": "org.apache.jackrabbit.oak.query.ast.ComparisonImpl",
+        " Type": "warning",
+        "  Cat": "EmptyBlockTag",
+        "  Msg": "A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.",
+        " Code": "     * @return",
+        " Mark": "       ^",
+        " Line": 114
+    },
+    {
+        " Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1075_79467350",
+        "Class": "org.apache.jackrabbit.oak.query.ast.ComparisonImpl",
+        " Type": "warning",
+        "  Cat": "MissingCasesInEnumSwitch",
+        "  Msg": "Non-exhaustive switch; either add a default or handle the remaining cases: IN",
+        " Code": "        switch (operator) {",
+        " Mark": "        ^",
+        " Line": 117
+    },
+    {
+        " Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1739_8188ef54",
+        "Class": "org.apache.jackrabbit.oak.query.ast.ComparisonImpl",
+        " Type": "warning",
+        "  Cat": "EmptyBlockTag",
+        "  Msg": "A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.",
+        " Code": "     * @param p1",
+        " Mark": "       ^",
+        " Line": 112
+    },
+    {
+        " Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1739_8188ef54",
+        "Class": "org.apache.jackrabbit.oak.query.ast.ComparisonImpl",
+        " Type": "warning",
+        "  Cat": "EmptyBlockTag",
+        "  Msg": "A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.",
+        " Code": "     * @param p2",
+        " Mark": "       ^",
+        " Line": 113
+    },
+    {
+        " Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1739_8188ef54",
+        "Class": "org.apache.jackrabbit.oak.query.ast.ComparisonImpl",
+        " Type": "warning",
+        "  Cat": "EmptyBlockTag",
+        "  Msg": "A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.",
+        " Code": "     * @return",
+        " Mark": "       ^",
+        " Line": 114
+    },
+    {
+        " Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1739_8188ef54",
+        "Class": "org.apache.jackrabbit.oak.query.ast.ComparisonImpl",
+        " Type": "warning",
+        "  Cat": "MissingCasesInEnumSwitch",
+        "  Msg": "Non-exhaustive switch; either add a default or handle the remaining cases: IN",
+        " Code": "        switch (operator) {",
+        " Mark": "        ^",
+        " Line": 117
+    },
+    {
+        " Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1894_35562cce",
+        "Class": "org.apache.jackrabbit.oak.plugins.index.property.PropertyIndex",
+        " Type": "warning",
+        "  Cat": "EmptyBlockTag",
+        "  Msg": "A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.",
+        " Code": "     * @param root",
+        " Mark": "       ^",
+        " Line": 126
+    },
+    {
+        " Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1977_4bfbfcdd",
+        "Class": "org.apache.jackrabbit.oak.plugins.index.property.PropertyIndexPlan",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "toString overrides method in Object; expected @Override",
+        " Code": "    public String toString() {",
+        " Mark": "                  ^",
+        " Line": 252
+    },
+    {
+        " Proj": "jackrabbit-oak_bugs-dot-jar_OAK-2388_487de751",
+        "Class": "org.apache.jackrabbit.oak.plugins.index.lucene.OakDirectory",
+        " Type": "warning",
+        "  Cat": "IntLongMath",
+        "  Msg": "Expression of type int may overflow before being assigned to a long",
+        " Code": "            this.length = data.size() * blobSize;",
+        " Mark": "                                      ^",
+        " Line": 190
+    },
+    {
+        " Proj": "jackrabbit-oak_bugs-dot-jar_OAK-276_1bf5c550",
+        "Class": "org.apache.jackrabbit.mk.persistence.InMemPersistence",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "readHead implements method in Persistence; expected @Override",
+        " Code": "    public Id readHead() {",
+        " Mark": "              ^",
+        " Line": 56
+    },
+    {
+        " Proj": "jackrabbit-oak_bugs-dot-jar_OAK-2388_487de751",
+        "Class": "org.apache.jackrabbit.oak.plugins.index.lucene.OakDirectory",
+        " Type": "warning",
+        "  Cat": "ClassCanBeStatic",
+        "  Msg": "Inner class is non-static but does not reference enclosing class",
+        " Code": "    private final class OakIndexOutput extends IndexOutput {",
+        " Mark": "                  ^",
+        " Line": 380
+    },
+    {
+        " Proj": "jackrabbit-oak_bugs-dot-jar_OAK-4038_557eec4f",
+        "Class": "org.apache.jackrabbit.oak.plugins.index.property.PropertyIndexPlan",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The field 'root' is never read.",
+        " Code": "    private final NodeState root;",
+        " Mark": "                            ^",
+        " Line": 75
+    },
+    {
+        " Proj": "logging-log4j2bugs-dot-jar_LOG4J2-102_7f391872",
+        "Class": "org.apache.logging.log4j.core.net.Priority",
+        " Type": "warning",
+        "  Cat": "OperatorPrecedence",
+        "  Msg": "Use grouping parenthesis to make the operator precedence explicit",
+        " Code": "        return facility.getCode() << 3 + Severity.getSeverity(level).getCode();",
+        " Mark": "                                       ^",
+        " Line": 46
+    },
+    {
+        " Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-139_50e19247",
+        "Class": "org.apache.logging.log4j.core.appender.SocketAppender",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The local variable 'prot' is never read.",
+        " Code": "        final String prot = protocol != null ? protocol : Protocol.TCP.name();",
+        " Mark": "                     ^",
+        " Line": 118
+    },
+    {
+        " Proj": "logging-log4j2bugs-dot-jar_LOG4J2-139_50e19247",
+        "Class": "org.apache.logging.log4j.core.appender.SocketAppender",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The local variable 'prot' is never read.",
+        " Code": "        final String prot = protocol != null ? protocol : Protocol.TCP.name();",
+        " Mark": "                     ^",
+        " Line": 118
+    },
+    {
+        " Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-492_61ccbb95",
+        "Class": "org.apache.logging.log4j.core.jmx.Server",
+        " Type": "error",
+        "  Cat": "FormatString",
+        "  Msg": "extra format arguments: used 1, provided 2",
+        " Code": "        final String search = String.format(pattern, contextName, \"*\");",
+        " Mark": "                                           ^",
+        " Line": 263
+    },
+    {
+        " Proj": "logging-log4j2bugs-dot-jar_LOG4J2-102_7f391872",
+        "Class": "org.apache.logging.log4j.core.net.Priority",
+        " Type": "warning",
+        "  Cat": "OperatorPrecedence",
+        "  Msg": "Use grouping parenthesis to make the operator precedence explicit",
+        " Code": "        return facility.getCode() << 3 + Severity.getSeverity(level).getCode();",
+        " Mark": "                                       ^",
+        " Line": 46
+    },
+    {
+        " Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-1046_11960820",
+        "Class": "org.apache.logging.log4j.core.impl.ThrowableProxy",
+        " Type": "warning",
+        "  Cat": "EqualsGetClass",
+        "  Msg": "Prefer instanceof to getClass when implementing Object#equals.",
+        " Code": "    public boolean equals(final Object obj) {",
+        " Mark": "                   ^",
+        " Line": 153
+    },
+    {
+        " Proj": "logging-log4j2bugs-dot-jar_LOG4J2-1046_11960820",
+        "Class": "org.apache.logging.log4j.core.impl.ThrowableProxy",
+        " Type": "warning",
+        "  Cat": "EqualsGetClass",
+        "  Msg": "Prefer instanceof to getClass when implementing Object#equals.",
+        " Code": "    public boolean equals(final Object obj) {",
+        " Mark": "                   ^",
+        " Line": 153
+    },
+    {
+        " Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-139_50e19247",
+        "Class": "org.apache.logging.log4j.core.appender.SocketAppender",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The local variable 'prot' is never read.",
+        " Code": "        final String prot = protocol != null ? protocol : Protocol.TCP.name();",
+        " Mark": "                     ^",
+        " Line": 118
+    },
+    {
+        " Proj": "logging-log4j2bugs-dot-jar_LOG4J2-139_50e19247",
+        "Class": "org.apache.logging.log4j.core.appender.SocketAppender",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The local variable 'prot' is never read.",
+        " Code": "        final String prot = protocol != null ? protocol : Protocol.TCP.name();",
+        " Mark": "                     ^",
+        " Line": 118
+    },
+    {
+        " Proj": "logging-log4j2bugs-dot-jar_LOG4J2-94_d8af1c93",
+        "Class": "org.apache.logging.log4j.core.lookup.Interpolator",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "lookup implements method in StrLookup; expected @Override",
+        " Code": "    public String lookup(String var) {",
+        " Mark": "                  ^",
+        " Line": 75
+    },
+    {
+        " Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-492_61ccbb95",
+        "Class": "org.apache.logging.log4j.core.jmx.Server",
+        " Type": "error",
+        "  Cat": "FormatString",
+        "  Msg": "extra format arguments: used 1, provided 2",
+        " Code": "        final String search = String.format(pattern, contextName, \"*\");",
+        " Mark": "                                           ^",
+        " Line": 263
+    },
+    {
+        " Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-763_97203de8",
+        "Class": "org.apache.logging.log4j.message.LocalizedMessage",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The local variable 'length' is never read.",
+        " Code": "        final int length = in.readInt();",
+        " Mark": "                  ^",
+        " Line": 276
+    },
+    {
+        " Proj": "logging-log4j2bugs-dot-jar_LOG4J2-763_97203de8",
+        "Class": "org.apache.logging.log4j.message.LocalizedMessage",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The local variable 'length' is never read.",
+        " Code": "        final int length = in.readInt();",
+        " Mark": "                  ^",
+        " Line": 276
+    },
+    {
+        " Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-639_a5a1f1a2",
+        "Class": "org.apache.logging.log4j.core.async.AsyncLoggerConfigHelper",
+        " Type": "warning",
+        "  Cat": "ReferenceEquality",
+        "  Msg": "Comparison using reference equality instead of value equality",
+        " Code": "        if (isAppenderThread.get() == Boolean.TRUE //",
+        " Mark": "                                   ^",
+        " Line": 322
+    },
+    {
+        " Proj": "logging-log4j2bugs-dot-jar_LOG4J2-639_a5a1f1a2",
+        "Class": "org.apache.logging.log4j.core.async.AsyncLoggerConfigHelper",
+        " Type": "warning",
+        "  Cat": "ReferenceEquality",
+        "  Msg": "Comparison using reference equality instead of value equality",
+        " Code": "        if (isAppenderThread.get() == Boolean.TRUE //",
+        " Mark": "                                   ^",
+        " Line": 322
+    },
+    {
+        " Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-668_60f64cc1",
+        "Class": "org.apache.logging.log4j.core.appender.AsyncAppender",
+        " Type": "warning",
+        "  Cat": "ReferenceEquality",
+        "  Msg": "Comparison using reference equality instead of value equality",
+        " Code": "            if (isAppenderThread.get() == Boolean.TRUE && queue.remainingCapacity() == 0) {",
+        " Mark": "                                       ^",
+        " Line": 140
+    },
+    {
+        " Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-1067_4786a739",
+        "Class": "org.apache.logging.log4j.core.impl.ThrowableProxy",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The parameter 'stackTraceElement' is never read.",
+        " Code": "    private CacheEntry toCacheEntry(final StackTraceElement stackTraceElement, final Class<?> callerClass,",
+        " Mark": "                                                            ^",
+        " Line": 503
+    },
+    {
+        " Proj": "logging-log4j2bugs-dot-jar_LOG4J2-1067_4786a739",
+        "Class": "org.apache.logging.log4j.core.impl.ThrowableProxy",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The parameter 'stackTraceElement' is never read.",
+        " Code": "    private CacheEntry toCacheEntry(final StackTraceElement stackTraceElement, final Class<?> callerClass,",
+        " Mark": "                                                            ^",
+        " Line": 503
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-1496_0a4c7694",
+        "Class": "org.apache.flink.runtime.io.network.api.reader.BufferReader",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "getNumberOfInputChannels implements method in BufferReaderBase; expected @Override",
+        " Code": "\tpublic int getNumberOfInputChannels() {",
+        " Mark": "\t           ^",
+        " Line": 163
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-1761_380ef878",
+        "Class": "org.apache.flink.runtime.io.network.netty.PartitionRequestClientHandler",
+        " Type": "warning",
+        "  Cat": "FutureReturnValueIgnored",
+        "  Msg": "Return value of methods returning Future must be checked. Ignoring returned Futures suppresses exceptions thrown from the code that completes the Future.",
+        " Code": "\t\t\tctx.close();",
+        " Mark": "\t\t\t         ^",
+        " Line": 136
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-1496_0a4c7694",
+        "Class": "org.apache.flink.runtime.io.network.api.reader.BufferReader",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "getNumberOfInputChannels implements method in BufferReaderBase; expected @Override",
+        " Code": "\tpublic int getNumberOfInputChannels() {",
+        " Mark": "\t           ^",
+        " Line": 163
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-1761_380ef878",
+        "Class": "org.apache.flink.runtime.io.network.netty.PartitionRequestClientHandler",
+        " Type": "warning",
+        "  Cat": "FutureReturnValueIgnored",
+        "  Msg": "Return value of methods returning Future must be checked. Ignoring returned Futures suppresses exceptions thrown from the code that completes the Future.",
+        " Code": "\t\t\tctx.close();",
+        " Mark": "\t\t\t         ^",
+        " Line": 136
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-1820_39d526e6",
+        "Class": "org.apache.flink.types.parser.DoubleParser",
+        " Type": "warning",
+        "  Cat": "DefaultCharset",
+        "  Msg": "Implicit use of the platform default charset, which can result in differing behaviour between JVM executions or incorrect behavior if the encoding of the data source doesn't match expectations.",
+        " Code": "\t\tString str = new String(bytes, startPos, i-startPos);",
+        " Mark": "\t\t             ^",
+        " Line": 44
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-1820_39d526e6",
+        "Class": "org.apache.flink.types.parser.DoubleParser",
+        " Type": "warning",
+        "  Cat": "DefaultCharset",
+        "  Msg": "Implicit use of the platform default charset, which can result in differing behaviour between JVM executions or incorrect behavior if the encoding of the data source doesn't match expectations.",
+        " Code": "\t\tString str = new String(bytes, startPos, i);",
+        " Mark": "\t\t             ^",
+        " Line": 105
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-1820_39d526e6",
+        "Class": "org.apache.flink.types.parser.DoubleValueParser",
+        " Type": "warning",
+        "  Cat": "DefaultCharset",
+        "  Msg": "Implicit use of the platform default charset, which can result in differing behaviour between JVM executions or incorrect behavior if the encoding of the data source doesn't match expectations.",
+        " Code": "\t\tString str = new String(bytes, startPos, i-startPos);",
+        " Mark": "\t\t             ^",
+        " Line": 45
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-1820_39d526e6",
+        "Class": "org.apache.flink.types.parser.FloatParser",
+        " Type": "warning",
+        "  Cat": "DefaultCharset",
+        "  Msg": "Implicit use of the platform default charset, which can result in differing behaviour between JVM executions or incorrect behavior if the encoding of the data source doesn't match expectations.",
+        " Code": "\t\tString str = new String(bytes, startPos, i-startPos);",
+        " Mark": "\t\t             ^",
+        " Line": 43
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-1820_39d526e6",
+        "Class": "org.apache.flink.types.parser.FloatParser",
+        " Type": "warning",
+        "  Cat": "DefaultCharset",
+        "  Msg": "Implicit use of the platform default charset, which can result in differing behaviour between JVM executions or incorrect behavior if the encoding of the data source doesn't match expectations.",
+        " Code": "\t\tString str = new String(bytes, startPos, i);",
+        " Mark": "\t\t             ^",
+        " Line": 104
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-1820_39d526e6",
+        "Class": "org.apache.flink.types.parser.FloatValueParser",
+        " Type": "warning",
+        "  Cat": "DefaultCharset",
+        "  Msg": "Implicit use of the platform default charset, which can result in differing behaviour between JVM executions or incorrect behavior if the encoding of the data source doesn't match expectations.",
+        " Code": "\t\tString str = new String(bytes, startPos, i-startPos);",
+        " Mark": "\t\t             ^",
+        " Line": 45
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-3314_8fc7e7af",
+        "Class": "org.apache.flink.streaming.runtime.tasks.StreamTask",
+        " Type": "warning",
+        "  Cat": "EmptyBlockTag",
+        "  Msg": "A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.",
+        " Code": " * @param <OUT>",
+        " Mark": "   ^",
+        " Line": 92
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-3314_8fc7e7af",
+        "Class": "org.apache.flink.streaming.runtime.tasks.StreamTask",
+        " Type": "warning",
+        "  Cat": "EmptyBlockTag",
+        "  Msg": "A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.",
+        " Code": " * @param <Operator>",
+        " Mark": "   ^",
+        " Line": 93
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-2734_8b40bb7a",
+        "Class": "org.apache.flink.streaming.util.keys.KeySelectorUtil",
+        " Type": "warning",
+        "  Cat": "ClassNewInstance",
+        "  Msg": "Class.newInstance() bypasses exception checking; prefer getDeclaredConstructor().newInstance()",
+        " Code": "\t\t\tkey = (Tuple) tupleClasses[keyLength - 1].newInstance();",
+        " Mark": "\t\t\t                                                     ^",
+        " Line": 132
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-2734_8b40bb7a",
+        "Class": "org.apache.flink.streaming.util.keys.KeySelectorUtil",
+        " Type": "warning",
+        "  Cat": "ClassNewInstance",
+        "  Msg": "Class.newInstance() bypasses exception checking; prefer getDeclaredConstructor().newInstance()",
+        " Code": "\t\t\tkey = (Tuple) tupleClasses[fields.length - 1].newInstance();",
+        " Mark": "\t\t\t                                                         ^",
+        " Line": 155
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-2734_8b40bb7a",
+        "Class": "org.apache.flink.streaming.util.keys.KeySelectorUtil",
+        " Type": "warning",
+        "  Cat": "ClassNewInstance",
+        "  Msg": "Class.newInstance() bypasses exception checking; prefer getDeclaredConstructor().newInstance()",
+        " Code": "\t\t\tkey = (Tuple) tupleClasses[keyLength - 1].newInstance();",
+        " Mark": "\t\t\t                                                     ^",
+        " Line": 132
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-2812_e494c279",
+        "Class": "org.apache.flink.streaming.util.keys.KeySelectorUtil",
+        " Type": "warning",
+        "  Cat": "ClassNewInstance",
+        "  Msg": "Class.newInstance() bypasses exception checking; prefer getDeclaredConstructor().newInstance()",
+        " Code": "\t\t\tTuple key = Tuple.getTupleClass(keyLength).newInstance();",
+        " Mark": "\t\t\t                                                      ^",
+        " Line": 134
+    },
+    {
+        " Proj": "wicket_bugs-dot-jar_WICKET-3721_1858bc18",
+        "Class": "org.apache.wicket.request.UrlEncoder",
+        " Type": "warning",
+        "  Cat": "MissingSummary",
+        "  Msg": "A summary fragment is required; consider using the value of the @see block as a summary fragment instead.",
+        " Code": "\t * @param s",
+        " Mark": "\t   ^",
+        " Line": 258
+    }
+]

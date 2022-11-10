@@ -1,0 +1,2809 @@
+[
+    {
+        "    Proj": "accumulo_bugs-dot-jar_ACCUMULO-193_8ad5a888",
+        "   Class": "org.apache.accumulo.core.data.Key",
+        "     Cat": "I18N",
+        "  Abbrev": "Dm",
+        "    Type": "DM_DEFAULT_ENCODING",
+        "Priority": "1",
+        "    Rank": "19",
+        "     Msg": "Found reliance on default encoding in org.apache.accumulo.core.data.Key.toStringNoTime(): new String(byte[], int, int)",
+        "  Method": "toStringNoTime",
+        "   Field": "",
+        "   Lines": [
+            [
+                480,
+                480,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "accumulo_bugs-dot-jar_ACCUMULO-193_c831e44d",
+        "   Class": "org.apache.accumulo.core.data.Key",
+        "     Cat": "I18N",
+        "  Abbrev": "Dm",
+        "    Type": "DM_DEFAULT_ENCODING",
+        "Priority": "1",
+        "    Rank": "19",
+        "     Msg": "Found reliance on default encoding in org.apache.accumulo.core.data.Key.toStringNoTime(): new String(byte[], int, int)",
+        "  Method": "toStringNoTime",
+        "   Field": "",
+        "   Lines": [
+            [
+                480,
+                480,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "camel_bugs-dot-jar_CAMEL-3448_b345dd82",
+        "   Class": "org.apache.camel.processor.exceptionpolicy.ExceptionPolicyKey",
+        "     Cat": "MALICIOUS_CODE",
+        "  Abbrev": "EI2",
+        "    Type": "EI_EXPOSE_REP2",
+        "Priority": "2",
+        "    Rank": "18",
+        "     Msg": "new org.apache.camel.processor.exceptionpolicy.ExceptionPolicyKey(Class, WhenDefinition) may expose internal representation by storing an externally mutable object into ExceptionPolicyKey.when",
+        "  Method": "<init>",
+        "   Field": "when",
+        "   Lines": [
+            [
+                34,
+                34,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "camel_bugs-dot-jar_CAMEL-3847_de9399f3",
+        "   Class": "org.apache.camel.impl.converter.BaseTypeConverterRegistry",
+        "     Cat": "MT_CORRECTNESS",
+        "  Abbrev": "JLM",
+        "    Type": "JLM_JSR166_UTILCONCURRENT_MONITORENTER",
+        "Priority": "2",
+        "    Rank": "8",
+        "     Msg": "Synchronization performed on java.util.concurrent.ConcurrentHashMap in org.apache.camel.impl.converter.BaseTypeConverterRegistry.doConvertTo(Class, Exchange, Object)",
+        "  Method": "doConvertTo",
+        "   Field": "misses",
+        "   Lines": [
+            [
+                226,
+                226,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "camel_bugs-dot-jar_CAMEL-4354_96e40c3c",
+        "   Class": "org.apache.camel.impl.ProducerCache$1",
+        "     Cat": "PERFORMANCE",
+        "  Abbrev": "SIC",
+        "    Type": "SIC_INNER_SHOULD_BE_STATIC_ANON",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "The class org.apache.camel.impl.ProducerCache$1 could be refactored into a named _static_ inner class",
+        "  Method": "sendExchange",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "camel_bugs-dot-jar_CAMEL-5432_93935780",
+        "   Class": "org.apache.camel.component.seda.SedaProducer",
+        "     Cat": "MALICIOUS_CODE",
+        "  Abbrev": "EI2",
+        "    Type": "EI_EXPOSE_REP2",
+        "Priority": "2",
+        "    Rank": "18",
+        "     Msg": "new org.apache.camel.component.seda.SedaProducer(SedaEndpoint, BlockingQueue, WaitForTaskToComplete, long, boolean) may expose internal representation by storing an externally mutable object into SedaProducer.endpoint",
+        "  Method": "<init>",
+        "   Field": "endpoint",
+        "   Lines": [
+            [
+                53,
+                53,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "camel_bugs-dot-jar_CAMEL-5432_93935780",
+        "   Class": "org.apache.camel.component.seda.SedaProducer",
+        "     Cat": "MALICIOUS_CODE",
+        "  Abbrev": "EI2",
+        "    Type": "EI_EXPOSE_REP2",
+        "Priority": "2",
+        "    Rank": "18",
+        "     Msg": "new org.apache.camel.component.seda.SedaProducer(SedaEndpoint, BlockingQueue, WaitForTaskToComplete, long, boolean) may expose internal representation by storing an externally mutable object into SedaProducer.queue",
+        "  Method": "<init>",
+        "   Field": "queue",
+        "   Lines": [
+            [
+                52,
+                52,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "camel_bugs-dot-jar_CAMEL-5437_da05f5aa",
+        "   Class": "",
+        "     Cat": "",
+        "  Abbrev": "",
+        "    Type": "NO_WARNING",
+        "Priority": "",
+        "    Rank": "",
+        "     Msg": "",
+        "  Method": "",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "camel_bugs-dot-jar_CAMEL-5571_0e87b84f",
+        "   Class": "org.apache.camel.component.bean.AbstractCamelInvocationHandler",
+        "     Cat": "BAD_PRACTICE",
+        "  Abbrev": "RV",
+        "    Type": "RV_RETURN_VALUE_IGNORED_BAD_PRACTICE",
+        "Priority": "3",
+        "    Rank": "19",
+        "     Msg": "Exceptional return value of java.util.concurrent.ExecutorService.submit(Runnable) ignored in org.apache.camel.component.bean.AbstractCamelInvocationHandler.invokeWithbody(Method, Object, ExchangePattern)",
+        "  Method": "invokeWithbody",
+        "   Field": "",
+        "   Lines": [
+            [
+                95,
+                95,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "camel_bugs-dot-jar_CAMEL-5571_0e87b84f",
+        "   Class": "org.apache.camel.component.bean.AbstractCamelInvocationHandler$1",
+        "     Cat": "PERFORMANCE",
+        "  Abbrev": "SIC",
+        "    Type": "SIC_INNER_SHOULD_BE_STATIC_ANON",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "The class org.apache.camel.component.bean.AbstractCamelInvocationHandler$1 could be refactored into a named _static_ inner class",
+        "  Method": "invokeWithbody",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "camel_bugs-dot-jar_CAMEL-6667_1fc7bd7a",
+        "   Class": "org.apache.camel.processor.LoopProcessor",
+        "     Cat": "STYLE",
+        "  Abbrev": "NP",
+        "    Type": "NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD",
+        "Priority": "2",
+        "    Rank": "14",
+        "     Msg": "Read of unwritten public or protected field processor in org.apache.camel.processor.LoopProcessor.process(Exchange, AsyncCallback, AtomicInteger, AtomicInteger)",
+        "  Method": "process",
+        "   Field": "processor",
+        "   Lines": [
+            [
+                103,
+                103,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "camel_bugs-dot-jar_CAMEL-6964_6b2ffb30",
+        "   Class": "org.apache.camel.component.file.GenericFileOnCompletion",
+        "     Cat": "STYLE",
+        "  Abbrev": "RV",
+        "    Type": "RV_CHECK_FOR_POSITIVE_INDEXOF",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "org.apache.camel.component.file.GenericFileOnCompletion.processStrategyCommit(GenericFileProcessStrategy, Exchange, GenericFile) checks to see if result of String.indexOf is positive",
+        "  Method": "processStrategyCommit",
+        "   Field": "",
+        "   Lines": [
+            [
+                128,
+                128,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "camel_bugs-dot-jar_CAMEL-7275_44cad623",
+        "   Class": "org.apache.camel.processor.MulticastProcessor",
+        "     Cat": "STYLE",
+        "  Abbrev": "NP",
+        "    Type": "NP_LOAD_OF_KNOWN_NULL_VALUE",
+        "Priority": "2",
+        "    Rank": "16",
+        "     Msg": "Load of known null value in org.apache.camel.processor.MulticastProcessor.createErrorHandler(RouteContext, Exchange, Processor)",
+        "  Method": "createErrorHandler",
+        "   Field": "",
+        "   Lines": [
+            [
+                930,
+                930,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "camel_bugs-dot-jar_CAMEL-7429_43956f93",
+        "   Class": "",
+        "     Cat": "",
+        "  Abbrev": "",
+        "    Type": "NO_WARNING",
+        "Priority": "",
+        "    Rank": "",
+        "     Msg": "",
+        "  Method": "",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "camel_bugs-dot-jar_CAMEL-8125_36e7b668",
+        "   Class": "org.apache.camel.impl.CamelPostProcessorHelper",
+        "     Cat": "CORRECTNESS",
+        "  Abbrev": "NP",
+        "    Type": "NP_NULL_PARAM_DEREF",
+        "Priority": "2",
+        "    Rank": "8",
+        "     Msg": "Null passed for non-null parameter of String.startsWith(String) in org.apache.camel.impl.CamelPostProcessorHelper.getInjectionPropertyValue(Class, String, String, String, Object, String)",
+        "  Method": "getInjectionPropertyValue",
+        "   Field": "",
+        "   Lines": [
+            [
+                240,
+                240,
+                "SOURCE_LINE_INVOKED"
+            ],
+            [
+                234,
+                234,
+                "SOURCE_LINE_KNOWN_NULL"
+            ]
+        ]
+    },
+    {
+        "    Proj": "camel_bugs-dot-jar_CAMEL-8227_54d7fc59",
+        "   Class": "org.apache.camel.processor.SendProcessor",
+        "     Cat": "CORRECTNESS",
+        "  Abbrev": "RCN",
+        "    Type": "RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE",
+        "Priority": "2",
+        "    Rank": "11",
+        "     Msg": "Nullcheck of exchange at line 136 of value previously dereferenced in org.apache.camel.processor.SendProcessor.process(Exchange, AsyncCallback)",
+        "  Method": "process",
+        "   Field": "",
+        "   Lines": [
+            [
+                105,
+                105,
+                null
+            ],
+            [
+                136,
+                136,
+                "SOURCE_REDUNDANT_NULL_CHECK"
+            ]
+        ]
+    },
+    {
+        "    Proj": "camel_bugs-dot-jar_CAMEL-9641_9a6e6d8a",
+        "   Class": "org.apache.camel.language.simple.ast.SimpleFunctionExpression",
+        "     Cat": "CORRECTNESS",
+        "  Abbrev": "NP",
+        "    Type": "NP_NULL_PARAM_DEREF",
+        "Priority": "2",
+        "    Rank": "8",
+        "     Msg": "Null passed for non-null parameter of ifStartsWithReturnRemainder(String, String) in org.apache.camel.language.simple.ast.SimpleFunctionExpression.createSimpleExpression(String, boolean)",
+        "  Method": "createSimpleExpression",
+        "   Field": "",
+        "   Lines": [
+            [
+                151,
+                151,
+                "SOURCE_LINE_INVOKED"
+            ],
+            [
+                145,
+                145,
+                "SOURCE_LINE_KNOWN_NULL"
+            ]
+        ]
+    },
+    {
+        "    Proj": "camel_bugs-dot-jar_CAMEL-9672_84922699",
+        "   Class": "org.apache.camel.management.DefaultManagementObjectStrategy",
+        "     Cat": "STYLE",
+        "  Abbrev": "BC",
+        "    Type": "BC_UNCONFIRMED_CAST",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Unchecked/unconfirmed cast from org.apache.camel.model.ProcessorDefinition<?> to org.apache.camel.model.FilterDefinition in org.apache.camel.management.DefaultManagementObjectStrategy.getManagedObjectForProcessor(CamelContext, Processor, ProcessorDefinition, Route)",
+        "  Method": "getManagedObjectForProcessor",
+        "   Field": "",
+        "   Lines": [
+            [
+                310,
+                310,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "camel_bugs-dot-jar_CAMEL-9672_84922699",
+        "   Class": "org.apache.camel.management.mbean.ManagedFilter",
+        "     Cat": "MALICIOUS_CODE",
+        "  Abbrev": "EI2",
+        "    Type": "EI_EXPOSE_REP2",
+        "Priority": "2",
+        "    Rank": "18",
+        "     Msg": "new org.apache.camel.management.mbean.ManagedFilter(CamelContext, FilterProcessor, FilterDefinition) may expose internal representation by storing an externally mutable object into ManagedFilter.processor",
+        "  Method": "<init>",
+        "   Field": "processor",
+        "   Lines": [
+            [
+                34,
+                34,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "camel_bugs-dot-jar_CAMEL-9673_7944093f",
+        "   Class": "org.apache.camel.processor.FinallyProcessor$1",
+        "     Cat": "PERFORMANCE",
+        "  Abbrev": "SIC",
+        "    Type": "SIC_INNER_SHOULD_BE_STATIC_ANON",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "The class org.apache.camel.processor.FinallyProcessor$1 could be refactored into a named _static_ inner class",
+        "  Method": "process",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "camel_bugs-dot-jar_CAMEL-9700_4d03e9de",
+        "   Class": "org.apache.camel.component.seda.SedaProducer",
+        "     Cat": "STYLE",
+        "  Abbrev": "NP",
+        "    Type": "NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD",
+        "Priority": "2",
+        "    Rank": "14",
+        "     Msg": "Read of unwritten public or protected field log in org.apache.camel.component.seda.SedaProducer.addToQueue(Exchange)",
+        "  Method": "addToQueue",
+        "   Field": "log",
+        "   Lines": [
+            [
+                234,
+                234,
+                null
+            ],
+            [
+                224,
+                224,
+                "SOURCE_LINE_ANOTHER_INSTANCE"
+            ]
+        ]
+    },
+    {
+        "    Proj": "camel_bugs-dot-jar_CAMEL-9700_4d03e9de",
+        "   Class": "org.apache.camel.component.seda.SedaProducer",
+        "     Cat": "STYLE",
+        "  Abbrev": "NP",
+        "    Type": "NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD",
+        "Priority": "2",
+        "    Rank": "14",
+        "     Msg": "Read of unwritten public or protected field log in org.apache.camel.component.seda.SedaProducer.process(Exchange, AsyncCallback)",
+        "  Method": "process",
+        "   Field": "log",
+        "   Lines": [
+            [
+                165,
+                165,
+                null
+            ],
+            [
+                123,
+                123,
+                "SOURCE_LINE_ANOTHER_INSTANCE"
+            ]
+        ]
+    },
+    {
+        "    Proj": "commons-math_bugs-dot-jar_MATH-293_59a0da9c",
+        "   Class": "",
+        "     Cat": "",
+        "  Abbrev": "",
+        "    Type": "NO_WARNING",
+        "Priority": "",
+        "    Rank": "",
+        "     Msg": "",
+        "  Method": "",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "commons-math_bugs-dot-jar_MATH-434_133cbc2d",
+        "   Class": "org.apache.commons.math.optimization.linear.SimplexTableau",
+        "     Cat": "MALICIOUS_CODE",
+        "  Abbrev": "MC",
+        "    Type": "MC_OVERRIDABLE_METHOD_CALL_IN_CONSTRUCTOR",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Overridable method initializeColumnLabels is called from constructor new org.apache.commons.math.optimization.linear.SimplexTableau(LinearObjectiveFunction, Collection, GoalType, boolean, double).",
+        "  Method": "<init>",
+        "   Field": "",
+        "   Lines": [
+            [
+                122,
+                122,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "commons-math_bugs-dot-jar_MATH-519_26a61077",
+        "   Class": "",
+        "     Cat": "",
+        "  Abbrev": "",
+        "    Type": "NO_WARNING",
+        "Priority": "",
+        "    Rank": "",
+        "     Msg": "",
+        "  Method": "",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "commons-math_bugs-dot-jar_MATH-738_f64b6a90",
+        "   Class": "",
+        "     Cat": "",
+        "  Abbrev": "",
+        "    Type": "NO_WARNING",
+        "Priority": "",
+        "    Rank": "",
+        "     Msg": "",
+        "  Method": "",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "commons-math_bugs-dot-jar_MATH-757_76b7413d",
+        "   Class": "org.apache.commons.math4.util.ResizableDoubleArray",
+        "     Cat": "MALICIOUS_CODE",
+        "  Abbrev": "EI",
+        "    Type": "EI_EXPOSE_REP",
+        "Priority": "2",
+        "    Rank": "18",
+        "     Msg": "org.apache.commons.math4.util.ResizableDoubleArray.getInternalValues() may expose internal representation by returning ResizableDoubleArray.internalArray",
+        "  Method": "getInternalValues",
+        "   Field": "internalArray",
+        "   Lines": [
+            [
+                880,
+                880,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "commons-math_bugs-dot-jar_MATH-757_76b7413d",
+        "   Class": "org.apache.commons.math4.util.ResizableDoubleArray",
+        "     Cat": "MT_CORRECTNESS",
+        "  Abbrev": "IS",
+        "    Type": "IS2_INCONSISTENT_SYNC",
+        "Priority": "2",
+        "    Rank": "17",
+        "     Msg": "Inconsistent synchronization of org.apache.commons.math4.util.ResizableDoubleArray.expansionMode; locked 77% of time",
+        "  Method": "",
+        "   Field": "expansionMode",
+        "   Lines": [
+            [
+                1037,
+                1037,
+                "SOURCE_LINE_UNSYNC_ACCESS"
+            ],
+            [
+                817,
+                817,
+                "SOURCE_LINE_UNSYNC_ACCESS"
+            ],
+            [
+                1184,
+                1184,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1184,
+                1184,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1137,
+                1137,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1137,
+                1137,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1089,
+                1089,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1207,
+                1207,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                696,
+                696,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ]
+        ]
+    },
+    {
+        "    Proj": "commons-math_bugs-dot-jar_MATH-757_76b7413d",
+        "   Class": "org.apache.commons.math4.util.ResizableDoubleArray",
+        "     Cat": "MT_CORRECTNESS",
+        "  Abbrev": "IS",
+        "    Type": "IS2_INCONSISTENT_SYNC",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Inconsistent synchronization of org.apache.commons.math4.util.ResizableDoubleArray.contractionCriterion; locked 88% of time",
+        "  Method": "",
+        "   Field": "contractionCriterion",
+        "   Lines": [
+            [
+                753,
+                753,
+                "SOURCE_LINE_UNSYNC_ACCESS"
+            ],
+            [
+                1182,
+                1182,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1182,
+                1182,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1135,
+                1135,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1135,
+                1135,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1092,
+                1092,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1090,
+                1090,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1206,
+                1206,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                934,
+                934,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ]
+        ]
+    },
+    {
+        "    Proj": "commons-math_bugs-dot-jar_MATH-757_76b7413d",
+        "   Class": "org.apache.commons.math4.util.ResizableDoubleArray",
+        "     Cat": "MT_CORRECTNESS",
+        "  Abbrev": "IS",
+        "    Type": "IS2_INCONSISTENT_SYNC",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Inconsistent synchronization of org.apache.commons.math4.util.ResizableDoubleArray.expansionFactor; locked 88% of time",
+        "  Method": "",
+        "   Field": "expansionFactor",
+        "   Lines": [
+            [
+                804,
+                804,
+                "SOURCE_LINE_UNSYNC_ACCESS"
+            ],
+            [
+                1183,
+                1183,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1183,
+                1183,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1136,
+                1136,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1136,
+                1136,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1205,
+                1205,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                699,
+                699,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                697,
+                697,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                999,
+                999,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ]
+        ]
+    },
+    {
+        "    Proj": "commons-math_bugs-dot-jar_MATH-757_76b7413d",
+        "   Class": "org.apache.commons.math4.util.ResizableDoubleArray",
+        "     Cat": "MT_CORRECTNESS",
+        "  Abbrev": "IS",
+        "    Type": "IS2_INCONSISTENT_SYNC",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Inconsistent synchronization of org.apache.commons.math4.util.ResizableDoubleArray.internalArray; locked 94% of time",
+        "  Method": "",
+        "   Field": "internalArray",
+        "   Lines": [
+            [
+                851,
+                851,
+                "SOURCE_LINE_UNSYNC_ACCESS"
+            ],
+            [
+                903,
+                903,
+                "SOURCE_LINE_UNSYNC_ACCESS"
+            ],
+            [
+                838,
+                838,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                518,
+                518,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                520,
+                520,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                950,
+                950,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                976,
+                976,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                979,
+                979,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                482,
+                482,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                484,
+                484,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                491,
+                491,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                785,
+                785,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1190,
+                1190,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1190,
+                1190,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1138,
+                1138,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1138,
+                1138,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1139,
+                1139,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1139,
+                1139,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1139,
+                1139,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1092,
+                1092,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1090,
+                1090,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1208,
+                1208,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                442,
+                442,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                445,
+                445,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                880,
+                880,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                699,
+                699,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                697,
+                697,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                704,
+                704,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                704,
+                704,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                705,
+                705,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                599,
+                599,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                600,
+                600,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                716,
+                716,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                716,
+                716,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                717,
+                717,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1074,
+                1074,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                457,
+                457,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                459,
+                459,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                769,
+                769,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ]
+        ]
+    },
+    {
+        "    Proj": "commons-math_bugs-dot-jar_MATH-757_76b7413d",
+        "   Class": "org.apache.commons.math4.util.ResizableDoubleArray",
+        "     Cat": "MT_CORRECTNESS",
+        "  Abbrev": "IS",
+        "    Type": "IS2_INCONSISTENT_SYNC",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Inconsistent synchronization of org.apache.commons.math4.util.ResizableDoubleArray.startIndex; locked 96% of time",
+        "  Method": "",
+        "   Field": "startIndex",
+        "   Lines": [
+            [
+                918,
+                918,
+                "SOURCE_LINE_UNSYNC_ACCESS"
+            ],
+            [
+                1108,
+                1108,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                672,
+                672,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                672,
+                672,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                517,
+                517,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                951,
+                951,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                587,
+                587,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                976,
+                976,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                979,
+                979,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                977,
+                977,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                482,
+                482,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                484,
+                484,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                488,
+                488,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                488,
+                488,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                491,
+                491,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                785,
+                785,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1186,
+                1186,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1186,
+                1186,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1142,
+                1142,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1142,
+                1142,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1210,
+                1210,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                442,
+                442,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                445,
+                445,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                599,
+                599,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                603,
+                603,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                1073,
+                1073,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                457,
+                457,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                460,
+                460,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                769,
+                769,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ]
+        ]
+    },
+    {
+        "    Proj": "commons-math_bugs-dot-jar_MATH-757_76b7413d",
+        "   Class": "org.apache.commons.math4.util.ResizableDoubleArray",
+        "     Cat": "STYLE",
+        "  Abbrev": "UC",
+        "    Type": "UC_USELESS_CONDITION",
+        "Priority": "3",
+        "    Rank": "19",
+        "     Msg": "Useless condition: it's known that expansionMode == 1 at this point",
+        "  Method": "setExpansionMode",
+        "   Field": "",
+        "   Lines": [
+            [
+                1023,
+                1023,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "commons-math_bugs-dot-jar_MATH-924_b07ecae3",
+        "   Class": "",
+        "     Cat": "",
+        "  Abbrev": "",
+        "    Type": "NO_WARNING",
+        "Priority": "",
+        "    Rank": "",
+        "     Msg": "",
+        "  Method": "",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1096_be44b816",
+        "   Class": "",
+        "     Cat": "",
+        "  Abbrev": "",
+        "    Type": "NO_WARNING",
+        "Priority": "",
+        "    Rank": "",
+        "     Msg": "",
+        "  Method": "",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1215_a9efe3c4",
+        "   Class": "org.apache.jackrabbit.oak.query.ast.PropertyValueImpl",
+        "     Cat": "STYLE",
+        "  Abbrev": "UC",
+        "    Type": "UC_USELESS_CONDITION",
+        "Priority": "1",
+        "    Rank": "14",
+        "     Msg": "Useless condition: it's known that asterisk == true at this point",
+        "  Method": "currentProperty",
+        "   Field": "",
+        "   Lines": [
+            [
+                120,
+                120,
+                "SOURCE_UNREACHABLE_CODE"
+            ],
+            [
+                119,
+                119,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1270_70564c7c",
+        "   Class": "org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndex",
+        "     Cat": "STYLE",
+        "  Abbrev": "DLS",
+        "    Type": "DLS_DEAD_LOCAL_STORE",
+        "Priority": "2",
+        "    Rank": "17",
+        "     Msg": "Dead store to tokens in org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndex.tokenToQuery(String, Analyzer)",
+        "  Method": "tokenToQuery",
+        "   Field": "",
+        "   Lines": [
+            [
+                653,
+                653,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1429_c2f5ca6c",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore",
+        "     Cat": "STYLE",
+        "  Abbrev": "NP",
+        "    Type": "NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE",
+        "Priority": "2",
+        "    Rank": "13",
+        "     Msg": "Possible null pointer dereference in org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore.diffFewChildren(JsopWriter, DocumentNodeState$Children, Revision, DocumentNodeState$Children, Revision) due to return value of called method",
+        "  Method": "diffFewChildren",
+        "   Field": "",
+        "   Lines": [
+            [
+                1518,
+                1518,
+                "SOURCE_LINE_INVOKED"
+            ],
+            [
+                1512,
+                1512,
+                "SOURCE_LINE_KNOWN_NULL"
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1429_c2f5ca6c",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore",
+        "     Cat": "STYLE",
+        "  Abbrev": "NP",
+        "    Type": "NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE",
+        "Priority": "2",
+        "    Rank": "13",
+        "     Msg": "Possible null pointer dereference in org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore.diffFewChildren(JsopWriter, DocumentNodeState$Children, Revision, DocumentNodeState$Children, Revision) due to return value of called method",
+        "  Method": "diffFewChildren",
+        "   Field": "",
+        "   Lines": [
+            [
+                1519,
+                1519,
+                "SOURCE_LINE_INVOKED"
+            ],
+            [
+                1513,
+                1513,
+                "SOURCE_LINE_KNOWN_NULL"
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1429_c2f5ca6c",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore",
+        "     Cat": "CORRECTNESS",
+        "  Abbrev": "NP",
+        "    Type": "NP_UNWRITTEN_FIELD",
+        "Priority": "3",
+        "    Rank": "11",
+        "     Msg": "Read of unwritten field children in org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore.diffFewChildren(JsopWriter, DocumentNodeState$Children, Revision, DocumentNodeState$Children, Revision)",
+        "  Method": "diffFewChildren",
+        "   Field": "children",
+        "   Lines": [
+            [
+                1526,
+                1526,
+                null
+            ],
+            [
+                1508,
+                1508,
+                "SOURCE_LINE_ANOTHER_INSTANCE"
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1516_7c62bd81",
+        "   Class": "org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndex",
+        "     Cat": "STYLE",
+        "  Abbrev": "PZLA",
+        "    Type": "PZLA_PREFER_ZERO_LENGTH_ARRAYS",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Should org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndex.extractMatchingTokens(IndexReader, String) return a zero length array rather than null?",
+        "  Method": "extractMatchingTokens",
+        "   Field": "",
+        "   Lines": [
+            [
+                732,
+                732,
+                null
+            ],
+            [
+                748,
+                748,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1662_3efb5cbf",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.NodeDocument$1",
+        "     Cat": "PERFORMANCE",
+        "  Abbrev": "SIC",
+        "    Type": "SIC_INNER_SHOULD_BE_STATIC_ANON",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "The class org.apache.jackrabbit.oak.plugins.document.NodeDocument$1 could be refactored into a named _static_ inner class",
+        "  Method": "getPreviousDocs",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1662_3efb5cbf",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.NodeDocument$3",
+        "     Cat": "PERFORMANCE",
+        "  Abbrev": "SIC",
+        "    Type": "SIC_INNER_SHOULD_BE_STATIC_ANON",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "The class org.apache.jackrabbit.oak.plugins.document.NodeDocument$3 could be refactored into a named _static_ inner class",
+        "  Method": "getAllPreviousDocs",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1731_024e5d37",
+        "   Class": "org.apache.jackrabbit.oak.upgrade.RepositoryUpgrade",
+        "     Cat": "STYLE",
+        "  Abbrev": "UCF",
+        "    Type": "UCF_USELESS_CONTROL_FLOW",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Useless control flow in org.apache.jackrabbit.oak.upgrade.RepositoryUpgrade.copyPropertyDefinition(QPropertyDefinition, NodeBuilder)",
+        "  Method": "copyPropertyDefinition",
+        "   Field": "",
+        "   Lines": [
+            [
+                549,
+                549,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1789_9f7c1df0",
+        "   Class": "org.apache.jackrabbit.oak.upgrade.JackrabbitNodeState",
+        "     Cat": "STYLE",
+        "  Abbrev": "DLS",
+        "    Type": "DLS_DEAD_LOCAL_STORE",
+        "Priority": "2",
+        "    Rank": "17",
+        "     Msg": "Dead store to primary in org.apache.jackrabbit.oak.upgrade.JackrabbitNodeState.createProperties(NodePropBundle)",
+        "  Method": "createProperties",
+        "   Field": "",
+        "   Lines": [
+            [
+                317,
+                317,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1822_016df669",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore",
+        "     Cat": "STYLE",
+        "  Abbrev": "DB",
+        "    Type": "DB_DUPLICATE_SWITCH_CLAUSES",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore.createUpdate(UpdateOp) uses the same code for two switch clauses",
+        "  Method": "createUpdate",
+        "   Field": "",
+        "   Lines": [
+            [
+                984,
+                985,
+                null
+            ],
+            [
+                992,
+                993,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1822_3e83a4c1",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore",
+        "     Cat": "STYLE",
+        "  Abbrev": "DB",
+        "    Type": "DB_DUPLICATE_SWITCH_CLAUSES",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore.createUpdate(UpdateOp) uses the same code for two switch clauses",
+        "  Method": "createUpdate",
+        "   Field": "",
+        "   Lines": [
+            [
+                984,
+                985,
+                null
+            ],
+            [
+                992,
+                993,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1874_3ae276c1",
+        "   Class": "org.apache.jackrabbit.oak.plugins.index.IndexUpdate",
+        "     Cat": "STYLE",
+        "  Abbrev": "NP",
+        "    Type": "NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE",
+        "Priority": "2",
+        "    Rank": "13",
+        "     Msg": "Possible null pointer dereference in org.apache.jackrabbit.oak.plugins.index.IndexUpdate.collectIndexEditors(NodeBuilder) due to return value of called method",
+        "  Method": "collectIndexEditors",
+        "   Field": "",
+        "   Lines": [
+            [
+                131,
+                131,
+                "SOURCE_LINE_INVOKED"
+            ],
+            [
+                130,
+                130,
+                "SOURCE_LINE_KNOWN_NULL"
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1877_716e1237",
+        "   Class": "org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate",
+        "     Cat": "STYLE",
+        "  Abbrev": "NP",
+        "    Type": "NP_LOAD_OF_KNOWN_NULL_VALUE",
+        "Priority": "2",
+        "    Rank": "16",
+        "     Msg": "Load of known null value in org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate.run()",
+        "  Method": "run",
+        "   Field": "",
+        "   Lines": [
+            [
+                234,
+                234,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1877_716e1237",
+        "   Class": "org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate",
+        "     Cat": "STYLE",
+        "  Abbrev": "NP",
+        "    Type": "NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE",
+        "Priority": "2",
+        "    Rank": "13",
+        "     Msg": "Possible null pointer dereference in org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate.isAlreadyRunning(NodeStore, String) due to return value of called method",
+        "  Method": "isAlreadyRunning",
+        "   Field": "",
+        "   Lines": [
+            [
+                300,
+                300,
+                "SOURCE_LINE_DEREF"
+            ],
+            [
+                299,
+                299,
+                "SOURCE_LINE_KNOWN_NULL"
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1877_716e1237",
+        "   Class": "org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate",
+        "     Cat": "STYLE",
+        "  Abbrev": "RCN",
+        "    Type": "RCN_REDUNDANT_NULLCHECK_OF_NULL_VALUE",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Redundant nullcheck of exception which is known to be null in org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate.run()",
+        "  Method": "run",
+        "   Field": "",
+        "   Lines": [
+            [
+                234,
+                234,
+                "SOURCE_REDUNDANT_NULL_CHECK"
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1877_716e1237",
+        "   Class": "org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate",
+        "     Cat": "CORRECTNESS",
+        "  Abbrev": "RpC",
+        "    Type": "RpC_REPEATED_CONDITIONAL_TEST",
+        "Priority": "3",
+        "    Rank": "11",
+        "     Msg": "Repeated conditional test in org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate.run()",
+        "  Method": "run",
+        "   Field": "",
+        "   Lines": [
+            [
+                234,
+                234,
+                null
+            ],
+            [
+                234,
+                234,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1985_f620b79b",
+        "   Class": "org.apache.jackrabbit.oak.security.authentication.token.TokenProviderImpl",
+        "     Cat": "STYLE",
+        "  Abbrev": "RCN",
+        "    Type": "RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Redundant nullcheck of parentPath, which is known to be non-null in org.apache.jackrabbit.oak.security.authentication.token.TokenProviderImpl.getTokenParent(String)",
+        "  Method": "getTokenParent",
+        "   Field": "",
+        "   Lines": [
+            [
+                387,
+                387,
+                "SOURCE_REDUNDANT_NULL_CHECK"
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-2336_d0f6715d",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.NodeDocument",
+        "     Cat": "CORRECTNESS",
+        "  Abbrev": "NP",
+        "    Type": "NP_UNWRITTEN_FIELD",
+        "Priority": "2",
+        "    Rank": "8",
+        "     Msg": "Read of unwritten field revision in org.apache.jackrabbit.oak.plugins.document.NodeDocument.getNodeAtRevision(DocumentNodeStore, Revision, Revision)",
+        "  Method": "getNodeAtRevision",
+        "   Field": "revision",
+        "   Lines": [
+            [
+                778,
+                778,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-2363_90ea7aa5",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore",
+        "     Cat": "STYLE",
+        "  Abbrev": "NP",
+        "    Type": "NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE",
+        "Priority": "2",
+        "    Rank": "13",
+        "     Msg": "Possible null pointer dereference in org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore.retrieve(String) due to return value of called method",
+        "  Method": "retrieve",
+        "   Field": "",
+        "   Lines": [
+            [
+                1407,
+                1407,
+                "SOURCE_LINE_DEREF"
+            ],
+            [
+                1407,
+                1407,
+                "SOURCE_LINE_KNOWN_NULL"
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-2420_24cb1908",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore$6",
+        "     Cat": "PERFORMANCE",
+        "  Abbrev": "SIC",
+        "    Type": "SIC_INNER_SHOULD_BE_STATIC_ANON",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "The class org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore$6 could be refactored into a named _static_ inner class",
+        "  Method": "getChildNodes",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-2420_24cb1908",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore$7",
+        "     Cat": "PERFORMANCE",
+        "  Abbrev": "SIC",
+        "    Type": "SIC_INNER_SHOULD_BE_STATIC_ANON",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "The class org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore$7 could be refactored into a named _static_ inner class",
+        "  Method": "compare",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-2420_24cb1908",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore$8",
+        "     Cat": "PERFORMANCE",
+        "  Abbrev": "SIC",
+        "    Type": "SIC_INNER_SHOULD_BE_STATIC_ANON",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "The class org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore$8 could be refactored into a named _static_ inner class",
+        "  Method": "diff",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-2420_24cb1908",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore$9",
+        "     Cat": "PERFORMANCE",
+        "  Abbrev": "SIC",
+        "    Type": "SIC_INNER_SHOULD_BE_STATIC_ANON",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "The class org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore$9 could be refactored into a named _static_ inner class",
+        "  Method": "createTracker",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-278_db19e70f",
+        "   Class": "org.apache.jackrabbit.oak.core.TreeImpl",
+        "     Cat": "MALICIOUS_CODE",
+        "  Abbrev": "EI2",
+        "    Type": "EI_EXPOSE_REP2",
+        "Priority": "2",
+        "    Rank": "18",
+        "     Msg": "org.apache.jackrabbit.oak.core.TreeImpl.remove() may expose internal representation by storing an externally mutable object into TreeImpl.parent",
+        "  Method": "remove",
+        "   Field": "parent",
+        "   Lines": [
+            [
+                257,
+                257,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3123_f3c9c818",
+        "   Class": "org.apache.jackrabbit.oak.plugins.segment.RecordIdMap",
+        "     Cat": "STYLE",
+        "  Abbrev": "UwF",
+        "    Type": "UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "RecordIdMap.keys not initialized in constructor and dereferenced in org.apache.jackrabbit.oak.plugins.segment.RecordIdMap.getKey(int)",
+        "  Method": "getKey",
+        "   Field": "keys",
+        "   Lines": [
+            [
+                110,
+                110,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3123_f3c9c818",
+        "   Class": "org.apache.jackrabbit.oak.plugins.segment.RecordIdMap",
+        "     Cat": "STYLE",
+        "  Abbrev": "UwF",
+        "    Type": "UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "RecordIdMap.keys not initialized in constructor and dereferenced in org.apache.jackrabbit.oak.plugins.segment.RecordIdMap.size()",
+        "  Method": "size",
+        "   Field": "keys",
+        "   Lines": [
+            [
+                100,
+                100,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3123_f3c9c818",
+        "   Class": "org.apache.jackrabbit.oak.plugins.segment.RecordIdMap",
+        "     Cat": "STYLE",
+        "  Abbrev": "UwF",
+        "    Type": "UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "RecordIdMap.values not initialized in constructor and dereferenced in org.apache.jackrabbit.oak.plugins.segment.RecordIdMap.get(short)",
+        "  Method": "get",
+        "   Field": "values",
+        "   Lines": [
+            [
+                81,
+                81,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3123_f3c9c818",
+        "   Class": "org.apache.jackrabbit.oak.plugins.segment.RecordIdMap",
+        "     Cat": "STYLE",
+        "  Abbrev": "UwF",
+        "    Type": "UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "RecordIdMap.values not initialized in constructor and dereferenced in org.apache.jackrabbit.oak.plugins.segment.RecordIdMap.getRecordId(int)",
+        "  Method": "getRecordId",
+        "   Field": "values",
+        "   Lines": [
+            [
+                121,
+                121,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3424_f4349a96",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.ClusterNodeInfo",
+        "     Cat": "STYLE",
+        "  Abbrev": "NP",
+        "    Type": "NP_LOAD_OF_KNOWN_NULL_VALUE",
+        "Priority": "2",
+        "    Rank": "16",
+        "     Msg": "Load of known null value in org.apache.jackrabbit.oak.plugins.document.ClusterNodeInfo.createInstance(DocumentStore, String, String, int)",
+        "  Method": "createInstance",
+        "   Field": "",
+        "   Lines": [
+            [
+                463,
+                463,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3424_f4349a96",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.ClusterNodeInfo",
+        "     Cat": "STYLE",
+        "  Abbrev": "RCN",
+        "    Type": "RCN_REDUNDANT_NULLCHECK_OF_NULL_VALUE",
+        "Priority": "2",
+        "    Rank": "18",
+        "     Msg": "Redundant nullcheck of leaseEnd which is known to be null in org.apache.jackrabbit.oak.plugins.document.ClusterNodeInfo.createInstance(DocumentStore, String, String, int)",
+        "  Method": "createInstance",
+        "   Field": "",
+        "   Lines": [
+            [
+                463,
+                463,
+                "SOURCE_REDUNDANT_NULL_CHECK"
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore",
+        "     Cat": "STYLE",
+        "  Abbrev": "BC",
+        "    Type": "BC_UNCONFIRMED_CAST_OF_RETURN_VALUE",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Unchecked/unconfirmed cast from org.apache.jackrabbit.oak.plugins.document.Document to org.apache.jackrabbit.oak.plugins.document.NodeDocument of return value in org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore.create(Collection, List)",
+        "  Method": "create",
+        "   Field": "",
+        "   Lines": [
+            [
+                874,
+                874,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore",
+        "     Cat": "STYLE",
+        "  Abbrev": "BC",
+        "    Type": "BC_UNCONFIRMED_CAST_OF_RETURN_VALUE",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Unchecked/unconfirmed cast from org.apache.jackrabbit.oak.plugins.document.Document to org.apache.jackrabbit.oak.plugins.document.NodeDocument of return value in org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore.findAndModify(Collection, UpdateOp, boolean, boolean)",
+        "  Method": "findAndModify",
+        "   Field": "",
+        "   Lines": [
+            [
+                764,
+                764,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore",
+        "     Cat": "STYLE",
+        "  Abbrev": "BC",
+        "    Type": "BC_UNCONFIRMED_CAST_OF_RETURN_VALUE",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Unchecked/unconfirmed cast from org.apache.jackrabbit.oak.plugins.document.Document to org.apache.jackrabbit.oak.plugins.document.NodeDocument of return value in org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore.queryInternal(Collection, String, String, String, long, int, long, boolean)",
+        "  Method": "queryInternal",
+        "   Field": "",
+        "   Lines": [
+            [
+                599,
+                599,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore",
+        "     Cat": "MALICIOUS_CODE",
+        "  Abbrev": "EI",
+        "    Type": "EI_EXPOSE_REP",
+        "Priority": "2",
+        "    Rank": "18",
+        "     Msg": "org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore.getMetadata() may expose internal representation by returning MongoDocumentStore.metadata",
+        "  Method": "getMetadata",
+        "   Field": "metadata",
+        "   Lines": [
+            [
+                1067,
+                1067,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore",
+        "     Cat": "MALICIOUS_CODE",
+        "  Abbrev": "EI2",
+        "    Type": "EI_EXPOSE_REP2",
+        "Priority": "2",
+        "    Rank": "18",
+        "     Msg": "new org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore(DB, DocumentMK$Builder) may expose internal representation by storing an externally mutable object into MongoDocumentStore.db",
+        "  Method": "<init>",
+        "   Field": "db",
+        "   Lines": [
+            [
+                173,
+                173,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore",
+        "     Cat": "MALICIOUS_CODE",
+        "  Abbrev": "FI",
+        "    Type": "FI_PUBLIC_SHOULD_BE_PROTECTED",
+        "Priority": "2",
+        "    Rank": "18",
+        "     Msg": "org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore.finalize() is public; should be protected",
+        "  Method": "finalize",
+        "   Field": "",
+        "   Lines": [
+            [
+                249,
+                253,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore",
+        "     Cat": "STYLE",
+        "  Abbrev": "NP",
+        "    Type": "NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD",
+        "Priority": "2",
+        "    Rank": "14",
+        "     Msg": "Read of unwritten public or protected field type in org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore.create(Collection, List)",
+        "  Method": "create",
+        "   Field": "type",
+        "   Lines": [
+            [
+                828,
+                828,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore",
+        "     Cat": "STYLE",
+        "  Abbrev": "NP",
+        "    Type": "NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD",
+        "Priority": "2",
+        "    Rank": "14",
+        "     Msg": "Read of unwritten public or protected field type in org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore.createQueryForUpdate(String, Map)",
+        "  Method": "createQueryForUpdate",
+        "   Field": "type",
+        "   Lines": [
+            [
+                1106,
+                1106,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore",
+        "     Cat": "STYLE",
+        "  Abbrev": "NP",
+        "    Type": "NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD",
+        "Priority": "2",
+        "    Rank": "14",
+        "     Msg": "Read of unwritten public or protected field type in org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore.createUpdate(UpdateOp)",
+        "  Method": "createUpdate",
+        "   Field": "type",
+        "   Lines": [
+            [
+                1146,
+                1146,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore$1",
+        "     Cat": "PERFORMANCE",
+        "  Abbrev": "SIC",
+        "    Type": "SIC_INNER_SHOULD_BE_STATIC_ANON",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "The class org.apache.jackrabbit.oak.plugins.document.mongo.MongoDocumentStore$1 could be refactored into a named _static_ inner class",
+        "  Method": "find",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore",
+        "     Cat": "STYLE",
+        "  Abbrev": "BC",
+        "    Type": "BC_UNCONFIRMED_CAST_OF_RETURN_VALUE",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Unchecked/unconfirmed cast from org.apache.jackrabbit.oak.plugins.document.Document to org.apache.jackrabbit.oak.plugins.document.NodeDocument of return value in org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore.bulkUpdate(Collection, List, Map, boolean)",
+        "  Method": "bulkUpdate",
+        "   Field": "",
+        "   Lines": [
+            [
+                414,
+                414,
+                null
+            ],
+            [
+                448,
+                448,
+                "SOURCE_LINE_ANOTHER_INSTANCE"
+            ],
+            [
+                446,
+                446,
+                "SOURCE_LINE_ANOTHER_INSTANCE"
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore",
+        "     Cat": "STYLE",
+        "  Abbrev": "BC",
+        "    Type": "BC_UNCONFIRMED_CAST_OF_RETURN_VALUE",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Unchecked/unconfirmed cast from org.apache.jackrabbit.oak.plugins.document.Document to org.apache.jackrabbit.oak.plugins.document.NodeDocument of return value in org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore.internalCreate(Collection, List)",
+        "  Method": "internalCreate",
+        "   Field": "",
+        "   Lines": [
+            [
+                1096,
+                1096,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore",
+        "     Cat": "STYLE",
+        "  Abbrev": "BC",
+        "    Type": "BC_UNCONFIRMED_CAST_OF_RETURN_VALUE",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Unchecked/unconfirmed cast from org.apache.jackrabbit.oak.plugins.document.Document to org.apache.jackrabbit.oak.plugins.document.NodeDocument of return value in org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore.internalCreateOrUpdate(Collection, UpdateOp, boolean, boolean)",
+        "  Method": "internalCreateOrUpdate",
+        "   Field": "",
+        "   Lines": [
+            [
+                1129,
+                1129,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore",
+        "     Cat": "STYLE",
+        "  Abbrev": "BC",
+        "    Type": "BC_UNCONFIRMED_CAST_OF_RETURN_VALUE",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Unchecked/unconfirmed cast from org.apache.jackrabbit.oak.plugins.document.Document to org.apache.jackrabbit.oak.plugins.document.NodeDocument of return value in org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore.internalUpdate(Collection, List, UpdateOp)",
+        "  Method": "internalUpdate",
+        "   Field": "",
+        "   Lines": [
+            [
+                1301,
+                1301,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore",
+        "     Cat": "STYLE",
+        "  Abbrev": "BC",
+        "    Type": "BC_UNCONFIRMED_CAST_OF_RETURN_VALUE",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Unchecked/unconfirmed cast from org.apache.jackrabbit.oak.plugins.document.Document to org.apache.jackrabbit.oak.plugins.document.NodeDocument of return value in org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore.internalUpdate(Collection, List, UpdateOp)",
+        "  Method": "internalUpdate",
+        "   Field": "",
+        "   Lines": [
+            [
+                1301,
+                1301,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore",
+        "     Cat": "STYLE",
+        "  Abbrev": "BC",
+        "    Type": "BC_UNCONFIRMED_CAST_OF_RETURN_VALUE",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Unchecked/unconfirmed cast from org.apache.jackrabbit.oak.plugins.document.Document to org.apache.jackrabbit.oak.plugins.document.NodeDocument of return value in org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore.internalUpdate(Collection, UpdateOp, Document, boolean, int)",
+        "  Method": "internalUpdate",
+        "   Field": "",
+        "   Lines": [
+            [
+                1203,
+                1203,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore",
+        "     Cat": "STYLE",
+        "  Abbrev": "BC",
+        "    Type": "BC_UNCONFIRMED_CAST_OF_RETURN_VALUE",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Unchecked/unconfirmed cast from org.apache.jackrabbit.oak.plugins.document.Document to org.apache.jackrabbit.oak.plugins.document.NodeDocument of return value in org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore.readDocumentCached(Collection, Set)",
+        "  Method": "readDocumentCached",
+        "   Field": "",
+        "   Lines": [
+            [
+                373,
+                373,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore",
+        "     Cat": "STYLE",
+        "  Abbrev": "BC",
+        "    Type": "BC_UNCONFIRMED_CAST_OF_RETURN_VALUE",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Unchecked/unconfirmed cast from org.apache.jackrabbit.oak.plugins.document.Document to org.apache.jackrabbit.oak.plugins.document.NodeDocument of return value in org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore.runThroughCache(Collection, RDBRow, long, RDBDocumentStore$QueryContext)",
+        "  Method": "runThroughCache",
+        "   Field": "",
+        "   Lines": [
+            [
+                1798,
+                1798,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore",
+        "     Cat": "BAD_PRACTICE",
+        "  Abbrev": "DMI",
+        "    Type": "DMI_ENTRY_SETS_MAY_REUSE_ENTRY_OBJECTS",
+        "Priority": "2",
+        "    Rank": "14",
+        "     Msg": "Adding elements of an entry set may fail due to reuse of Map.Entry object in org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore.getCnStats()",
+        "  Method": "getCnStats",
+        "   Field": "",
+        "   Lines": [
+            [
+                1844,
+                1844,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore",
+        "     Cat": "MALICIOUS_CODE",
+        "  Abbrev": "EI",
+        "    Type": "EI_EXPOSE_REP",
+        "Priority": "2",
+        "    Rank": "18",
+        "     Msg": "org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore.getMetadata() may expose internal representation by returning RDBDocumentStore.metadata",
+        "  Method": "getMetadata",
+        "   Field": "metadata",
+        "   Lines": [
+            [
+                643,
+                643,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore",
+        "     Cat": "MALICIOUS_CODE",
+        "  Abbrev": "MS",
+        "    Type": "MS_EXPOSE_REP",
+        "Priority": "2",
+        "    Rank": "18",
+        "     Msg": "Public static org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore.getTableNames() may expose internal representation by returning RDBDocumentStore.TABLENAMES",
+        "  Method": "getTableNames",
+        "   Field": "TABLENAMES",
+        "   Lines": [
+            [
+                548,
+                548,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore",
+        "     Cat": "STYLE",
+        "  Abbrev": "NP",
+        "    Type": "NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD",
+        "Priority": "2",
+        "    Rank": "14",
+        "     Msg": "Read of unwritten public or protected field value in org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore.getModifiedFromOperation(UpdateOp$Operation)",
+        "  Method": "getModifiedFromOperation",
+        "   Field": "value",
+        "   Lines": [
+            [
+                1621,
+                1621,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore",
+        "     Cat": "STYLE",
+        "  Abbrev": "REC",
+        "    Type": "REC_CATCH_EXCEPTION",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Exception is caught when Exception is not thrown in org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore.delete(Collection, Map)",
+        "  Method": "delete",
+        "   Field": "",
+        "   Lines": [
+            [
+                1522,
+                1522,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore$1",
+        "     Cat": "PERFORMANCE",
+        "  Abbrev": "SIC",
+        "    Type": "SIC_INNER_SHOULD_BE_STATIC_ANON",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "The class org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore$1 could be refactored into a named _static_ inner class",
+        "  Method": "readDocumentCached",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore$3",
+        "     Cat": "PERFORMANCE",
+        "  Abbrev": "SIC",
+        "    Type": "SIC_INNER_SHOULD_BE_STATIC_ANON",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "The class org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore$3 could be refactored into a named _static_ inner class",
+        "  Method": "getCnStats",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore",
+        "     Cat": "SECURITY",
+        "  Abbrev": "SQL",
+        "    Type": "SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE",
+        "Priority": "3",
+        "    Rank": "15",
+        "     Msg": "org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore.createTableFor(Connection, Collection, RDBDocumentStore$RDBTableMetaData, List, List, StringBuilder) passes a nonconstant String to an execute or addBatch method on an SQL statement",
+        "  Method": "createTableFor",
+        "   Field": "",
+        "   Lines": [
+            [
+                962,
+                962,
+                null
+            ],
+            [
+                967,
+                967,
+                "SOURCE_LINE_ANOTHER_INSTANCE"
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore",
+        "     Cat": "SECURITY",
+        "  Abbrev": "SQL",
+        "    Type": "SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE",
+        "Priority": "3",
+        "    Rank": "15",
+        "     Msg": "org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore.initialize(DataSource, DocumentMK$Builder, RDBOptions) passes a nonconstant String to an execute or addBatch method on an SQL statement",
+        "  Method": "initialize",
+        "   Field": "",
+        "   Lines": [
+            [
+                752,
+                752,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore",
+        "     Cat": "SECURITY",
+        "  Abbrev": "SQL",
+        "    Type": "SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING",
+        "Priority": "3",
+        "    Rank": "15",
+        "     Msg": "A prepared statement is generated from a nonconstant String in org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore.createTableFor(Connection, Collection, RDBDocumentStore$RDBTableMetaData, List, List, StringBuilder)",
+        "  Method": "createTableFor",
+        "   Field": "",
+        "   Lines": [
+            [
+                939,
+                939,
+                null
+            ],
+            [
+                975,
+                975,
+                "SOURCE_LINE_ANOTHER_INSTANCE"
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3634_90ad50da",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore",
+        "     Cat": "PERFORMANCE",
+        "  Abbrev": "UPM",
+        "    Type": "UPM_UNCALLED_PRIVATE_METHOD",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Private method org.apache.jackrabbit.oak.plugins.document.rdb.RDBDocumentStore.idOf(Document) is never called",
+        "  Method": "idOf",
+        "   Field": "",
+        "   Lines": [
+            [
+                1754,
+                1758,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3817_2a02a138",
+        "   Class": "",
+        "     Cat": "",
+        "  Abbrev": "",
+        "    Type": "NO_WARNING",
+        "Priority": "",
+        "    Rank": "",
+        "     Msg": "",
+        "  Method": "",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3897_94c6c575",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore",
+        "     Cat": "STYLE",
+        "  Abbrev": "NP",
+        "    Type": "NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE",
+        "Priority": "2",
+        "    Rank": "13",
+        "     Msg": "Possible null pointer dereference in org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore.reset(RevisionVector, RevisionVector, DocumentNodeStoreBranch) due to return value of called method",
+        "  Method": "reset",
+        "   Field": "",
+        "   Lines": [
+            [
+                1283,
+                1283,
+                "SOURCE_LINE_DEREF"
+            ],
+            [
+                1283,
+                1283,
+                "SOURCE_LINE_KNOWN_NULL"
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-395_4ed7bc8e",
+        "   Class": "org.apache.jackrabbit.oak.jcr.NodeImpl",
+        "     Cat": "STYLE",
+        "  Abbrev": "NP",
+        "    Type": "NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE",
+        "Priority": "2",
+        "    Rank": "13",
+        "     Msg": "Possible null pointer dereference in org.apache.jackrabbit.oak.jcr.NodeImpl.setProperty(String, double) due to return value of called method",
+        "  Method": "setProperty",
+        "   Field": "",
+        "   Lines": [
+            [
+                448,
+                448,
+                "SOURCE_LINE_RETURNED"
+            ],
+            [
+                448,
+                448,
+                "SOURCE_LINE_KNOWN_NULL"
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-395_4ed7bc8e",
+        "   Class": "org.apache.jackrabbit.oak.jcr.NodeImpl",
+        "     Cat": "STYLE",
+        "  Abbrev": "NP",
+        "    Type": "NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE",
+        "Priority": "2",
+        "    Rank": "13",
+        "     Msg": "Possible null pointer dereference in org.apache.jackrabbit.oak.jcr.NodeImpl.setProperty(String, long) due to return value of called method",
+        "  Method": "setProperty",
+        "   Field": "",
+        "   Lines": [
+            [
+                467,
+                467,
+                "SOURCE_LINE_RETURNED"
+            ],
+            [
+                467,
+                467,
+                "SOURCE_LINE_KNOWN_NULL"
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-395_4ed7bc8e",
+        "   Class": "org.apache.jackrabbit.oak.jcr.NodeImpl",
+        "     Cat": "STYLE",
+        "  Abbrev": "NP",
+        "    Type": "NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE",
+        "Priority": "2",
+        "    Rank": "13",
+        "     Msg": "Possible null pointer dereference in org.apache.jackrabbit.oak.jcr.NodeImpl.setProperty(String, boolean) due to return value of called method",
+        "  Method": "setProperty",
+        "   Field": "",
+        "   Lines": [
+            [
+                439,
+                439,
+                "SOURCE_LINE_RETURNED"
+            ],
+            [
+                439,
+                439,
+                "SOURCE_LINE_KNOWN_NULL"
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-4036_f4324736",
+        "   Class": "org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService",
+        "     Cat": "PERFORMANCE",
+        "  Abbrev": "UrF",
+        "    Type": "URF_UNREAD_FIELD",
+        "Priority": "2",
+        "    Rank": "18",
+        "     Msg": "Unread field: org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService.extractedTextProvider",
+        "  Method": "",
+        "   Field": "extractedTextProvider",
+        "   Lines": [
+            [
+                487,
+                487,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-4038_557eec4f",
+        "   Class": "org.apache.jackrabbit.oak.plugins.index.property.PropertyIndexPlan",
+        "     Cat": "PERFORMANCE",
+        "  Abbrev": "UrF",
+        "    Type": "URF_UNREAD_FIELD",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Unread field: org.apache.jackrabbit.oak.plugins.index.property.PropertyIndexPlan.root",
+        "  Method": "",
+        "   Field": "root",
+        "   Lines": [
+            [
+                101,
+                101,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-4066_9a109aa3",
+        "   Class": "org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexEditorContext",
+        "     Cat": "STYLE",
+        "  Abbrev": "NP",
+        "    Type": "NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE",
+        "Priority": "2",
+        "    Rank": "13",
+        "     Msg": "Possible null pointer dereference in org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexEditorContext.updateSuggester(Analyzer) due to return value of called method",
+        "  Method": "updateSuggester",
+        "   Field": "",
+        "   Lines": [
+            [
+                290,
+                290,
+                "SOURCE_LINE_DEREF"
+            ],
+            [
+                289,
+                289,
+                "SOURCE_LINE_KNOWN_NULL"
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-4358_74cbba24",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.NodeDocument$5",
+        "     Cat": "PERFORMANCE",
+        "  Abbrev": "SIC",
+        "    Type": "SIC_INNER_SHOULD_BE_STATIC_ANON",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "The class org.apache.jackrabbit.oak.plugins.document.NodeDocument$5 could be refactored into a named _static_ inner class",
+        "  Method": "getAllChanges",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-4358_74cbba24",
+        "   Class": "org.apache.jackrabbit.oak.plugins.document.NodeDocument$6",
+        "     Cat": "PERFORMANCE",
+        "  Abbrev": "SIC",
+        "    Type": "SIC_INNER_SHOULD_BE_STATIC_ANON",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "The class org.apache.jackrabbit.oak.plugins.document.NodeDocument$6 could be refactored into a named _static_ inner class",
+        "  Method": "getChanges",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-43_668f08f2",
+        "   Class": "org.apache.jackrabbit.mk.core.MicroKernelImpl",
+        "     Cat": "CORRECTNESS",
+        "  Abbrev": "NP",
+        "    Type": "NP_UNWRITTEN_FIELD",
+        "Priority": "2",
+        "    Rank": "8",
+        "     Msg": "Read of unwritten field props in org.apache.jackrabbit.mk.core.MicroKernelImpl.addNode(LinkedList, String, String, JsopTokenizer)",
+        "  Method": "addNode",
+        "   Field": "props",
+        "   Lines": [
+            [
+                652,
+                652,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-499_61381ea2",
+        "   Class": "org.apache.jackrabbit.oak.query.SQL2Parser",
+        "     Cat": "STYLE",
+        "  Abbrev": "SF",
+        "    Type": "SF_SWITCH_FALLTHROUGH",
+        "Priority": "2",
+        "    Rank": "17",
+        "     Msg": "Switch statement found in org.apache.jackrabbit.oak.query.SQL2Parser.read() where one case falls through to the next case",
+        "  Method": "read",
+        "   Field": "",
+        "   Lines": [
+            [
+                924,
+                928,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-520_ec961a38",
+        "   Class": "org.apache.jackrabbit.oak.plugins.index.p2.strategy.ContentMirrorStoreStrategy",
+        "     Cat": "STYLE",
+        "  Abbrev": "UC",
+        "    Type": "UC_USELESS_OBJECT",
+        "Priority": "2",
+        "    Rank": "17",
+        "     Msg": "Useless object stored in variable parentQueue of method org.apache.jackrabbit.oak.plugins.index.p2.strategy.ContentMirrorStoreStrategy.remove(NodeBuilder, String, Iterable)",
+        "  Method": "remove",
+        "   Field": "",
+        "   Lines": [
+            [
+                41,
+                41,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-537_a8493efc",
+        "   Class": "",
+        "     Cat": "",
+        "  Abbrev": "",
+        "    Type": "NO_WARNING",
+        "Priority": "",
+        "    Rank": "",
+        "     Msg": "",
+        "  Method": "",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-579_7d72e6ed",
+        "   Class": "org.apache.jackrabbit.oak.query.ast.SelectorImpl",
+        "     Cat": "STYLE",
+        "  Abbrev": "NP",
+        "    Type": "NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD",
+        "Priority": "2",
+        "    Rank": "14",
+        "     Msg": "Read of unwritten public or protected field query in org.apache.jackrabbit.oak.query.ast.SelectorImpl.createFilter()",
+        "  Method": "createFilter",
+        "   Field": "query",
+        "   Lines": [
+            [
+                130,
+                130,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-621_00b4b8a0",
+        "   Class": "org.apache.jackrabbit.oak.core.TreeImpl",
+        "     Cat": "MT_CORRECTNESS",
+        "  Abbrev": "IS",
+        "    Type": "IS2_INCONSISTENT_SYNC",
+        "Priority": "2",
+        "    Rank": "17",
+        "     Msg": "Inconsistent synchronization of org.apache.jackrabbit.oak.core.TreeImpl.nodeBuilder; locked 50% of time",
+        "  Method": "",
+        "   Field": "nodeBuilder",
+        "   Lines": [
+            [
+                216,
+                216,
+                "SOURCE_LINE_UNSYNC_ACCESS"
+            ],
+            [
+                219,
+                219,
+                "SOURCE_LINE_UNSYNC_ACCESS"
+            ],
+            [
+                423,
+                423,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                426,
+                426,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ],
+            [
+                424,
+                424,
+                "SOURCE_LINE_SYNC_ACCESS"
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-846_7acb091a",
+        "   Class": "org.apache.jackrabbit.mongomk.Commit",
+        "     Cat": "STYLE",
+        "  Abbrev": "UCF",
+        "    Type": "UCF_USELESS_CONTROL_FLOW",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Useless control flow in org.apache.jackrabbit.mongomk.Commit.createOrUpdateNode(DocumentStore, UpdateOp)",
+        "  Method": "createOrUpdateNode",
+        "   Field": "",
+        "   Lines": [
+            [
+                311,
+                311,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "jackrabbit-oak_bugs-dot-jar_OAK-926_e1ae968c",
+        "   Class": "org.apache.jackrabbit.oak.plugins.mongomk.NodeDocument$1",
+        "     Cat": "PERFORMANCE",
+        "  Abbrev": "SIC",
+        "    Type": "SIC_INNER_SHOULD_BE_STATIC_ANON",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "The class org.apache.jackrabbit.oak.plugins.mongomk.NodeDocument$1 could be refactored into a named _static_ inner class",
+        "  Method": "transformAndSeal",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-102_7f391872",
+        "   Class": "org.apache.logging.log4j.core.net.Priority",
+        "     Cat": "CORRECTNESS",
+        "  Abbrev": "BSHIFT",
+        "    Type": "BSHIFT_WRONG_ADD_PRIORITY",
+        "Priority": "3",
+        "    Rank": "15",
+        "     Msg": "Possible bad parsing of shift operation in org.apache.logging.log4j.core.net.Priority.getPriority(Facility, Level)",
+        "  Method": "getPriority",
+        "   Field": "",
+        "   Lines": [
+            [
+                46,
+                46,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-139_50e19247",
+        "   Class": "org.apache.logging.log4j.core.appender.SocketAppender",
+        "     Cat": "STYLE",
+        "  Abbrev": "DLS",
+        "    Type": "DLS_DEAD_LOCAL_STORE",
+        "Priority": "2",
+        "    Rank": "17",
+        "     Msg": "Dead store to prot in org.apache.logging.log4j.core.appender.SocketAppender.createAppender(String, String, String, String, String, String, String, String, Layout, Filter, String, Configuration)",
+        "  Method": "createAppender",
+        "   Field": "",
+        "   Lines": [
+            [
+                118,
+                118,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-147_17296089",
+        "   Class": "org.apache.logging.log4j.core.filter.ThreadContextMapFilter",
+        "     Cat": "PERFORMANCE",
+        "  Abbrev": "UrF",
+        "    Type": "URF_UNREAD_FIELD",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Unread field: org.apache.logging.log4j.core.filter.ThreadContextMapFilter.value",
+        "  Method": "",
+        "   Field": "value",
+        "   Lines": [
+            [
+                55,
+                55,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-492_24a3bed4",
+        "   Class": "org.apache.logging.log4j.core.jmx.Server",
+        "     Cat": "STYLE",
+        "  Abbrev": "SF",
+        "    Type": "SF_SWITCH_NO_DEFAULT",
+        "Priority": "2",
+        "    Rank": "19",
+        "     Msg": "Switch statement found in org.apache.logging.log4j.core.jmx.Server.escape(String) where default case is missing",
+        "  Method": "escape",
+        "   Field": "",
+        "   Lines": [
+            [
+                75,
+                88,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-56_3eb44094",
+        "   Class": "org.apache.logging.log4j.Level",
+        "     Cat": "STYLE",
+        "  Abbrev": "RCN",
+        "    Type": "RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE",
+        "Priority": "2",
+        "    Rank": "18",
+        "     Msg": "Redundant nullcheck of level, which is known to be non-null in org.apache.logging.log4j.Level.toLevel(String, Level)",
+        "  Method": "toLevel",
+        "   Field": "",
+        "   Lines": [
+            [
+                101,
+                101,
+                "SOURCE_REDUNDANT_NULL_CHECK"
+            ]
+        ]
+    },
+    {
+        "    Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-763_97203de8",
+        "   Class": "org.apache.logging.log4j.message.FormattedMessage",
+        "     Cat": "MALICIOUS_CODE",
+        "  Abbrev": "EI2",
+        "    Type": "EI_EXPOSE_REP2",
+        "Priority": "2",
+        "    Rank": "18",
+        "     Msg": "new org.apache.logging.log4j.message.FormattedMessage(String, Object[]) may expose internal representation by storing an externally mutable object into FormattedMessage.argArray",
+        "  Method": "<init>",
+        "   Field": "argArray",
+        "   Lines": [
+            [
+                53,
+                53,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "wicket_bugs-dot-jar_WICKET-5497_724066f4",
+        "   Class": "org.apache.wicket.ajax.json.JsonUtils",
+        "     Cat": "CORRECTNESS",
+        "  Abbrev": "RCN",
+        "    Type": "RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE",
+        "Priority": "2",
+        "    Rank": "11",
+        "     Msg": "Nullcheck of value at line 61 of value previously dereferenced in org.apache.wicket.ajax.json.JsonUtils.asArray(Map)",
+        "  Method": "asArray",
+        "   Field": "",
+        "   Lines": [
+            [
+                61,
+                61,
+                null
+            ],
+            [
+                77,
+                77,
+                "SOURCE_REDUNDANT_NULL_CHECK"
+            ]
+        ]
+    },
+    {
+        "    Proj": "wicket_bugs-dot-jar_WICKET-5569_5efb8091",
+        "   Class": "",
+        "     Cat": "",
+        "  Abbrev": "",
+        "    Type": "NO_WARNING",
+        "Priority": "",
+        "    Rank": "",
+        "     Msg": "",
+        "  Method": "",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "wicket_bugs-dot-jar_WICKET-5783_7b8b6767",
+        "   Class": "org.apache.wicket.ajax.AjaxEventBehavior",
+        "     Cat": "I18N",
+        "  Abbrev": "Dm",
+        "    Type": "DM_CONVERT_CASE",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "Use of non-localized String.toUpperCase() or String.toLowerCase() in new org.apache.wicket.ajax.AjaxEventBehavior(String)",
+        "  Method": "<init>",
+        "   Field": "",
+        "   Lines": [
+            [
+                72,
+                72,
+                null
+            ]
+        ]
+    },
+    {
+        "    Proj": "wicket_bugs-dot-jar_WICKET-5853_b80f6640",
+        "   Class": "",
+        "     Cat": "",
+        "  Abbrev": "",
+        "    Type": "NO_WARNING",
+        "Priority": "",
+        "    Rank": "",
+        "     Msg": "",
+        "  Method": "",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "wicket_bugs-dot-jar_WICKET-5898_ffdd0864",
+        "   Class": "org.apache.wicket.markup.html.panel.AbstractMarkupSourcingStrategy$1",
+        "     Cat": "PERFORMANCE",
+        "  Abbrev": "SIC",
+        "    Type": "SIC_INNER_SHOULD_BE_STATIC_ANON",
+        "Priority": "3",
+        "    Rank": "20",
+        "     Msg": "The class org.apache.wicket.markup.html.panel.AbstractMarkupSourcingStrategy$1 could be refactored into a named _static_ inner class",
+        "  Method": "searchMarkupInTransparentResolvers",
+        "   Field": "",
+        "   Lines": []
+    },
+    {
+        "    Proj": "wicket_bugs-dot-jar_WICKET-5916_def03add",
+        "   Class": "",
+        "     Cat": "",
+        "  Abbrev": "",
+        "    Type": "NO_WARNING",
+        "Priority": "",
+        "    Rank": "",
+        "     Msg": "",
+        "  Method": "",
+        "   Field": "",
+        "   Lines": []
+    }
+]

@@ -1,5 +1,6 @@
 import os
 import shutil
+import sys
 
 from scripts.classpathsearcher import find_all_jars, get_class_paths_from_dependencies
 from scripts.commands import git
@@ -7,6 +8,7 @@ from scripts.commands import maven
 from scripts.diffparser import get_changed_file
 from scripts.errorprone.runner import run_error_prone
 from scripts.spotbugs.runner import run_spotbugs
+from scripts.infer.runner import run_infer
 
 
 PATH_TO_DATABASE = "/home/yuliia/PycharmProjects/bugs-dot-jar"
@@ -16,8 +18,12 @@ PATH_TO_RESULTS = "/home/yuliia/PycharmProjects/masters/results"
 BUG_FOLDER = "bug"
 FIX_FOLDER = "fix"
 
+# accumulo done
 if __name__ == '__main__':
-    proj = "maven"  # 23
+    proj = sys.argv[1]  # 23
+
+    n = int(sys.argv[2])
+
     proj_path = os.path.join(PATH_TO_DATABASE, proj)
 
     class_paths = get_class_paths_from_dependencies(proj)
@@ -30,8 +36,8 @@ if __name__ == '__main__':
     # camel 142
 
     for i, branch in enumerate(all_branches):
-        # if i + 1 <= 146: # 30
-        #     continue
+        if i + 1 <= n: # 30
+            continue
         print(i + 1, branch)
         git.checkout_branch(branch)
         buggy_files = get_changed_file(proj_path)
@@ -41,6 +47,7 @@ if __name__ == '__main__':
         git.apply_proj_specific_patches(proj)
 
         maven.clean_install()
+
         # run_error_prone(
         #     buggy_files,
         #     class_paths + (find_all_jars(proj_path) if proj != "maven" else []),
@@ -48,14 +55,21 @@ if __name__ == '__main__':
         #     proj + "_" + branch.split('/')[-1],
         #     os.path.join(PATH_TO_LOGS, BUG_FOLDER),
         # )
-        run_spotbugs(
+        # run_spotbugs(
+        #     buggy_files,
+        #     class_paths + find_all_jars(proj_path) if proj != "maven" else [],
+        #     os.path.join(PATH_TO_RESULTS, BUG_FOLDER, 'sb_output'),
+        #     proj + "_" + branch.split('/')[-1],
+        #     os.path.join(PATH_TO_LOGS, BUG_FOLDER),
+        # )
+        run_infer(
             buggy_files,
             class_paths + find_all_jars(proj_path) if proj != "maven" else [],
-            os.path.join(PATH_TO_RESULTS, BUG_FOLDER, 'sb_output'),
+            os.path.join(PATH_TO_RESULTS, BUG_FOLDER, 'inf_output_txt'),
+            os.path.join(PATH_TO_RESULTS, BUG_FOLDER, 'inf_output_json'),
             proj + "_" + branch.split('/')[-1],
             os.path.join(PATH_TO_LOGS, BUG_FOLDER),
-        ) # 21
-        # TODO: run infer
+        )
 
         git.revert_changes()
         git.apply_developer_patch()
@@ -71,14 +85,21 @@ if __name__ == '__main__':
         #     proj + "_" + branch.split('/')[-1],
         #     os.path.join(PATH_TO_LOGS, FIX_FOLDER),
         # )
-        run_spotbugs(
+        # run_spotbugs(
+        #     buggy_files,
+        #     class_paths + (find_all_jars(proj_path) if proj != "maven" else []),
+        #     os.path.join(PATH_TO_RESULTS, FIX_FOLDER, "sp_output"),
+        #     proj + "_" + branch.split('/')[-1],
+        #     os.path.join(PATH_TO_LOGS, FIX_FOLDER),
+        # )
+        run_infer(
             buggy_files,
-            class_paths + (find_all_jars(proj_path) if proj != "maven" else []),
-            os.path.join(PATH_TO_RESULTS, FIX_FOLDER, "sp_output"),
+            class_paths + find_all_jars(proj_path) if proj != "maven" else [],
+            os.path.join(PATH_TO_RESULTS, FIX_FOLDER, 'inf_output_txt'),
+            os.path.join(PATH_TO_RESULTS, FIX_FOLDER, 'inf_output_json'),
             proj + "_" + branch.split('/')[-1],
             os.path.join(PATH_TO_LOGS, FIX_FOLDER),
         )
-        # TODO: run infer
 
         git.revert_changes()
 

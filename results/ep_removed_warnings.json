@@ -1,0 +1,302 @@
+[
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-2494_0dc92ca1",
+        "Class": "org.apache.accumulo.core.util.Stat",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "toString overrides method in Object; expected @Override",
+        " Code": "  public String toString() {",
+        " Mark": "                ^",
+        " Line": 56
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-2928_f99b5654",
+        "Class": "",
+        " Type": "",
+        "  Cat": "NO_WARNING",
+        "  Msg": "",
+        " Code": "",
+        " Mark": "",
+        " Line": -1
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-3229_891584fb",
+        "Class": "org.apache.accumulo.core.util.shell.Shell",
+        " Type": "error",
+        "  Cat": "FormatString",
+        "  Msg": "illegal format conversion: 'java.lang.Long' cannot be formatted using '%f'",
+        " Code": "      sb.append(\"- Authorization timeout: \").append(String.format(\"%.2fs%n\", TimeUnit.NANOSECONDS.toSeconds(authTimeout)));",
+        " Mark": "                                                                 ^",
+        " Line": 496
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-3475_7651b777",
+        "Class": "org.apache.accumulo.core.client.mock.MockShell",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "config overrides method in Shell; expected @Override",
+        " Code": "  public boolean config(String... args) {",
+        " Mark": "                 ^",
+        " Line": 47
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-4113_27300d81",
+        "Class": "org.apache.accumulo.core.util.UnsynchronizedBuffer",
+        " Type": "warning",
+        "  Cat": "MissingSummary",
+        "  Msg": "A summary line is required on public/protected Javadocs.",
+        " Code": "public class UnsynchronizedBuffer {",
+        " Mark": "^",
+        " Line": 26
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-776_dc9f23d9",
+        "Class": "org.apache.accumulo.core.iterators.user.TimestampFilter",
+        " Type": "warning",
+        "  Cat": "JavaUtilDate",
+        "  Msg": "Date has a bad API that leads to bugs; prefer java.time.Instant or LocalDate.",
+        " Code": "        start = dateParser.parse(options.get(START)).getTime();",
+        " Mark": "                                                            ^",
+        " Line": 90
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-776_dc9f23d9",
+        "Class": "org.apache.accumulo.core.iterators.user.TimestampFilter",
+        " Type": "warning",
+        "  Cat": "JavaUtilDate",
+        "  Msg": "Date has a bad API that leads to bugs; prefer java.time.Instant or LocalDate.",
+        " Code": "        end = dateParser.parse(options.get(END)).getTime();",
+        " Mark": "                                                        ^",
+        " Line": 92
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-776_dc9f23d9",
+        "Class": "org.apache.accumulo.core.iterators.user.TimestampFilter",
+        " Type": "warning",
+        "  Cat": "JavaUtilDate",
+        "  Msg": "Date has a bad API that leads to bugs; prefer java.time.Instant or LocalDate.",
+        " Code": "    is.addOption(START, dateParser.format(new Date(start)));",
+        " Mark": "                                          ^",
+        " Line": 252
+    },
+    {
+        " Proj": "accumulo_bugs-dot-jar_ACCUMULO-776_dc9f23d9",
+        "Class": "org.apache.accumulo.core.iterators.user.TimestampFilter",
+        " Type": "warning",
+        "  Cat": "JavaUtilDate",
+        "  Msg": "Date has a bad API that leads to bugs; prefer java.time.Instant or LocalDate.",
+        " Code": "    is.addOption(END, dateParser.format(new Date(end)));",
+        " Mark": "                                        ^",
+        " Line": 268
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-1145_22c370d9",
+        "Class": "org.apache.flink.api.typeutils.TypeExtractor",
+        " Type": "warning",
+        "  Cat": "OperatorPrecedence",
+        "  Msg": "Use grouping parenthesis to make the operator precedence explicit",
+        " Code": "\t\t\t\t\tm.getParameterTypes().length == 0 &&",
+        " Mark": "\t\t\t\t\t                                  ^",
+        " Line": 976
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-1496_0a4c7694",
+        "Class": "org.apache.flink.runtime.io.network.api.reader.BufferReader",
+        " Type": "warning",
+        "  Cat": "MissingOverride",
+        "  Msg": "getNumberOfInputChannels implements method in BufferReaderBase; expected @Override",
+        " Code": "\tpublic int getNumberOfInputChannels() {",
+        " Mark": "\t           ^",
+        " Line": 163
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-1761_380ef878",
+        "Class": "org.apache.flink.runtime.io.network.netty.PartitionRequestClientHandler",
+        " Type": "warning",
+        "  Cat": "FutureReturnValueIgnored",
+        "  Msg": "Return value of methods returning Future must be checked. Ignoring returned Futures suppresses exceptions thrown from the code that completes the Future.",
+        " Code": "\t\t\tctx.close();",
+        " Mark": "\t\t\t         ^",
+        " Line": 136
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-2437_a41bc8cc",
+        "Class": "org.apache.flink.api.typeutils.TypeExtractor",
+        " Type": "error",
+        "  Cat": "ReturnValueIgnored",
+        "  Msg": "Return value of 'getDeclaredConstructor' must be used",
+        " Code": "\t\t\tclazz.getDeclaredConstructor();",
+        " Mark": "\t\t\t                            ^",
+        " Line": 1368
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-2442_30761572",
+        "Class": "org.apache.flink.api.typeutils.TupleTypeInfoBase",
+        " Type": "warning",
+        "  Cat": "EmptyBlockTag",
+        "  Msg": "A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.",
+        " Code": "\t * @param startKeyId",
+        " Mark": "\t   ^",
+        " Line": 94
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-2442_30761572",
+        "Class": "org.apache.flink.api.typeutils.TupleTypeInfoBase",
+        " Type": "warning",
+        "  Cat": "EmptyBlockTag",
+        "  Msg": "A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.",
+        " Code": "\t * @param keyFields",
+        " Mark": "\t   ^",
+        " Line": 95
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-3052_8dc70f2e",
+        "Class": "org.apache.flink.optimizer.dag.BulkIterationNode",
+        " Type": "warning",
+        "  Cat": "ModifiedButNotUsed",
+        "  Msg": "A collection or proto builder was created, but its values were never accessed.",
+        " Code": "\t\t\tList<PlanNode> newCandidates = new ArrayList<PlanNode>();",
+        " Mark": "\t\t\t                               ^",
+        " Line": 307
+    },
+    {
+        " Proj": "flink_bugs-dot-jar_FLINK-3342_8e3e2f8f",
+        "Class": "org.apache.flink.runtime.checkpoint.stats.SimpleCheckpointStatsTracker",
+        " Type": "warning",
+        "  Cat": "NarrowingCompoundAssignment",
+        "  Msg": "Compound assignments from long to int hide lossy casts",
+        " Code": "\t\t\t\toverallStateSize += state.getStateSize();",
+        " Mark": "\t\t\t\t                 ^",
+        " Line": 146
+    },
+    {
+        " Proj": "jackrabbit-oak_bugs-dot-jar_OAK-1894_35562cce",
+        "Class": "org.apache.jackrabbit.oak.plugins.index.property.PropertyIndex",
+        " Type": "warning",
+        "  Cat": "EmptyBlockTag",
+        "  Msg": "A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.",
+        " Code": "     * @param root",
+        " Mark": "       ^",
+        " Line": 126
+    },
+    {
+        " Proj": "jackrabbit-oak_bugs-dot-jar_OAK-2388_487de751",
+        "Class": "org.apache.jackrabbit.oak.plugins.index.lucene.OakDirectory",
+        " Type": "warning",
+        "  Cat": "IntLongMath",
+        "  Msg": "Expression of type int may overflow before being assigned to a long",
+        " Code": "            this.length = data.size() * blobSize;",
+        " Mark": "                                      ^",
+        " Line": 190
+    },
+    {
+        " Proj": "jackrabbit-oak_bugs-dot-jar_OAK-2691_d2da7499",
+        "Class": "org.apache.jackrabbit.oak.plugins.identifier.ClusterRepositoryInfo",
+        " Type": "warning",
+        "  Cat": "EmptyBlockTag",
+        "  Msg": "A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.",
+        " Code": "     * @throws CommitFailedException",
+        " Mark": "       ^",
+        " Line": 40
+    },
+    {
+        " Proj": "jackrabbit-oak_bugs-dot-jar_OAK-4038_557eec4f",
+        "Class": "org.apache.jackrabbit.oak.plugins.index.property.PropertyIndexPlan",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The field 'root' is never read.",
+        " Code": "    private final NodeState root;",
+        " Mark": "                            ^",
+        " Line": 75
+    },
+    {
+        " Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-139_50e19247",
+        "Class": "org.apache.logging.log4j.core.appender.SocketAppender",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The local variable 'prot' is never read.",
+        " Code": "        final String prot = protocol != null ? protocol : Protocol.TCP.name();",
+        " Mark": "                     ^",
+        " Line": 118
+    },
+    {
+        " Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-147_17296089",
+        "Class": "org.apache.logging.log4j.core.filter.ThreadContextMapFilter",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The field 'value' is never read.",
+        " Code": "    private final String value;",
+        " Mark": "                         ^",
+        " Line": 44
+    },
+    {
+        " Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-492_61ccbb95",
+        "Class": "org.apache.logging.log4j.core.jmx.Server",
+        " Type": "error",
+        "  Cat": "FormatString",
+        "  Msg": "extra format arguments: used 1, provided 2",
+        " Code": "        final String search = String.format(pattern, contextName, \"*\");",
+        " Mark": "                                           ^",
+        " Line": 263
+    },
+    {
+        " Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-523_837dcd89",
+        "Class": "",
+        " Type": "",
+        "  Cat": "NO_WARNING",
+        "  Msg": "",
+        " Code": "",
+        " Mark": "",
+        " Line": -1
+    },
+    {
+        " Proj": "logging-log4j2bugs-dot-jar_LOG4J2-102_7f391872",
+        "Class": "org.apache.logging.log4j.core.net.Priority",
+        " Type": "warning",
+        "  Cat": "OperatorPrecedence",
+        "  Msg": "Use grouping parenthesis to make the operator precedence explicit",
+        " Code": "        return facility.getCode() << 3 + Severity.getSeverity(level).getCode();",
+        " Mark": "                                       ^",
+        " Line": 46
+    },
+    {
+        " Proj": "logging-log4j2bugs-dot-jar_LOG4J2-139_50e19247",
+        "Class": "org.apache.logging.log4j.core.appender.SocketAppender",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The local variable 'prot' is never read.",
+        " Code": "        final String prot = protocol != null ? protocol : Protocol.TCP.name();",
+        " Mark": "                     ^",
+        " Line": 118
+    },
+    {
+        " Proj": "logging-log4j2bugs-dot-jar_LOG4J2-147_17296089",
+        "Class": "org.apache.logging.log4j.core.filter.ThreadContextMapFilter",
+        " Type": "warning",
+        "  Cat": "UnusedVariable",
+        "  Msg": "The field 'value' is never read.",
+        " Code": "    private final String value;",
+        " Mark": "                         ^",
+        " Line": 44
+    },
+    {
+        " Proj": "logging-log4j2bugs-dot-jar_LOG4J2-523_837dcd89",
+        "Class": "",
+        " Type": "",
+        "  Cat": "NO_WARNING",
+        "  Msg": "",
+        " Code": "",
+        " Mark": "",
+        " Line": -1
+    },
+    {
+        " Proj": "wicket_bugs-dot-jar_WICKET-16_3431e60d",
+        "Class": "",
+        " Type": "",
+        "  Cat": "NO_WARNING",
+        "  Msg": "",
+        " Code": "",
+        " Mark": "",
+        " Line": -1
+    }
+]
