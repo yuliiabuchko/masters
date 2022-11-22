@@ -1,0 +1,1203 @@
+[
+    {
+        "      Proj": "accumulo_bugs-dot-jar_ACCUMULO-1348_6ff92b12",
+        "     Class": "org.apache.accumulo.core.client.mock.MockShell",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `java.io.FileInputStream` acquired by call to `Scanner(...)` at line 80 is not released after line 81.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            71,
+            72,
+            76,
+            79,
+            80,
+            81
+        ],
+        " Procedure": "org.apache.accumulo.core.client.mock.MockShell.start():int"
+    },
+    {
+        "      Proj": "accumulo_bugs-dot-jar_ACCUMULO-1348_ef0f6ddc",
+        "     Class": "org.apache.accumulo.core.client.mock.MockShell",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `java.io.FileInputStream` acquired by call to `Scanner(...)` at line 80 is not released after line 81.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            71,
+            72,
+            76,
+            79,
+            80,
+            81
+        ],
+        " Procedure": "org.apache.accumulo.core.client.mock.MockShell.start():int"
+    },
+    {
+        "      Proj": "accumulo_bugs-dot-jar_ACCUMULO-1348_ef0f6ddc",
+        "     Class": "org.apache.accumulo.core.util.shell.Shell",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `java.io.FileInputStream` acquired by call to `Scanner(...)` at line 440 is not released after line 441.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            418,
+            963,
+            964,
+            421,
+            422,
+            424,
+            425,
+            426,
+            427,
+            430,
+            431,
+            432,
+            437,
+            439,
+            440,
+            441,
+            413,
+            414
+        ],
+        " Procedure": "org.apache.accumulo.core.util.shell.Shell.start():int"
+    },
+    {
+        "      Proj": "accumulo_bugs-dot-jar_ACCUMULO-3229_891584fb",
+        "     Class": "org.apache.accumulo.core.util.shell.Shell",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `java.io.PrintWriter` acquired by call to `Shell()` at line 409 is not released after line 412.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            408,
+            409,
+            410,
+            412,
+            415,
+            171,
+            178,
+            179,
+            180,
+            181,
+            184,
+            185,
+            186,
+            189,
+            192,
+            194,
+            195,
+            200,
+            201,
+            202,
+            203,
+            206,
+            208,
+            209,
+            212,
+            213,
+            214,
+            215,
+            218
+        ],
+        " Procedure": "org.apache.accumulo.core.util.shell.Shell.main(java.lang.String[]):void"
+    },
+    {
+        "      Proj": "accumulo_bugs-dot-jar_ACCUMULO-3475_7651b777",
+        "     Class": "org.apache.accumulo.core.util.shell.Shell",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `java.io.PrintWriter` acquired by call to `Shell()` at line 410 is not released after line 413.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            409,
+            410,
+            411,
+            413,
+            416,
+            173,
+            180,
+            181,
+            182,
+            183,
+            186,
+            187,
+            188,
+            191,
+            194,
+            196,
+            197,
+            202,
+            203,
+            204,
+            205,
+            208,
+            209,
+            210,
+            213,
+            214,
+            215,
+            216,
+            219
+        ],
+        " Procedure": "org.apache.accumulo.core.util.shell.Shell.main(java.lang.String[]):void"
+    },
+    {
+        "      Proj": "accumulo_bugs-dot-jar_ACCUMULO-1348_6ff92b12",
+        "     Class": "org.apache.accumulo.core.client.mock.MockShell",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `java.io.FileInputStream` acquired by call to `Scanner(...)` at line 80 is not released after line 81.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            71,
+            72,
+            76,
+            79,
+            80,
+            81
+        ],
+        " Procedure": "org.apache.accumulo.core.client.mock.MockShell.start():int"
+    },
+    {
+        "      Proj": "accumulo_bugs-dot-jar_ACCUMULO-1348_ef0f6ddc",
+        "     Class": "org.apache.accumulo.core.client.mock.MockShell",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `java.io.FileInputStream` acquired by call to `Scanner(...)` at line 80 is not released after line 81.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            71,
+            72,
+            76,
+            79,
+            80,
+            81
+        ],
+        " Procedure": "org.apache.accumulo.core.client.mock.MockShell.start():int"
+    },
+    {
+        "      Proj": "accumulo_bugs-dot-jar_ACCUMULO-1348_6ff92b12",
+        "     Class": "org.apache.accumulo.core.client.mock.MockShell",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `java.io.FileInputStream` acquired by call to `Scanner(...)` at line 80 is not released after line 81.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            71,
+            72,
+            76,
+            79,
+            80,
+            81
+        ],
+        " Procedure": "org.apache.accumulo.core.client.mock.MockShell.start():int"
+    },
+    {
+        "      Proj": "accumulo_bugs-dot-jar_ACCUMULO-1348_ef0f6ddc",
+        "     Class": "org.apache.accumulo.core.client.mock.MockShell",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `java.io.FileInputStream` acquired by call to `Scanner(...)` at line 80 is not released after line 81.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            71,
+            72,
+            76,
+            79,
+            80,
+            81
+        ],
+        " Procedure": "org.apache.accumulo.core.client.mock.MockShell.start():int"
+    },
+    {
+        "      Proj": "accumulo_bugs-dot-jar_ACCUMULO-1348_ef0f6ddc",
+        "     Class": "org.apache.accumulo.core.util.shell.Shell",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `java.io.FileInputStream` acquired by call to `Scanner(...)` at line 440 is not released after line 441.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            418,
+            963,
+            964,
+            421,
+            422,
+            424,
+            425,
+            426,
+            427,
+            430,
+            431,
+            432,
+            437,
+            439,
+            440,
+            441,
+            413,
+            414
+        ],
+        " Procedure": "org.apache.accumulo.core.util.shell.Shell.start():int"
+    },
+    {
+        "      Proj": "accumulo_bugs-dot-jar_ACCUMULO-1348_6ff92b12",
+        "     Class": "org.apache.accumulo.core.client.mock.MockShell",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `java.io.FileInputStream` acquired by call to `Scanner(...)` at line 80 is not released after line 81.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            71,
+            72,
+            76,
+            79,
+            80,
+            81
+        ],
+        " Procedure": "org.apache.accumulo.core.client.mock.MockShell.start():int"
+    },
+    {
+        "      Proj": "accumulo_bugs-dot-jar_ACCUMULO-1348_ef0f6ddc",
+        "     Class": "org.apache.accumulo.core.client.mock.MockShell",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `java.io.FileInputStream` acquired by call to `Scanner(...)` at line 80 is not released after line 81.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            71,
+            72,
+            76,
+            79,
+            80,
+            81
+        ],
+        " Procedure": "org.apache.accumulo.core.client.mock.MockShell.start():int"
+    },
+    {
+        "      Proj": "accumulo_bugs-dot-jar_ACCUMULO-1348_ef0f6ddc",
+        "     Class": "org.apache.accumulo.core.util.shell.Shell",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `java.io.FileInputStream` acquired by call to `Scanner(...)` at line 440 is not released after line 441.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            418,
+            963,
+            964,
+            421,
+            422,
+            424,
+            425,
+            426,
+            427,
+            430,
+            431,
+            432,
+            437,
+            439,
+            440,
+            441,
+            413,
+            414
+        ],
+        " Procedure": "org.apache.accumulo.core.util.shell.Shell.start():int"
+    },
+    {
+        "      Proj": "accumulo_bugs-dot-jar_ACCUMULO-3229_891584fb",
+        "     Class": "org.apache.accumulo.core.util.shell.Shell",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `java.io.PrintWriter` acquired by call to `Shell()` at line 409 is not released after line 412.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            408,
+            409,
+            410,
+            412,
+            415,
+            171,
+            178,
+            179,
+            180,
+            181,
+            184,
+            185,
+            186,
+            189,
+            192,
+            194,
+            195,
+            200,
+            201,
+            202,
+            203,
+            206,
+            208,
+            209,
+            212,
+            213,
+            214,
+            215,
+            218
+        ],
+        " Procedure": "org.apache.accumulo.core.util.shell.Shell.main(java.lang.String[]):void"
+    },
+    {
+        "      Proj": "accumulo_bugs-dot-jar_ACCUMULO-3475_7651b777",
+        "     Class": "org.apache.accumulo.core.util.shell.Shell",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `java.io.PrintWriter` acquired by call to `Shell()` at line 410 is not released after line 413.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            409,
+            410,
+            411,
+            413,
+            416,
+            173,
+            180,
+            181,
+            182,
+            183,
+            186,
+            187,
+            188,
+            191,
+            194,
+            196,
+            197,
+            202,
+            203,
+            204,
+            205,
+            208,
+            209,
+            210,
+            213,
+            214,
+            215,
+            216,
+            219
+        ],
+        " Procedure": "org.apache.accumulo.core.util.shell.Shell.main(java.lang.String[]):void"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-2249_6dde8e9d",
+        "     Class": "org.apache.jackrabbit.oak.query.ast.FullTextSearchImpl",
+        "  Bug_Type": "NULL_DEREFERENCE",
+        "       Msg": "object returned by `getFullTextConstraint(FullTextSearchImpl.selector)` could be null and is dereferenced at line 210.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            128,
+            129,
+            143,
+            153,
+            158,
+            171,
+            174,
+            175,
+            182,
+            183,
+            187,
+            188,
+            189,
+            192,
+            193,
+            197,
+            205,
+            210,
+            127
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.query.ast.FullTextSearchImpl.evaluate():boolean"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-2249_6dde8e9d",
+        "     Class": "org.apache.jackrabbit.oak.query.xpath.Statement",
+        "  Bug_Type": "NULL_DEREFERENCE",
+        "       Msg": "object `union` last assigned on line 66 could be null and is dereferenced at line 80.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            66,
+            67,
+            80,
+            112,
+            113,
+            53,
+            54,
+            85,
+            86,
+            57,
+            60,
+            61,
+            62,
+            63
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.query.xpath.Statement.optimize():org.apache.jackrabbit.oak.query.xpath.Statement"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-2427_e6d4f9a6",
+        "     Class": "org.apache.jackrabbit.oak.query.xpath.Statement",
+        "  Bug_Type": "NULL_DEREFERENCE",
+        "       Msg": "object `union` last assigned on line 66 could be null and is dereferenced at line 80.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            66,
+            67,
+            110,
+            111,
+            80,
+            63,
+            53,
+            54,
+            85,
+            86,
+            57,
+            60,
+            61,
+            62,
+            95
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.query.xpath.Statement.optimize():org.apache.jackrabbit.oak.query.xpath.Statement"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-2249_6dde8e9d",
+        "     Class": "org.apache.jackrabbit.oak.query.xpath.Statement",
+        "  Bug_Type": "NULL_DEREFERENCE",
+        "       Msg": "object `union` last assigned on line 66 could be null and is dereferenced at line 80.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            66,
+            67,
+            80,
+            112,
+            113,
+            53,
+            54,
+            85,
+            86,
+            57,
+            60,
+            61,
+            62,
+            63
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.query.xpath.Statement.optimize():org.apache.jackrabbit.oak.query.xpath.Statement"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-2427_e6d4f9a6",
+        "     Class": "org.apache.jackrabbit.oak.query.xpath.Statement",
+        "  Bug_Type": "NULL_DEREFERENCE",
+        "       Msg": "object `union` last assigned on line 66 could be null and is dereferenced at line 80.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            66,
+            67,
+            110,
+            111,
+            80,
+            63,
+            53,
+            54,
+            85,
+            86,
+            57,
+            60,
+            61,
+            62,
+            95
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.query.xpath.Statement.optimize():org.apache.jackrabbit.oak.query.xpath.Statement"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-2249_6dde8e9d",
+        "     Class": "org.apache.jackrabbit.oak.query.xpath.Statement",
+        "  Bug_Type": "NULL_DEREFERENCE",
+        "       Msg": "object `union` last assigned on line 66 could be null and is dereferenced at line 80.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            66,
+            67,
+            80,
+            112,
+            113,
+            53,
+            54,
+            85,
+            86,
+            57,
+            60,
+            61,
+            62,
+            63
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.query.xpath.Statement.optimize():org.apache.jackrabbit.oak.query.xpath.Statement"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-2427_e6d4f9a6",
+        "     Class": "org.apache.jackrabbit.oak.query.xpath.Statement",
+        "  Bug_Type": "NULL_DEREFERENCE",
+        "       Msg": "object `union` last assigned on line 66 could be null and is dereferenced at line 80.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            66,
+            67,
+            110,
+            111,
+            80,
+            63,
+            53,
+            54,
+            85,
+            86,
+            57,
+            60,
+            61,
+            62,
+            95
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.query.xpath.Statement.optimize():org.apache.jackrabbit.oak.query.xpath.Statement"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3897_94c6c575",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Read/Write race. Non-private method `DocumentNodeStoreBranch$InMemory.getHead()` reads without synchronization from `this.head`. Potentially races with write in method `DocumentNodeStoreBranch$InMemory.merge(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            464,
+            496,
+            482
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch$InMemory.getHead():org.apache.jackrabbit.oak.spi.state.NodeState"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3897_94c6c575",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Read/Write race. Non-private method `DocumentNodeStoreBranch$Persisted.getHead()` reads without synchronization from `this.head`. Potentially races with write in method `DocumentNodeStoreBranch$Persisted.merge(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            610,
+            556,
+            621
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch$Persisted.getHead():org.apache.jackrabbit.oak.spi.state.NodeState"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3897_94c6c575",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Read/Write race. Non-private method `DocumentNodeStoreBranch$InMemory.rebase()` reads without synchronization from `this.base`. Potentially races with write in method `DocumentNodeStoreBranch$InMemory.merge(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            496,
+            481,
+            483
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch$InMemory.rebase():void"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3897_94c6c575",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Unprotected write. Non-private method `DocumentNodeStoreBranch$InMemory.rebase()` writes to field `this.head` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            496,
+            482
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch$InMemory.rebase():void"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3897_94c6c575",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Unprotected write. Non-private method `DocumentNodeStoreBranch$InMemory.rebase()` writes to field `this.base` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            496,
+            483
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch$InMemory.rebase():void"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3897_94c6c575",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Unprotected write. Non-private method `DocumentNodeStoreBranch$InMemory.setRoot(...)` writes to field `this.head` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            472,
+            496,
+            482
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch$InMemory.setRoot(org.apache.jackrabbit.oak.spi.state.NodeState):void"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3897_94c6c575",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Unprotected write. Non-private method `DocumentNodeStoreBranch$InMemory.setRoot(...)` writes to field `this.this$0.branchState` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            500,
+            470
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch$InMemory.setRoot(org.apache.jackrabbit.oak.spi.state.NodeState):void"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3897_94c6c575",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Read/Write race. Non-private method `DocumentNodeStoreBranch$InMemory.setRoot(...)` reads without synchronization from `this.base`. Potentially races with write in method `DocumentNodeStoreBranch$InMemory.merge(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            496,
+            483,
+            469
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch$InMemory.setRoot(org.apache.jackrabbit.oak.spi.state.NodeState):void"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3897_94c6c575",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Read/Write race. Non-private method `DocumentNodeStoreBranch$InMemory.setRoot(...)` reads without synchronization from `this.head`. Potentially races with write in method `DocumentNodeStoreBranch$InMemory.merge(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            496,
+            482,
+            471
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch$InMemory.setRoot(org.apache.jackrabbit.oak.spi.state.NodeState):void"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3897_94c6c575",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Read/Write race. Non-private method `DocumentNodeStoreBranch$InMemory.toString()` reads without synchronization from `this.base`. Potentially races with write in method `DocumentNodeStoreBranch$InMemory.merge(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            496,
+            483,
+            453
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch$InMemory.toString():java.lang.String"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3424_f4349a96",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.ClusterNodeInfo",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Read/Write race. Non-private method `ClusterNodeInfo.performLeaseCheck()` indirectly reads without synchronization from `document.ClusterNodeInfo.clock`. Potentially races with write in method `ClusterNodeInfo.setClock(...)`.\n Reporting because this access may occur on a background thread.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            530,
+            876,
+            773
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.ClusterNodeInfo.performLeaseCheck():void"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3424_f4349a96",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.ClusterNodeInfo",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Read/Write race. Non-private method `ClusterNodeInfo.performLeaseCheck()` reads without synchronization from `this.leaseCheckFailed`. Potentially races with write in method `ClusterNodeInfo.renewLease()`.\n Reporting because this access may occur on a background thread.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            698,
+            517
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.ClusterNodeInfo.performLeaseCheck():void"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3549_9772f5b2",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Read/Write race. Non-private method `DocumentNodeStore.runBackgroundOperations()` indirectly reads with synchronization from container `this.lastKnownRevision` via call to `Map.get(...)`. Potentially races with unsynchronized write in method `DocumentNodeStore.backgroundRead(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            1696,
+            1681,
+            1819,
+            1628,
+            1821
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore.runBackgroundOperations():void"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3549_9772f5b2",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Read/Write race. Non-private method `DocumentNodeStore.runBackgroundReadOperations()` indirectly reads with synchronization from container `this.lastKnownRevision` via call to `Map.get(...)`. Potentially races with unsynchronized write in method `DocumentNodeStore.backgroundRead(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            1696,
+            1681,
+            1819,
+            1821
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore.runBackgroundReadOperations():void"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3897_94c6c575",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Read/Write race. Non-private method `DocumentNodeStoreBranch$InMemory.getHead()` reads without synchronization from `this.head`. Potentially races with write in method `DocumentNodeStoreBranch$InMemory.merge(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            464,
+            496,
+            482
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch$InMemory.getHead():org.apache.jackrabbit.oak.spi.state.NodeState"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3897_94c6c575",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Read/Write race. Non-private method `DocumentNodeStoreBranch$InMemory.rebase()` reads without synchronization from `this.base`. Potentially races with write in method `DocumentNodeStoreBranch$InMemory.merge(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            496,
+            481,
+            483
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch$InMemory.rebase():void"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3897_94c6c575",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Unprotected write. Non-private method `DocumentNodeStoreBranch$InMemory.rebase()` writes to field `this.head` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            496,
+            482
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch$InMemory.rebase():void"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3897_94c6c575",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Unprotected write. Non-private method `DocumentNodeStoreBranch$InMemory.rebase()` writes to field `this.base` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            496,
+            483
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch$InMemory.rebase():void"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3897_94c6c575",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Unprotected write. Non-private method `DocumentNodeStoreBranch$InMemory.setRoot(...)` writes to field `this.head` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            472,
+            496,
+            482
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch$InMemory.setRoot(org.apache.jackrabbit.oak.spi.state.NodeState):void"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3897_94c6c575",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Read/Write race. Non-private method `DocumentNodeStoreBranch$InMemory.setRoot(...)` reads without synchronization from `this.base`. Potentially races with write in method `DocumentNodeStoreBranch$InMemory.merge(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            496,
+            483,
+            469
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch$InMemory.setRoot(org.apache.jackrabbit.oak.spi.state.NodeState):void"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3897_94c6c575",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Read/Write race. Non-private method `DocumentNodeStoreBranch$InMemory.setRoot(...)` reads without synchronization from `this.head`. Potentially races with write in method `DocumentNodeStoreBranch$InMemory.merge(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            496,
+            482,
+            471
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch$InMemory.setRoot(org.apache.jackrabbit.oak.spi.state.NodeState):void"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3897_94c6c575",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Read/Write race. Non-private method `DocumentNodeStoreBranch$InMemory.toString()` reads without synchronization from `this.base`. Potentially races with write in method `DocumentNodeStoreBranch$InMemory.merge(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            496,
+            483,
+            453
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreBranch$InMemory.toString():java.lang.String"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3579_2565d74a",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Unprotected write. Non-private method `DocumentNodeStore$NodeStoreTask.run()` writes to field `this.delay` outside of synchronization.\n Reporting because this access may occur on a background thread.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            2591
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore$NodeStoreTask.run():void"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-3579_2565d74a",
+        "     Class": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Read/Write race. Non-private method `DocumentNodeStore$NodeStoreTask.run()` reads with synchronization from `this.delay`. Potentially races with unsynchronized write in method `DocumentNodeStore$NodeStoreTask.run()`.\n Reporting because this access may occur on a background thread.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            2579,
+            2591
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.document.DocumentNodeStore$NodeStoreTask.run():void"
+    },
+    {
+        "      Proj": "jackrabbit-oak_bugs-dot-jar_OAK-4067_56accddf",
+        "     Class": "org.apache.jackrabbit.oak.plugins.index.lucene.util.SuggestHelper",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `org.apache.jackrabbit.oak.plugins.index.lucene.util.SuggestHelper$2` acquired by call to `getLookup(...)` at line 70 is not released after line 70.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            66,
+            67,
+            69,
+            70,
+            57,
+            58,
+            125,
+            127
+        ],
+        " Procedure": "org.apache.jackrabbit.oak.plugins.index.lucene.util.SuggestHelper.updateSuggester(org.apache.lucene.store.Directory,org.apache.lucene.analysis.Analyzer,org.apache.lucene.index.IndexReader):void"
+    },
+    {
+        "      Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-177_f91ce934",
+        "     Class": "org.apache.logging.log4j.core.appender.OutputStreamManager",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Read/Write race. Non-private method `OutputStreamManager.releaseSub()` reads without synchronization from `this.footer`. Potentially races with write in method `OutputStreamManager.setFooter(...)`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            80,
+            71
+        ],
+        " Procedure": "org.apache.logging.log4j.core.appender.OutputStreamManager.releaseSub():void"
+    },
+    {
+        "      Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-581_bb02fa15",
+        "     Class": "org.apache.logging.log4j.core.appender.rolling.RollingRandomAccessFileManager",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `org.apache.logging.log4j.core.appender.rolling.RollingRandomAccessFileManager$DummyOutputStream` acquired by call to `new()` at line 172 is not released after line 174.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            148,
+            149,
+            150,
+            151,
+            155,
+            158,
+            159,
+            161,
+            163,
+            164,
+            165,
+            166,
+            167,
+            172,
+            173,
+            174,
+            46,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            190
+        ],
+        " Procedure": "org.apache.logging.log4j.core.appender.rolling.RollingRandomAccessFileManager$RollingRandomAccessFileManagerFactory.createManager(java.lang.String,org.apache.logging.log4j.core.appender.rolling.RollingRandomAccessFileManager$FactoryData):org.apache.logging.log4j.core.appender.rolling.RollingRandomAccessFileManager"
+    },
+    {
+        "      Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-965_43517f15",
+        "     Class": "org.apache.logging.log4j.core.appender.ConsoleAppender",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `java.io.PrintStream` acquired by call to `getOutputStream(...)` at line 177 is not released after line 178.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            264,
+            265,
+            266,
+            267,
+            268,
+            175,
+            176,
+            177,
+            178,
+            181,
+            182,
+            183,
+            185,
+            191,
+            192,
+            193,
+            194,
+            209,
+            219,
+            220,
+            221
+        ],
+        " Procedure": "org.apache.logging.log4j.core.appender.ConsoleAppender.getManager(boolean,org.apache.logging.log4j.core.appender.ConsoleAppender$Target,org.apache.logging.log4j.core.Layout):org.apache.logging.log4j.core.appender.OutputStreamManager"
+    },
+    {
+        "      Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-965_43517f15",
+        "     Class": "org.apache.logging.log4j.core.appender.ConsoleAppender",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `org.apache.logging.log4j.core.appender.ConsoleAppender$CloseShieldOutputStream` acquired by call to `getOutputStream(...)` at line 177 is not released after line 178.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            264,
+            265,
+            266,
+            267,
+            268,
+            175,
+            176,
+            177,
+            178,
+            181,
+            182,
+            183,
+            185,
+            191,
+            192,
+            193,
+            198,
+            199,
+            201,
+            209,
+            219,
+            220,
+            221
+        ],
+        " Procedure": "org.apache.logging.log4j.core.appender.ConsoleAppender.getManager(boolean,org.apache.logging.log4j.core.appender.ConsoleAppender$Target,org.apache.logging.log4j.core.Layout):org.apache.logging.log4j.core.appender.OutputStreamManager"
+    },
+    {
+        "      Proj": "logging-log4j2_bugs-dot-jar_LOG4J2-965_43517f15",
+        "     Class": "org.apache.logging.log4j.core.appender.ConsoleAppender",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `java.io.PrintStream` acquired to `printStream` by call to `new()` at line 185 is not released after line 201.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            192,
+            193,
+            198,
+            199,
+            201,
+            181,
+            182,
+            183,
+            185,
+            219,
+            220,
+            221,
+            191
+        ],
+        " Procedure": "org.apache.logging.log4j.core.appender.ConsoleAppender.getOutputStream(boolean,org.apache.logging.log4j.core.appender.ConsoleAppender$Target):java.io.OutputStream"
+    },
+    {
+        "      Proj": "flink_bugs-dot-jar_FLINK-1214_6ecd0f82",
+        "     Class": "org.apache.flink.compiler.dag.SingleInputNode",
+        "  Bug_Type": "NULL_DEREFERENCE",
+        "       Msg": "object returned by `getPredecessorNode()` could be null and is dereferenced at line 245.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            131,
+            132,
+            135,
+            238,
+            240,
+            245
+        ],
+        " Procedure": "org.apache.flink.compiler.dag.SingleInputNode.getAlternativePlans(org.apache.flink.compiler.costs.CostEstimator):java.util.List"
+    },
+    {
+        "      Proj": "wicket_bugs-dot-jar_WICKET-3721_1858bc18",
+        "     Class": "org.apache.wicket.request.UrlEncoder",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `java.io.CharArrayWriter` acquired by call to `new()` at line 283 is not released after line 397.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            292,
+            397,
+            303,
+            304,
+            278,
+            280,
+            281,
+            283,
+            285
+        ],
+        " Procedure": "org.apache.wicket.request.UrlEncoder.encode(java.lang.String,java.lang.String):java.lang.String"
+    },
+    {
+        "      Proj": "wicket_bugs-dot-jar_WICKET-3721_1858bc18",
+        "     Class": "org.apache.wicket.request.UrlEncoder",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `java.io.CharArrayWriter` acquired by call to `new()` at line 283 is not released after line 397.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            292,
+            397,
+            303,
+            304,
+            278,
+            280,
+            281,
+            283,
+            285
+        ],
+        " Procedure": "org.apache.wicket.request.UrlEncoder.encode(java.lang.String,java.lang.String):java.lang.String"
+    },
+    {
+        "      Proj": "wicket_bugs-dot-jar_WICKET-3721_1858bc18",
+        "     Class": "org.apache.wicket.request.UrlEncoder",
+        "  Bug_Type": "RESOURCE_LEAK",
+        "       Msg": "resource of type `java.io.CharArrayWriter` acquired by call to `new()` at line 283 is not released after line 397.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            292,
+            397,
+            303,
+            304,
+            278,
+            280,
+            281,
+            283,
+            285
+        ],
+        " Procedure": "org.apache.wicket.request.UrlEncoder.encode(java.lang.String,java.lang.String):java.lang.String"
+    },
+    {
+        "      Proj": "camel_bugs-dot-jar_CAMEL-8053_cac72b14",
+        "     Class": "org.apache.camel.impl.DefaultCamelContext",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Read/Write race. Non-private method `DefaultCamelContext.removeEndpoints(...)` reads without synchronization from container `this.endpoints` via call to `Map.entrySet()`. Potentially races with write in method `DefaultCamelContext.doStop()`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            2205,
+            471
+        ],
+        " Procedure": "org.apache.camel.impl.DefaultCamelContext.removeEndpoints(java.lang.String):java.util.Collection"
+    },
+    {
+        "      Proj": "camel_bugs-dot-jar_CAMEL-8125_36e7b668",
+        "     Class": "org.apache.camel.impl.DefaultCamelContext",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Read/Write race. Non-private method `DefaultCamelContext.removeEndpoints(...)` reads without synchronization from `this.endpoints`. Potentially races with write in method `DefaultCamelContext.doStart()`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            469,
+            1990,
+            2095
+        ],
+        " Procedure": "org.apache.camel.impl.DefaultCamelContext.removeEndpoints(java.lang.String):java.util.Collection"
+    },
+    {
+        "      Proj": "camel_bugs-dot-jar_CAMEL-8053_cac72b14",
+        "     Class": "org.apache.camel.impl.DefaultCamelContext",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Unprotected write. Non-private method `DefaultCamelContext.createTypeConverter()` indirectly writes to field `this.typeConverterRegistry` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            2241,
+            2747,
+            1532,
+            2733
+        ],
+        " Procedure": "org.apache.camel.impl.DefaultCamelContext.createTypeConverter():org.apache.camel.TypeConverter"
+    },
+    {
+        "      Proj": "camel_bugs-dot-jar_CAMEL-8053_cac72b14",
+        "     Class": "org.apache.camel.impl.DefaultCamelContext",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Unprotected write. Non-private method `DefaultCamelContext.setTypeConverterRegistry(...)` writes to field `this.typeConverterRegistry` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            2241,
+            1532,
+            2733
+        ],
+        " Procedure": "org.apache.camel.impl.DefaultCamelContext.setTypeConverterRegistry(org.apache.camel.spi.TypeConverterRegistry):void"
+    },
+    {
+        "      Proj": "camel_bugs-dot-jar_CAMEL-8125_36e7b668",
+        "     Class": "org.apache.camel.impl.DefaultCamelContext",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Unprotected write. Non-private method `DefaultCamelContext.getTypeConverterRegistry()` writes to field `this.typeConverterRegistry` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            1529,
+            2246,
+            2743
+        ],
+        " Procedure": "org.apache.camel.impl.DefaultCamelContext.getTypeConverterRegistry():org.apache.camel.spi.TypeConverterRegistry"
+    },
+    {
+        "      Proj": "camel_bugs-dot-jar_CAMEL-8125_36e7b668",
+        "     Class": "org.apache.camel.impl.DefaultCamelContext",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Read/Write race. Non-private method `DefaultCamelContext.lookupPropertiesComponent()` indirectly reads without synchronization from container `this.components` via call to `Map.get(...)`. Potentially races with write in method `DefaultCamelContext.doStop()`.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            3080,
+            341,
+            2213
+        ],
+        " Procedure": "org.apache.camel.impl.DefaultCamelContext.lookupPropertiesComponent():org.apache.camel.Component"
+    },
+    {
+        "      Proj": "camel_bugs-dot-jar_CAMEL-8125_36e7b668",
+        "     Class": "org.apache.camel.impl.DefaultCamelContext",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Unprotected write. Non-private method `DefaultCamelContext.lookupPropertiesComponent()` indirectly writes to field `this.registry` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            2725,
+            1990,
+            3082,
+            2091,
+            1590
+        ],
+        " Procedure": "org.apache.camel.impl.DefaultCamelContext.lookupPropertiesComponent():org.apache.camel.Component"
+    },
+    {
+        "      Proj": "camel_bugs-dot-jar_CAMEL-8125_36e7b668",
+        "     Class": "org.apache.camel.impl.DefaultCamelContext",
+        "  Bug_Type": "THREAD_SAFETY_VIOLATION",
+        "       Msg": "Unprotected write. Non-private method `DefaultCamelContext.resolvePropertyPlaceholders(...)` indirectly writes to field `this.registry` outside of synchronization.\n Reporting because another access to the same memory occurs on a background thread, although this access may not.",
+        "  Severity": "WARNING",
+        "     Lines": [
+            2725,
+            1990,
+            3082,
+            2091,
+            1590,
+            1463
+        ],
+        " Procedure": "org.apache.camel.impl.DefaultCamelContext.resolvePropertyPlaceholders(java.lang.String):java.lang.String"
+    },
+    {
+        "      Proj": "camel_bugs-dot-jar_CAMEL-7478_69b00a31",
+        "     Class": "org.apache.camel.component.bean.BeanInfo",
+        "  Bug_Type": "NULL_DEREFERENCE",
+        "       Msg": "object `clazz` last assigned on line 292 could be null and is dereferenced at line 299.",
+        "  Severity": "ERROR",
+        "     Lines": [
+            290,
+            995,
+            292,
+            293,
+            295,
+            299,
+            988,
+            989
+        ],
+        " Procedure": "org.apache.camel.component.bean.BeanInfo.introspect(java.lang.Class):void"
+    }
+]

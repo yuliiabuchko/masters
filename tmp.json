@@ -1,0 +1,342 @@
+[
+  {
+    "bug_type": "NULL_DEREFERENCE",
+    "qualifier": "object `clazz` last assigned on line 686 could be null and is dereferenced at line 690.",
+    "severity": "ERROR",
+    "line": 690,
+    "column": -1,
+    "procedure": "org.apache.flink.api.java.typeutils.TypeExtractor.validateInfo(java.util.ArrayList,java.lang.reflect.Type,org.apache.flink.api.common.typeinfo.TypeInformation):void",
+    "procedure_start_line": 552,
+    "file": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+    "bug_trace": [
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 552,
+        "column_number": -1,
+        "description": "start of procedure validateInfo(...)"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 554,
+        "column_number": -1,
+        "description": "Taking false branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 558,
+        "column_number": -1,
+        "description": "Taking false branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 562,
+        "column_number": -1,
+        "description": "Taking true branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 564,
+        "column_number": -1,
+        "description": "Taking false branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 578,
+        "column_number": -1,
+        "description": "Taking false branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 614,
+        "column_number": -1,
+        "description": "Taking false branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 629,
+        "column_number": -1,
+        "description": "Taking false branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 648,
+        "column_number": -1,
+        "description": "Taking false branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 672,
+        "column_number": -1,
+        "description": "Taking false branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 685,
+        "column_number": -1,
+        "description": "Taking true branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 686,
+        "column_number": -1,
+        "description": ""
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 687,
+        "column_number": -1,
+        "description": ""
+      },
+      {
+        "level": 1,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 1146,
+        "column_number": -1,
+        "description": "start of procedure isClassType(...)"
+      },
+      {
+        "level": 1,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 1147,
+        "column_number": -1,
+        "description": "Taking true branch"
+      },
+      {
+        "level": 1,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 1147,
+        "column_number": -1,
+        "description": "Taking false branch"
+      },
+      {
+        "level": 1,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 1147,
+        "column_number": -1,
+        "description": "return from a call to boolean TypeExtractor.isClassType(Type)"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 687,
+        "column_number": -1,
+        "description": "Taking false branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 688,
+        "column_number": -1,
+        "description": "Skipping append(...): unknown method"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 689,
+        "column_number": -1,
+        "description": "Skipping append(...): unknown method"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 690,
+        "column_number": -1,
+        "description": ""
+      }
+    ],
+    "key": "TypeExtractor.java|validateInfo|NULL_DEREFERENCE",
+    "node_key": "3677875e6aead27ee1320f16c80d8b0f",
+    "hash": "acccd1955a818f10d59ea79ec832a182",
+    "bug_type_hum": "Null Dereference"
+  },
+  {
+    "bug_type": "NULL_DEREFERENCE",
+    "qualifier": "object `clazz` last assigned on line 706 could be null and is dereferenced at line 710.",
+    "severity": "ERROR",
+    "line": 710,
+    "column": -1,
+    "procedure": "org.apache.flink.api.java.typeutils.TypeExtractor.validateInfo(java.util.ArrayList,java.lang.reflect.Type,org.apache.flink.api.common.typeinfo.TypeInformation):void",
+    "procedure_start_line": 552,
+    "file": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+    "bug_trace": [
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 552,
+        "column_number": -1,
+        "description": "start of procedure validateInfo(...)"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 554,
+        "column_number": -1,
+        "description": "Taking false branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 558,
+        "column_number": -1,
+        "description": "Taking false branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 562,
+        "column_number": -1,
+        "description": "Taking true branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 564,
+        "column_number": -1,
+        "description": "Taking false branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 578,
+        "column_number": -1,
+        "description": "Taking false branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 614,
+        "column_number": -1,
+        "description": "Taking false branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 629,
+        "column_number": -1,
+        "description": "Taking false branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 648,
+        "column_number": -1,
+        "description": "Taking false branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 672,
+        "column_number": -1,
+        "description": "Taking false branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 685,
+        "column_number": -1,
+        "description": "Taking false branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 694,
+        "column_number": -1,
+        "description": "Taking false branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 705,
+        "column_number": -1,
+        "description": "Taking true branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 706,
+        "column_number": -1,
+        "description": ""
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 707,
+        "column_number": -1,
+        "description": ""
+      },
+      {
+        "level": 1,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 1146,
+        "column_number": -1,
+        "description": "start of procedure isClassType(...)"
+      },
+      {
+        "level": 1,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 1147,
+        "column_number": -1,
+        "description": "Taking true branch"
+      },
+      {
+        "level": 1,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 1147,
+        "column_number": -1,
+        "description": "Taking false branch"
+      },
+      {
+        "level": 1,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 1147,
+        "column_number": -1,
+        "description": "return from a call to boolean TypeExtractor.isClassType(Type)"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 707,
+        "column_number": -1,
+        "description": "Taking false branch"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 708,
+        "column_number": -1,
+        "description": "Skipping append(...): unknown method"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 709,
+        "column_number": -1,
+        "description": "Skipping append(...): unknown method"
+      },
+      {
+        "level": 0,
+        "filename": "flink-java/src/main/java/org/apache/flink/api/java/typeutils/TypeExtractor.java",
+        "line_number": 710,
+        "column_number": -1,
+        "description": ""
+      }
+    ],
+    "key": "TypeExtractor.java|validateInfo|NULL_DEREFERENCE",
+    "node_key": "3677875e6aead27ee1320f16c80d8b0f",
+    "hash": "acccd1955a818f10d59ea79ec832a182",
+    "bug_type_hum": "Null Dereference"
+  }
+]
